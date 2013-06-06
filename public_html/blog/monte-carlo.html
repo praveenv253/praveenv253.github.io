@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax TeX Test Page</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Hello SyntaxHighlighter</title>
+	<script type="text/javascript" src="syntaxhighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="syntaxhighlighter/scripts/shBrushJScript.js"></script>
+	<link type="text/css" rel="stylesheet" href="syntaxhighlighter/styles/shCoreDefault.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+Well, for a while I'd been wondering what Monte Carlo simulations are all about. It never really struck me to <a href="http://en.wikipedia.org/wiki/Monte_Carlo_method" target="_blank">wiki it up</a> until recently. On doing so, I was rather struck by the relative ease of its implementation (at least, for simplistic computations) so I decided to actually go ahead and write a program for it.<br />
+<br />
+The program in question is one that attempts to estimate the value of $ \pi $. The <a href="http://en.wikipedia.org/wiki/File:Pi_30K.gif" target="_blank">figure</a> that inspired me to try this out can also be found on the wiki page.&nbsp;In short, here's the way it works:<br />
+<ol style="text-align: left;">
+<li>Create a bunch of random points in the range $[0,1) \times [0,1)$ <i>uniformly</i></li>
+<li>See which ones of them fall inside the unit circle and which ones don't</li>
+<li>Quite clearly, the ratio of the two numbers gives you the ratio of the two areas (since the distribution of random numbers is uniform!)</li>
+<li>Since the area of the unit circle is simply $ \pi $, the ratio we just procured is one-fourth the value of $ \pi $, and therefore we need to multiply it by 4 to get the actual value.</li>
+</ol>
+<div>
+Here's my version of the program:<br />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+</script>
+<script src="https://github.com/jamesward/github-files/raw/master/src/main/javascript/github-files.js">
+</script>
+<script>
+$.getGithubFileByFilePath("praveenv253", "monte-carlo", "pi-estimation/naive-implementation.py", function(contents) {
+    console.log(contents)
+});
+</script>
+<br />
+Okay. So far, so good. But of course, there are always some questions we can raise regarding the method, and I tried to figure out the answer to some of them.</div>
+</div>
+</html>
