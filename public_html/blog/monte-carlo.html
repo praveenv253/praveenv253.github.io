@@ -1,30 +1,200 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Monte Carlo Simulations</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Monte Carlo Simulations | Praveen's blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 100px;
+        line-height: 1;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">Praveen's blog</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="../home">Home</a></li>
+                <li><a href="../academics">Academics</a></li>
+                <li><a href="../projects">Projects</a></li>
+                <li class="active"><a href="../blog">Blog</a></li>
+                <li><a href="../about">About</a></li>
+                <li><a href="../CV">CV</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+      <!-- Jumbotron -->
+      <!--
+      <div class="jumbotron">
+        <h1>Marketing stuff!</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <a class="btn btn-large btn-success" href="#">Get started today</a>
+      </div>
+      -->
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+        <div class="span12">
+          <h2>Monte Carlo Simulations</h2>
+          <p>Well, for a while I'd been wondering what Monte Carlo
+          simulations are all about. It never really struck me to
+          <a href="http://en.wikipedia.org/wiki/Monte_Carlo_method"
+             target="_blank">wiki it up</a> until recently. On doing so,
+          I was rather struck by the relative ease of its implementation
+          (at least, for simplistic computations) so I decided to actually
+          go ahead and write a program for it.
+          </p>
+          <p>The program in question is one that attempts to estimate the
+          value of $ \pi $. The
+          <a href="http://en.wikipedia.org/wiki/File:Pi_30K.gif"
+             target="_blank">figure</a> that inspired me to try this out can
+          also be found on the wiki page.</p>
+          <p>In short, here's the way it works:
+            <ol style="text-align: left;">
+              <li>Create a bunch of random points in the range
+                  $[0,1) \times [0,1)$ <i>uniformly</i></li>
+              <li>See which ones of them fall inside the unit circle and
+                  which ones don't</li>
+              <li>Quite clearly, the ratio of the two numbers gives you the
+                  ratio of the two areas (since the distribution of random
+                  numbers is uniform!)</li>
+              <li>Since the area of the unit circle is simply $ \pi $, the
+                  ratio we just procured is one-fourth the value of $ \pi $,
+                  and therefore we need to multiply it by 4 to get the actual
+                  value.</li>
+            </ol>
+          </p>
+          <p>Here's my version of the program:
+          <script src="http://gist-it.appspot.com/https://github.com/praveenv253/monte-carlo/blob/master/pi-estimation/naive-implementation.py"></script>
+          </p>
+          <p>Okay. So far, so good. But of course, there are always some
+             questions we can raise regarding the method, and I tried to
+             figure out the answer to some of them.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Praveen Venkatesh 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
 	<script type="text/x-mathjax-config">
   		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 	</script>
 	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
-</head>
-
-<body>
-<div dir="ltr" style="text-align: left;" trbidi="on">
-Well, for a while I'd been wondering what Monte Carlo simulations are all about. It never really struck me to <a href="http://en.wikipedia.org/wiki/Monte_Carlo_method" target="_blank">wiki it up</a> until recently. On doing so, I was rather struck by the relative ease of its implementation (at least, for simplistic computations) so I decided to actually go ahead and write a program for it.<br />
-<br />
-The program in question is one that attempts to estimate the value of $ \pi $. The <a href="http://en.wikipedia.org/wiki/File:Pi_30K.gif" target="_blank">figure</a> that inspired me to try this out can also be found on the wiki page.&nbsp;In short, here's the way it works:<br />
-<ol style="text-align: left;">
-<li>Create a bunch of random points in the range $[0,1) \times [0,1)$ <i>uniformly</i></li>
-<li>See which ones of them fall inside the unit circle and which ones don't</li>
-<li>Quite clearly, the ratio of the two numbers gives you the ratio of the two areas (since the distribution of random numbers is uniform!)</li>
-<li>Since the area of the unit circle is simply $ \pi $, the ratio we just procured is one-fourth the value of $ \pi $, and therefore we need to multiply it by 4 to get the actual value.</li>
-</ol>
-<div>
-Here's my version of the program:<br />
-<script src="http://gist-it.appspot.com/https://github.com/praveenv253/monte-carlo/blob/master/pi-estimation/naive-implementation.py">
-</script>
-<br />
-Okay. So far, so good. But of course, there are always some questions we can raise regarding the method, and I tried to figure out the answer to some of them.</div>
-</div>
+  </body>
 </html>
