@@ -178,15 +178,29 @@
       <div class="row-fluid">
         <div class="span12">
           <p>And that's really all that's there to a Monte Carlo simulation.
-          Any simulation that does its work by choosing a random bunch of
-          points and then counting how many of them lie in an area of interest
-          qualifies as a Monte Carlo simulation! ==> CHECK!!!</p>
+          Any simulation that does its work by choosing a random sample from
+          some known distribution and then counting how many items lie in an
+          area of interest qualifies as a Monte Carlo simulation!</p>
           <p>Being the perfectionist that I am, I was pretty dissatisfied with
           the above implementation because it is rather inefficient:
           double-for-loop! So I decided to give numpy a spin for optimization.
           Vector operations are blazing fast compared to for loops in python.
-          <!-- Something about how fast it was... -->
           </p>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <script src="http://gist-it.appspot.com/https://github.com/praveenv253/monte-carlo/blob/master/pi-estimation/vector-implementation.py"></script>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <p>This turned out to be much better than the naive implementation.
+          For instance, the naive implementation took around 2.8 seconds for
+          $ 10^6 $ points. On the other hand, the vectorized implementation
+          managed the same in just 0.15 seconds!</p>
           <p>Okay, so now that I had a faster implementation, I could actually
           start asking some questions. One of them was this: How is it better
           to use more points? I expect the error to reduce, but by how much?
@@ -195,6 +209,92 @@
           time taken for computation, I would indirectly be asking how long I
           would have to wait (and the amount of computing resource I would
           need) in order to achieve a certain accuracy.</p>
+          <p>As it turns out, this was a fairly interesting exercise. First I
+          made a simple program along the lines of the two previous ones that
+          tried to plot the general trend in the error as numbers grew.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <script src="http://gist-it.appspot.com/https://github.com/praveenv253/monte-carlo/blob/master/pi-estimation/error-scaling.py"></script>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <p>This turned out the way I expected. The law of decreasing returns.
+          I kind of guessed that the decrease was exponential, but there was no
+          way to know until I did a more detailed analysis.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <img src="" alt="Error trend">
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <p>Much later, I realised that the error calculation that I was doing
+          was kind of silly because it only did the experiment once, for each
+          number-of-points. This isn't useful because there's always a chance
+          that the simulation with $ 10^4 $ points will get lucky and hit
+          closer to 3.14159 than the simulation with $ 10^7 $ points, say. Of
+          course, it's much less likely to happen, but it might. And I'm doing
+          the experiment only once, so I'll never know.</p>
+          <p>A better way, therefore, is to repeat the experiment several times
+          for each given number-of-points. Then, the standard deviation in the
+          values so obtained would give me a measure of how far off from the
+          value of pi the estimates <em>usually</em> go.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <script src="http://gist-it.appspot.com/https://github.com/praveenv253/monte-carlo/blob/master/pi-estimation/error-scaling2.py"></script>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <p>Naturally, this gave a far more pleasing result.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <img src="" alt="Error scaling">
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <p>As to whether or not the curve was exponential was easy to
+          determine. All I had to do was to take the same data and make a
+          semilog graph out of it, with log scaling in the x-axis. An
+          exponential curve would then become linear.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <script src="http://gist-it.appspot.com/https://github.com/praveenv253/monte-carlo/blob/master/pi-estimation/semilog-plot.py"></script>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <img src="" alt="Semilog plot">
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <p>The plot looked fairly linear, but it still had a slight curve to
+          it. But I satisfied myself for the moment and moved on to an even
+          more interesting question.</p>
         </div>
       </div>
 
