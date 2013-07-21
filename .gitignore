@@ -1,3 +1,6 @@
 # Ignore temporary files
 *~
+*.swp
+
+# Ignore the output directory
 _site
