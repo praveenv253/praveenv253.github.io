@@ -11,18 +11,23 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <style>
       h1 {
-        color: #555555;
+        color: {{ page.fggrey }};
         font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
         font-weight: normal;
         font-size: 24pt;
+        text-transform: lowercase;
       }
       h3 {
         font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
         font-weight: normal;
         font-size: 16pt;
+        text-transform: lowercase;
+      }
+      h5 {
+        text-transform: lowercase;
       }
       a {
-        color: #555555;
+        color: {{ page.fggrey }};
         transition: all 0.25s;
         moz-transition: all 0.25s;
         webkit-transition: all 0.25s;
@@ -32,10 +37,13 @@
         text-decoration: none;
       }
       p, li, thead, tbody, div {
-        color: #555555;
+        color: {{ page.fggrey }};
         font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
         font-weight: normal;
         font-size: 10pt;
+      }
+      thead {
+        text-transform: lowercase;
       }
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -82,7 +90,7 @@
             <div class="row-fluid">
               <div class="span6"> <!-- Copyright notice -->
                 <p class="text-left">
-                  <a href="/copyright">&copy; Praveen Venkatesh 2013</a>
+                  <a href="/copyright.html">&copy; Praveen Venkatesh 2013</a>
                 </p>
               </div>
               <div class="span6">
