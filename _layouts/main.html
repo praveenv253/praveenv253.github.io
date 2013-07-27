@@ -11,36 +11,45 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <style>
       h1 {
-        color: {{ page.fggrey }};
         font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
         font-weight: normal;
         font-size: 24pt;
         text-transform: lowercase;
+        color: {{ page.fggrey }};
       }
       h3 {
         font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
         font-weight: normal;
         font-size: 16pt;
         text-transform: lowercase;
+        color: {{ page.fggrey }};
+      }
+      h4 {
+        font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+        font-weight: normal;
+        font-size:14pt;
+        text-transform: lowercase;
+        color: {{ page.fggrey }};
       }
       h5 {
         text-transform: lowercase;
+        color: {{ page.fggrey }};
       }
       a {
-        color: {{ page.fggrey }};
         transition: all 0.25s;
         moz-transition: all 0.25s;
         webkit-transition: all 0.25s;
+        color: {{ page.fggrey }};
       }
-      a:hover {
+      a:hover, a.muted:hover {
         color: #0088cc;
         text-decoration: none;
       }
       p, li, thead, tbody, div {
-        color: {{ page.fggrey }};
         font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
         font-weight: normal;
         font-size: 10pt;
+        color: {{ page.fggrey }};
       }
       thead {
         text-transform: lowercase;
@@ -85,13 +94,18 @@
             <div class="row-fluid">
               <div class="span6"> <!-- Copyright notice -->
                 <p class="text-left">
-                  <a href="copyright.html">&copy; Praveen Venkatesh 2013</a>
+                  <a href="copyright.html" class="muted">
+                    &copy; Praveen Venkatesh 2013
+                  </a>
                 </p>
               </div>
               <div class="span6">
-                <p class="text-right"> <!-- Links -->
-                  <a href="http://github.com/praveenv253">github</a> |
-                  <a href="">google</a>
+                <p class="text-right muted"> <!-- Links -->
+                  <a href="http://github.com/praveenv253" class="muted">
+                    github
+                  </a>
+                  |
+                  <a href="" class="muted">google</a>
                 </p>
               </div>
             </div>
