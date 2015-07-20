@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: sed 'top/htop/g'
 date: 2014-09-19 23:18:46 -0400
 day: Friday
 tags:
@@ -10,4 +10,4 @@ tags:
   - processor utilization
 ---
 
-To check out CPU utilization using a fancier top command, try htop. 
+To check out CPU utilization using a fancier top command, try htop.
