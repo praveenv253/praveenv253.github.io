@@ -1,5 +1,13 @@
 name: Praveen's website
 theme: minimal
 highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+#gems:
+#  - jekyll-coffeescript
+#  - jekyll-paginate
+
 paginate: 5
 paginate_path: "blog/page:num/"
