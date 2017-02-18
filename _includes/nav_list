@@ -45,3 +45,7 @@
     {% endfor %}
   </ul>
 </nav>
+
+{% comment %}
+<!-- vim: set ft=liquid : -->
+{% endcomment %}
