@@ -1,0 +1,13 @@
+---
+layout: blog
+title: Log Message
+date: 2013-07-05 18:18:59 +0530
+day: Friday
+tags:
+  - log message
+  - cuda-gdb
+  - printf
+  - cuPrintf
+---
+
+Dont use it. Just dont. Tried and failed far too many times. Use printf instead. It overloads the printf defined by cstdio, so you have to include cstdio for it to work. Also note, cuPrintf is some compatibility thing for compute capability < 2.x. We dont need to worry about it. 
