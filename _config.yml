@@ -78,8 +78,8 @@ analytics:
 # Site Author
 author:
   name             : "Praveen Venkatesh"
-  avatar           : "/assets/images/portrait.jpg"
-  bio              : "PhD. Candidate in the  Electrical and Computer Engineering department at Carnegie Mellon University"
+  avatar           : "/assets/img/portrait-full-size.jpg"
+  bio              : "PhD. Candidate<br>Electrical and Computer Engineering<br>Carnegie Mellon University"
   location         :
   email            :
   uri              :
