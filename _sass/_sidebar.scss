@@ -13,15 +13,20 @@
   @include clearfix();
   margin-bottom: 1em;
 
-  @include breakpoint($large) {
-    @include span(2 of 12);
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
+  /*@include breakpoint($large) {*/
+  /*  @include span(2 of 12);*/
+  /*  opacity: 0.75;*/
+  /*  -webkit-transition: opacity 0.2s ease-in-out;*/
+  /*          transition: opacity 0.2s ease-in-out;*/
 
-    &:hover {
-      opacity: 1;
-    }
+  /*  &:hover {*/
+  /*    opacity: 1;*/
+  /*  }*/
+  /*}*/
+
+  @include breakpoint($large) {
+    @include span(3 of 12);
+    opacity: 1;
   }
 
   @include breakpoint($x-large) {
@@ -77,13 +82,13 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 220px;
+    /*border-radius: 50%;*/
 
-    @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
-    }
+	@include breakpoint($large) {
+	  padding: 5px;
+	  border: 1px solid $border-color;
+	}
   }
 }
 
