@@ -162,6 +162,7 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+  parse_block_html: true
 
 
 # Sass/SCSS
@@ -171,9 +172,9 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+  permalink: /:categories/:year/:month/:day/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 

@@ -5,6 +5,8 @@ main:
   - title: "Research"
     url: /research/
   - title: "Publications"
-    url: /year-archive/
+    url: /publications/
+  - title: "CV"
+    url: /assets/doc/cv.pdf
   - title: "Blog"
-    url: /collection-archive/
+    url: /blog/
