@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Get ls to sort by file extension
 date: 2016-07-13 20:04:21 -0400
 day: Wednesday
 tags:

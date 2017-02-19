@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Which which is which
 date: 2016-07-14 14:31:17 -0400
 day: Thursday
 tags:

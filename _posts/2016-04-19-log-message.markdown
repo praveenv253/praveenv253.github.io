@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Place pdf pages side-by-side in linux
 date: 2016-04-19 23:38:17 -0400
 day: Tuesday
 tags:

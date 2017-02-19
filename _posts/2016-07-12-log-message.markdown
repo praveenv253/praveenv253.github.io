@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Installing a user-defined python module in your own system
 date: 2016-07-12 13:20:11 -0400
 day: Tuesday
 tags:

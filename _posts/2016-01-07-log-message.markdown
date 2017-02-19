@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: PEP8-style indentation in vim
 date: 2016-01-07 00:33:56 +0530
 day: Thursday
 tags:

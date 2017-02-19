@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Export syntax-highlighted pdf files from vim
 date: 2016-09-13 14:07:40 -0400
 day: Tuesday
 tags:

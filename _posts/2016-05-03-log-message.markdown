@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Short tutorial on screen
 date: 2016-05-03 16:29:03 -0400
 day: Tuesday
 tags:

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Making sudo pip use a different HOME
 date: 2016-04-08 00:22:21 -0400
 day: Friday
 tags:

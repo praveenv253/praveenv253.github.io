@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Making vim display italicised text
 date: 2016-09-12 18:23:07 -0400
 day: Monday
 tags:

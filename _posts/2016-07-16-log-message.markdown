@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Extending Python using C
 date: 2016-07-16 11:26:47 -0400
 day: Saturday
 tags:

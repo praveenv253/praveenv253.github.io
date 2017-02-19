@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Installing cvxopt linked to Intel MKL via pip
 date: 2016-04-17 19:35:35 -0400
 day: Sunday
 tags:

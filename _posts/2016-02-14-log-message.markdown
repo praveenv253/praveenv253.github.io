@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Installing scikit-learn via pip, without sudo and with a static ATLAS
 date: 2016-02-14 04:41:56 -0500
 day: Sunday
 tags:

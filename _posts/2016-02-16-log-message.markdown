@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Terminating an unresponsive ssh session
 date: 2016-02-16 22:59:43 -0500
 day: Tuesday
 tags:

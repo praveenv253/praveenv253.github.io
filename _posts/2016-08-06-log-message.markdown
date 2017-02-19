@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Log Message
+title: Installation instructions for VTK (for mayavi)
 date: 2016-08-06 17:04:42 -0400
 day: Saturday
 tags:
