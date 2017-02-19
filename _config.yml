@@ -8,7 +8,7 @@
 # Site Settings
 locale                   : "en"
 title                    : "Praveen's website"
-title_separator          : "-"
+title_separator          : "|"
 name                     : "Praveen Venkatesh"
 description              : "My personal website."
 url                      : "https://praveenv253.github.io"
