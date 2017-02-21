@@ -3,5 +3,8 @@
   - Also see https://github.com/sverrirs/jekyll-paginate-v2/tree/master/examples
 - Create categories for research, blog/logs, publications, etc.
 - Create a research post for each paper/study, with a nice simple explanation
+- Get github pages to work with tags by committing and pushing locally generated tag archive pages.
+  - See this for a list of plugins that work with github-pages: https://pages.github.com/versions/
+  - Need to create a new repo, looks like. One for source files, and one for output
 - Upload teaching info
 - Publications should each have links under them to: the published paper, preprint if available, research post, doi, bibtex
