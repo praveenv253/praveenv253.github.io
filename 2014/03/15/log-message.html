@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Log Message      Praveen’s website      </title>
+
+
+
+
+<meta name="description" content="“The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code.” What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to “know” what the “full” definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create “specializations” of this template for each type that actually gets used. That is the only way it can generate object code. Check out http://stackoverflow.com/questions/10632251/undefined-reference-to-template-function on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations.">
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Praveen's website">
+<meta property="og:title" content="Log Message">
+
+
+  <link rel="canonical" href="http://localhost:4000/2014/03/15/log-message.html">
+  <meta property="og:url" content="http://localhost:4000/2014/03/15/log-message.html">
+
+
+
+  <meta property="og:description" content="“The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code.” What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to “know” what the “full” definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create “specializations” of this template for each type that actually gets used. That is the only way it can generate object code. Check out http://stackoverflow.com/questions/10632251/undefined-reference-to-template-function on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2014-03-15T13:22:34-04:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Praveen Venkatesh",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Praveen's website Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/assets/ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/ico/manifest.json">
+<link rel="mask-icon" href="/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/ico/favicon.ico">
+<meta name="msapplication-config" content="/assets/ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--blog">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Praveen's website</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/research">Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/publications">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/awards">Awards</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/assets/doc/cv.pdf">CV</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/blog/">Blog</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="http://localhost:4000/assets/img/portrait-full-size.jpg" class="author__avatar" alt="Praveen Venkatesh" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Praveen Venkatesh</h3>
+    
+      <p class="author__bio" itemprop="description">
+        PhD. Candidate<br>Electrical and Computer Engineering<br>Carnegie Mellon University
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/praveenv253" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://www.stackoverflow.com/users/525169/praveen" itemprop="sameAs">
+            <i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Log Message">
+    <meta itemprop="description" content="“The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code.” What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to “know” what the “full” definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create “specializations” of this template for each type that actually gets used. That is the only way it can generate object code. Check out http://stackoverflow.com/questions/10632251/undefined-reference-to-template-function on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations.">
+    <meta itemprop="datePublished" content="March 15, 2014">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Log Message
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        "The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code." What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to "know" what the "full" definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create "specializations" of this template for each type that actually gets used. That is the only way it can generate object code. Check out http://stackoverflow.com/questions/10632251/undefined-reference-to-template-function on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations. 
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/c" class="page__taxonomy-item" rel="tag">C++</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/log-message" class="page__taxonomy-item" rel="tag">log message</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/template-functions" class="page__taxonomy-item" rel="tag">template functions</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/templates" class="page__taxonomy-item" rel="tag">templates</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2014-03-15T13:22:34-04:00">March 15, 2014</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Log Message http://localhost:4000/2014/03/15/log-message.html" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2014/03/15/log-message.html" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http://localhost:4000/2014/03/15/log-message.html" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2014/03/15/log-message.html" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/2014/02/26/log-message.html" class="pagination--pager" title="Log Message
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/2014/04/05/log-message.html" class="pagination--pager" title="Log Message
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <!--
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/praveenv253"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+-->
+
+<div class="page__footer-copyright">&copy; 2017 Praveen Venkatesh. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
