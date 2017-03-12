@@ -10,5 +10,5 @@ main:
     url: /awards
   - title: "CV"
     url: /assets/doc/cv.pdf
-  - title: "Blog"
-    url: /blog/
+  - title: "Logs"
+    url: /logs/

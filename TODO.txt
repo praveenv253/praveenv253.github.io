@@ -1,24 +1,13 @@
 - Use jekyll-paginate-v2 instead of jekyll-archives for pagination and archive generation
   - See https://github.com/mmistakes/made-mistakes-jekyll/commit/75471d029e0cfcc425730ae41786a591e69347a8
   - Also see https://github.com/sverrirs/jekyll-paginate-v2/tree/master/examples
+  - Finsihed! Check this thoroughly!!!
+
 - Create categories for research, blog/logs, publications, etc.
 - Create a research post for each paper/study, with a nice simple explanation
-- Get github pages to work with tags by committing and pushing locally generated tag archive pages.
-  - See this for a list of plugins that work with github-pages: https://pages.github.com/versions/
-  - Need to create a new repo, looks like. One for source files, and one for output
 - Upload teaching info
 - Publications should each have links under them to: the published paper, preprint if available, research post, doi, bibtex
 - Make fonts smaller? This could be tricky...
 - Include google scholar link in sidebar. Use this for the icon, maybe: https://jpswalsh.github.io/academicons/
 
-- Need to figure out how to get Jekyll to use the right global site before we can simply copy _site into the master branch: otherwise, all assets are served from localhost:4000
-  - Think about using TravisCI for auto-deploy. It really might make things much more convenient.
-    - Look at the following:
-      - https://eshepelyuk.github.io/2014/10/28/automate-github-pages-travisci.html
-      - https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
-      - https://github.com/steveklabnik/automatically_update_github_pages_with_travis_example
-    - But this might also be a lot of overhead in future. So rewards might be limited. Time is better spent elsewhere since we aren't updating the website so often.
-  - Simpler alternative to TravisCI might be following the readme here: https://github.com/mmistakes/made-mistakes-jekyll
-    - Needs installation of nodejs as well, but this was easy if I remember correctly.
-    - Might have to learn how to use this `gulp` thing, but that's fine too. As long as it takes care of distinguishing between production and local versions, we're fine.
-  - Final solution: Don't do all this. Just use jekyll build (not jekyll serve).
+- Make sidebars for posts which are not author profile - more useful to have tags, related links, etc.

@@ -112,8 +112,6 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
   - vendor
   - .asset-cache
   - .bundle
@@ -129,15 +127,12 @@ exclude:
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
-  - log
   - node_modules
   - package.json
   - Rakefile
   - README
   - tmp
   - TODO
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -174,57 +169,52 @@ sass:
 
 # Outputting
   permalink: /:categories/:year/:month/:day/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /blog/page:num/
+#paginate: 5 # amount of posts to show
+#paginate_path: /blog/page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
 gems:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-archives
 
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-archives
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: jekyll-archives
+  type: jekyll-paginate-v2
   path: /categories/
+
 tag_archive:
-  type: jekyll-archives
+  type: jekyll-paginate-v2
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+
+pagination:
+  enabled: true
+  debug: false
+  per_page: 15
+  permalink: "/page/:num/"
+  title: ":title | Page :num of :max"
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+
+# Plugin: Auto Pages (jekyll-paginate-v2)
+autopages:
+  enabled: true
+  categories:
+    enabled: true
+    title: "Posts filed under :cat"
+    permalink: "/categories/:cat"
+  collections:
+    enabled: false
+  tags:
+    enabled: true
+    layouts:
+      - "autopage_tags.html"
+    title: "Posts tagged with :tag" # :tag is replaced by the tag name
+    permalink: "/tags/:tag"
 
 
 # HTML Compression
