@@ -1,13 +1,7 @@
-- Use jekyll-paginate-v2 instead of jekyll-archives for pagination and archive generation
-  - See https://github.com/mmistakes/made-mistakes-jekyll/commit/75471d029e0cfcc425730ae41786a591e69347a8
-  - Also see https://github.com/sverrirs/jekyll-paginate-v2/tree/master/examples
-  - Finsihed! Check this thoroughly!!!
-
 - Create categories for research, blog/logs, publications, etc.
 - Create a research post for each paper/study, with a nice simple explanation
 - Upload teaching info
 - Publications should each have links under them to: the published paper, preprint if available, research post, doi, bibtex
 - Make fonts smaller? This could be tricky...
-- Include google scholar link in sidebar. Use this for the icon, maybe: https://jpswalsh.github.io/academicons/
 
 - Make sidebars for posts which are not author profile - more useful to have tags, related links, etc.
