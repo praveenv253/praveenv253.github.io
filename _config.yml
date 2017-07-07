@@ -205,6 +205,8 @@ autopages:
   enabled: true
   categories:
     enabled: true
+    layouts:
+      - "autopage_category.html"
     title: "Posts filed under :cat"
     permalink: "/categories/:cat"
   collections:

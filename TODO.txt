@@ -1,6 +1,3 @@
-- Fix pagination for tags: figure out tag indexing base URLs
-- Also fix pagination for categories: this is under /categories/:cat/ where pagination (first and last) takes you back to /:cat
-
 - Create categories for research, blog/logs, publications, etc.
 - Create a research post for each paper/study, with a nice simple explanation
 - Upload teaching info
