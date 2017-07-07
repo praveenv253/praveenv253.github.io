@@ -1,5 +1,5 @@
 {% if paginator.total_pages > 1 %}
-<nav class="pagination">
+<nav class="pagination" style="text-align: center;">
   {% comment %} Check if we are in category pagination or in tag pagination {% endcomment %}
   {% if page.pagination.category %}
     {% assign first_page_path = page.pagination.category | absolute_url %}
@@ -7,7 +7,7 @@
   {% else %}
     {% comment %} We are in tag pagination. TODO: Need to figure out how to compute first and last page URLs {% endcomment %}
   {% endif %}
-  <ul>
+  <ul style="display: inline-block;"><!-- This style is required for making the ul self-contained, which helps with centering -->
     {% comment %} Links for first page and previous page {% endcomment %}
     {% if paginator.previous_page %}
       {% if first_page_path %}

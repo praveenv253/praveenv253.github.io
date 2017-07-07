@@ -85,15 +85,15 @@
 
 .list__item {
   @include breakpoint($medium) {
-    padding-right: $right-sidebar-width-narrow;
+    padding-right: 0; //$right-sidebar-width-narrow;
   }
 
   @include breakpoint($large) {
-    padding-right: $right-sidebar-width;
+    padding-right: 0; //$right-sidebar-width;
   }
 
   @include breakpoint($x-large) {
-    padding-right: $right-sidebar-width-wide;
+    padding-right: 0; //$right-sidebar-width-wide;
   }
 
   .page__meta {
