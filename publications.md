@@ -8,12 +8,12 @@ title: Publications
 
 ## Journal papers
 
-- Pulkit Grover and **Praveen Venkatesh**  
-  "An Information-theoretic View of EEG Sensing"  
-  _Proceedings of the IEEE_, February 2017
 - Amanda Robinson, **Praveen Venkatesh**, Matthew Boring, Michael Tarr, Pulkit Grover, Marlene Behrmann  
   "Very High Density EEG Elucidates Spatiotemporal Aspects of Early Visual Processing"  
   _(submitted)_
+- Pulkit Grover and **Praveen Venkatesh**  
+  ["An Information-theoretic View of EEG Sensing"](http://ieeexplore.ieee.org/document/7782724/)  
+  _Proceedings of the IEEE_, February 2017
 
 ## Conference papers
 
@@ -22,10 +22,10 @@ title: Publications
   _International Symposium on Information Theory (ISIT)_, June 2017  
   _(to appear)_
 - **Praveen Venkatesh** and Pulkit Grover  
-  "Is the direction of greater Granger causal influence the same as the direction of information flow?"  
+  ["Is the direction of greater Granger causal influence the same as the direction of information flow?"](http://ieeexplore.ieee.org/document/7447069/)  
   _Allerton Conference on Communication, Control and Computing_, September 2015
 - Pulkit Grover, Jeffrey A Weldon, Shawn K Kelly, **Praveen Venkatesh**, Haewon Jeong  
-  "An Information-theoretic Technique for Harnessing Attenuation of High Spatial Frequencies to Design Ultra-High-Density EEG"  
+  ["An Information-theoretic Technique for Harnessing Attenuation of High Spatial Frequencies to Design Ultra-High-Density EEG"](http://ieeexplore.ieee.org/document/7447102/)  
   _Allerton Conference on Communication, Control and Computing_, September 2015
 
 ## Conference abstracts
