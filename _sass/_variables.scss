@@ -33,25 +33,25 @@ $header-font-family         : $sans-serif !default;
 $caption-font-family        : $serif !default;
 
 /* type scale */
-$type-size-1                : 2.441em !default;  // ~39.056px
-$type-size-2                : 1.953em !default;  // ~31.248px
-$type-size-3                : 1.563em !default;  // ~25.008px
-$type-size-4                : 1.25em !default;   // ~20px
-$type-size-5                : 1em !default;      // ~16px
-$type-size-6                : 0.75em !default;   // ~12px
-$type-size-7                : 0.6875em !default; // ~11px
-$type-size-8                : 0.625em !default;  // ~10px
+/*$type-size-1                : 2.441em !default;  // ~39.056px*/
+/*$type-size-2                : 1.953em !default;  // ~31.248px*/
+/*$type-size-3                : 1.563em !default;  // ~25.008px*/
+/*$type-size-4                : 1.25em !default;   // ~20px*/
+/*$type-size-5                : 1em !default;      // ~16px*/
+/*$type-size-6                : 0.75em !default;   // ~12px*/
+/*$type-size-7                : 0.6875em !default; // ~11px*/
+/*$type-size-8                : 0.625em !default;  // ~10px*/
 
 /* custom type scale */
 /*$type-size-0                : 2.441em !default;  // ~39.056px*/
-/*$type-size-1                : 1.953em !default;  // ~31.248px*/
-/*$type-size-2                : 1.563em !default;  // ~25.008px*/
-/*$type-size-3                : 1.25em !default;   // ~20px*/
-/*$type-size-4                : 1em !default;      // ~16px*/
-/*$type-size-5                : 0.75em !default;   // ~12px*/
-/*$type-size-6                : 0.6875em !default; // ~11px*/
-/*$type-size-7                : 0.625em !default;  // ~10px*/
-/*$type-size-8                : 0.625em !default;  // ~10px*/
+$type-size-1                : 1.953em !default;  // ~31.248px
+$type-size-2                : 1.563em !default;  // ~25.008px
+$type-size-3                : 1.25em !default;   // ~20px
+$type-size-4                : 1em !default;      // ~16px
+$type-size-5                : 0.75em !default;   // ~12px
+$type-size-6                : 0.6875em !default; // ~11px
+$type-size-7                : 0.625em !default;  // ~10px
+$type-size-8                : 0.625em !default;  // ~10px
 
 /*
    Colors
@@ -100,7 +100,8 @@ $xing-color                 : #006567 !default;
 $google-scholar-color       : #4885ed !default;
 
 /* links */
-$link-color                 : $info-color !default;
+/*$link-color                 : $info-color !default;*/
+$link-color                 : #0195c1 !default;
 $link-color-hover           : mix(#000, $link-color, 25%) !default;
 $link-color-visited         : mix(#fff, $link-color, 25%) !default;
 $masthead-link-color        : $primary-color !default;
@@ -133,6 +134,8 @@ $right-sidebar-width-wide   : 400px !default;
 
 $border-radius              : 4px !default;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125) !default;
-$navicon-width              : 28px !default;
-$navicon-height             : 4px !default;
+/*$navicon-width              : 28px !default;*/
+/*$navicon-height             : 4px !default;*/
+$navicon-width              : 20px !default;
+$navicon-height             : 3px !default;
 $global-transition          : all 0.2s ease-in-out !default;

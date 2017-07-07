@@ -73,7 +73,7 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  height: 36px;
+  /*height: 36px;*/
 
   @include breakpoint($large) {
     display: block;
@@ -82,7 +82,7 @@
   }
 
   img {
-    max-width: 220px;
+    max-width: 180px;
     /*border-radius: 50%;*/
 
 	@include breakpoint($large) {
@@ -226,7 +226,7 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: $type-size-4;
     text-decoration: none;
 
     &:hover {
