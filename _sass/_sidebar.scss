@@ -25,7 +25,7 @@
   /*}*/
 
   @include breakpoint($large) {
-    @include span(3 of 12);
+    @include span(2.5 of 12);
     opacity: 1;
   }
 
