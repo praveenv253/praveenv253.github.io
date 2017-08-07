@@ -1,0 +1,54 @@
+{% comment %} Assume the variable `paper` is defined {% endcomment %}
+
+<tr class="publications">
+  <td class="publications align_rt">
+    {% comment %} Date formatting {% endcomment %}
+    {% if paper.date %}
+      {{ paper.date | date: "%Y<br>%B" }}
+    {% elsif paper.status %}
+      <em>({{ paper.status }})</em>
+    {% endif %}
+  </td>
+
+  <td class="publications">
+    {% comment %} Author formatting {% endcomment %}
+    {%- if paper.authors.size == 2 -%}
+      {%- if paper.authors[0] == "Praveen Venkatesh" -%}
+        <strong>{{ paper.authors[0] }}</strong> and {{ paper.authors[1] }}
+      {%- elsif paper.authors[1] == "Praveen Venkatesh" -%}
+        {{ paper.authors[0] }} and <strong>{{ paper.authors[1] }}</strong>
+      {%- endif -%}
+    {%- else -%}
+      {%- for author in paper.authors -%}
+        {%- if author == "Praveen Venkatesh" -%}
+          <strong>{{ author }}</strong>
+        {%- else -%}
+          {{ author }}
+        {%- endif -%}
+        {%- unless forloop.last -%}, {% endunless %}
+        {% comment %} `if not` doesn't work, apparently {% endcomment %}
+        {% comment %} No dash for endunless: space after comma {% endcomment %}
+      {%- endfor -%}
+    {%- endif -%}
+    <br>
+
+    {% comment %} Title formatting {% endcomment %}
+    {%- if paper.url -%}
+      <a href="{{ paper.url }}">"{{ paper.title }}"</a>
+    {%- else -%}
+      "{{ paper.title }}"
+    {%- endif -%}
+    <br>
+
+    {% comment %} Venue and status formatting {% endcomment %}
+    {%- if paper.venue -%}
+      <em>{{ paper.venue }}</em>
+      {%- if paper.status -%}
+        <br>
+      {%- endif -%}
+    {%- endif -%}
+    {%- if paper.status -%}
+      <em>({{ paper.status }})</em>
+    {%- endif -%}
+  </td>
+</tr>

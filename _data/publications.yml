@@ -1,0 +1,106 @@
+# Journal papers
+
+journal_papers:
+  - id: Robinson2017Very
+    authors:
+      - Amanda Robinson
+      - Praveen Venkatesh
+      - Matthew Boring
+      - Michael Tarr
+      - Pulkit Grover
+      - Marlene Behrmann
+    title: "Very High Density EEG Elucidates Spatiotemporal Aspects of Early Visual Processing"
+    url: http://www.biorxiv.org/content/early/2017/08/04/172353
+    venue:
+    date:
+    status: submitted
+  - id: Grover2017Information
+    authors:
+      - Pulkit Grover
+      - Praveen Venkatesh
+    title: "An Information-theoretic View of EEG Sensing"
+    url: http://ieeexplore.ieee.org/document/7782724/
+    venue: Proceedings of the IEEE
+    date: February 2017
+    status:
+
+# Conference papers
+
+conference_papers:
+  - id: Venkatesh2017Lower
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Lower Bounds on the Minimax Risk for the Source Localization Problem"
+    venue: International Symposium on Information Theory (ISIT)
+    url:
+    date: June 2017
+    status: to appear
+  - id: Venkatesh2015Direction
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Is the direction of greater Granger causal influence the same as the direction of information flow?"
+    url: http://ieeexplore.ieee.org/document/7447069/
+    venue: Allerton Conference on Communication, Control and Computing
+    date: September 2015
+  - id: Grover2015Information
+    authors:
+      - Pulkit Grover
+      - Jeffrey A Weldon
+      - Shawn K Kelly
+      - Praveen Venkatesh
+      - Haewon Jeong
+    title: "An Information-theoretic Technique for Harnessing Attenuation of High Spatial Frequencies to Design Ultra-High-Density EEG"
+    url: http://ieeexplore.ieee.org/document/7447102/
+    venue: Allerton Conference on Communication, Control and Computing
+    date: September 2015
+
+# Conference abstracts
+
+conference_abstracts:
+  - id: Venkatesh2017Ultra
+    authors:
+      - Praveen Venkatesh
+      - Ashwati Krishnan
+      - Jeffrey Weldon
+      - Shawn Kelly
+      - Pulkit Grover
+    title: "Ultra-resolution subdermal eeg: long-term minimally-invasive brain monitoring"
+    venue: SfN Neuroscience 2017
+    date: November 2017
+    status: accepted
+  - id: Venkatesh2017High
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "High Density EEG: Information-theoretic Limits and Algorithms"
+    url: /assets/doc/2017--isit--recent-results-poster.pdf
+    venue: International Symposium on Information Theory (ISIT), Recent Results
+    date: June 2017
+  - id: Chamanzar2017Systematic
+    authors:
+      - Alireza Chamanzar
+      - Shilpa George
+      - Praveen Venkatesh
+      - Wanqiao Ding
+      - Pulkit Grover
+    title: "Systematic and automated algorithms for detecting cortical spreading depolarizations using EEG and ECoG to improve TBI diagnosis and treatment"
+    venue: 12th World Conference on Brain Injury
+    date: March 2017
+  - id: Venkatesh2016Data
+    authors:
+      - Praveen Venkatesh
+      - Wanqiao Ding
+      - Pulkit Grover
+    title: "Data processing for reliable detection of cortical spreading depolarizations using high-density EEG"
+    venue: American Epilepsy Society annual meeting
+    date: December 2016
+  - id: Venkatesh2015Direction
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Is the direction of greater Granger causal influence the same as the direction of information flow?"
+    url: /assets/doc/2015--sfn--poster.pdf
+    venue: SfN Neuroscience 2015
+    date: October 2015

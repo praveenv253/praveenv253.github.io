@@ -36,3 +36,20 @@ td {
 tr, td, th {
   vertical-align: middle;
 }
+
+/*****************************************************************************/
+/*
+/* Publications
+/*
+/*****************************************************************************/
+
+/* I'm using important here to force these to work.
+   The publications class is used only in publications.md and related files */
+.publications {
+  border: none !important;
+}
+
+.publications .align_rt {
+  text-align: right !important;
+  vertical-align: top !important;
+}
