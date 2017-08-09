@@ -14,6 +14,9 @@ journal_papers:
     venue:
     date:
     status: submitted
+    links:
+      doi: https://doi.org/10.1101/172353
+      biorxiv: http://www.biorxiv.org/content/early/2017/08/04/172353
   - id: Grover2017Information
     authors:
       - Pulkit Grover
@@ -23,6 +26,9 @@ journal_papers:
     venue: Proceedings of the IEEE
     date: February 2017
     status:
+    links:
+      doi: https://doi.org/10.1109/JPROC.2016.2615179
+      ieee: http://ieeexplore.ieee.org/document/7782724/
 
 # Conference papers
 
@@ -33,17 +39,29 @@ conference_papers:
       - Pulkit Grover
     title: "Lower Bounds on the Minimax Risk for the Source Localization Problem"
     venue: International Symposium on Information Theory (ISIT)
-    url:
+    url: https://github.com/praveenv253/isit-2017/blob/master/paper.pdf
     date: June 2017
     status: to appear
+    links:
+      doi:
+      ieee:
+      full_version: https://github.com/praveenv253/isit-2017/blob/master/paper.pdf
+      code: https://github.com/praveenv253/isit-2017/blob/master/q-function-test/q_fn_test.py
+      slides: https://github.com/praveenv253/isit-2017/blob/master/presentation/isit-presentation.pptx
   - id: Venkatesh2015Direction
     authors:
       - Praveen Venkatesh
       - Pulkit Grover
-    title: "Is the direction of greater Granger causal influence the same as the direction of information flow?"
+    title: "Is the Direction of Greater Granger Causal Influence the Same as the Direction of Information Flow?"
     url: http://ieeexplore.ieee.org/document/7447069/
     venue: Allerton Conference on Communication, Control and Computing
     date: September 2015
+    links:
+      doi: https://doi.org/10.1109/ALLERTON.2015.7447069
+      ieee: http://ieeexplore.ieee.org/document/7447069/
+      full_version: https://github.com/praveenv253/allerton-2015/blob/master/paper.pdf
+      code: https://github.com/praveenv253/info-dirn-reversal
+      slides: https://github.com/praveenv253/allerton-2015/blob/master/allerton-presentation/allerton-presentation-updated.pdf
   - id: Grover2015Information
     authors:
       - Pulkit Grover
@@ -55,6 +73,10 @@ conference_papers:
     url: http://ieeexplore.ieee.org/document/7447102/
     venue: Allerton Conference on Communication, Control and Computing
     date: September 2015
+    links:
+      doi: https://doi.org/10.1109/ALLERTON.2015.7447102
+      ieee: http://ieeexplore.ieee.org/document/7447102/
+      code: http://www.tinyurl.com/pulkitgrover/EEGCode.html
 
 # Conference abstracts
 
@@ -66,7 +88,7 @@ conference_abstracts:
       - Jeffrey Weldon
       - Shawn Kelly
       - Pulkit Grover
-    title: "Ultra-resolution subdermal eeg: long-term minimally-invasive brain monitoring"
+    title: "Ultra-resolution Subdermal EEG: Long-term Minimally-invasive Brain Monitoring"
     venue: SfN Neuroscience 2017
     date: November 2017
     status: accepted
@@ -85,7 +107,7 @@ conference_abstracts:
       - Praveen Venkatesh
       - Wanqiao Ding
       - Pulkit Grover
-    title: "Systematic and automated algorithms for detecting cortical spreading depolarizations using EEG and ECoG to improve TBI diagnosis and treatment"
+    title: "Systematic and Automated Algorithms for Detecting Cortical Spreading Depolarizations Using EEG and ECoG to Improve TBI Diagnosis and Treatment"
     venue: 12th World Conference on Brain Injury
     date: March 2017
   - id: Venkatesh2016Data
@@ -93,14 +115,14 @@ conference_abstracts:
       - Praveen Venkatesh
       - Wanqiao Ding
       - Pulkit Grover
-    title: "Data processing for reliable detection of cortical spreading depolarizations using high-density EEG"
+    title: "Data Processing for Reliable Detection of Cortical Spreading Depolarizations Using High-density EEG"
     venue: American Epilepsy Society annual meeting
     date: December 2016
   - id: Venkatesh2015Direction
     authors:
       - Praveen Venkatesh
       - Pulkit Grover
-    title: "Is the direction of greater Granger causal influence the same as the direction of information flow?"
+    title: "Is the Direction of Greater Granger Causal Influence the Same as the Direction of Information Flow?"
     url: /assets/doc/2015--sfn--poster.pdf
     venue: SfN Neuroscience 2015
     date: October 2015

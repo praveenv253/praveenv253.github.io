@@ -50,5 +50,29 @@
     {%- if paper.status -%}
       <em>({{ paper.status }})</em>
     {%- endif -%}
+
+    {% comment %} Links formatting {% endcomment %}
+    {% if paper.links %}
+      <br><p class="publication__link">
+      {% if paper.links.full_version %}
+        <a class="publication__link-item" href="{{ paper.links.full_version }}"><i class="fa fa-file-text" aria-hidden="true"></i> Full version</a>
+      {% endif %}
+      {% if paper.links.slides %}
+        <a class="publication__link-item" href="{{ paper.links.slides }}"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Slides</a>
+      {% endif %}
+      {% if paper.links.code %}
+        <a class="publication__link-item" href="{{ paper.links.code }}"><i class="fa fa-code" aria-hidden="true"></i> Code</a>
+      {% endif %}
+      {% if paper.links.doi %}
+        <a class="publication__link-item" href="{{ paper.links.doi }}"><i class="ai ai-doi" aria-hidden="true"></i> doi</a>
+      {% endif %}
+      {% if paper.links.ieee %}
+        <a class="publication__link-item" href="{{ paper.links.ieee }}"><i class="ai ai-ieee" aria-hidden="true"></i> View @ IEEE</a>
+      {% endif %}
+      {% if paper.links.biorxiv %}
+        <a class="publication__link-item" href="{{ paper.links.biorxiv }}"><i class="ai ai-biorxiv" aria-hidden="true"></i> View @ BioRxiv</a>
+      {% endif %}
+      </p>
+    {% endif %}
   </td>
 </tr>
