@@ -49,6 +49,10 @@ tr, td, th {
   border: none !important;
 }
 
+.publications:target {
+  background-color: #fffbdd;
+}
+
 .publications .align_rt {
   text-align: right !important;
   vertical-align: top !important;

@@ -1,6 +1,6 @@
 {% comment %} Assume the variable `paper` is defined {% endcomment %}
 
-<tr class="publications">
+<tr class="publications" id="{{ paper.id }}">
   <td class="publications align_rt">
     {% comment %} Date formatting {% endcomment %}
     {% if paper.date %}

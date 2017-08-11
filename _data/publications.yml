@@ -48,7 +48,7 @@ conference_papers:
       full_version: https://github.com/praveenv253/isit-2017/blob/master/paper.pdf
       code: https://github.com/praveenv253/isit-2017/blob/master/q-function-test/q_fn_test.py
       slides: https://github.com/praveenv253/isit-2017/blob/master/presentation/isit-presentation.pptx
-  - id: Venkatesh2015Direction
+  - id: Venkatesh2015Direction_Allerton
     authors:
       - Praveen Venkatesh
       - Pulkit Grover
@@ -118,7 +118,7 @@ conference_abstracts:
     title: "Data Processing for Reliable Detection of Cortical Spreading Depolarizations Using High-density EEG"
     venue: American Epilepsy Society annual meeting
     date: December 2016
-  - id: Venkatesh2015Direction
+  - id: Venkatesh2015Direction_SfN
     authors:
       - Praveen Venkatesh
       - Pulkit Grover
