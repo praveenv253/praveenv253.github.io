@@ -4,7 +4,7 @@
     {% comment %} Links for first page and previous page {% endcomment %}
     {% if paginator.previous_page %}
       <li><a href="{{ paginator.first_page_path | absolute_url }}"><i class="fa fa-lg fa-angle-double-left" aria-hidden="true"></i></a></li>
-      <li><a href="{% if paginator.previous_page == 1 %}{{ first_page_path }}{% else %}{{ paginator.previous_page_path | absolute_url }}{% endif %}"><i class="fa fa-lg fa-angle-left" aria-hidden="true"></i></a></li>
+      <li><a href="{% if paginator.previous_page == 1 %}{{ paginator.first_page_path | absolute_url }}{% else %}{{ paginator.previous_page_path | absolute_url }}{% endif %}"><i class="fa fa-lg fa-angle-left" aria-hidden="true"></i></a></li>
     {% else %}
       <li><a href="#" class="disabled"><i class="fa fa-lg fa-angle-double-left" aria-hidden="true"></i></a></li>
       <li><a href="#" class="disabled"><i class="fa fa-lg fa-angle-left" aria-hidden="true"></i></a></li>

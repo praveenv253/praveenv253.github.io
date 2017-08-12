@@ -1,6 +1,6 @@
 - Create categories for research, blog/logs, publications, etc.
 - Create a research post for each paper/study, with a nice simple explanation
 - Upload teaching info
-- Publications should each have links under them to: the published paper, preprint if available, research post, doi, bibtex citation, code (one of published/preprint should be main link)
+- Publications still missing a couple of links: bibtex citation, link to post under research/
 
 - Make sidebars for posts which are not author profile - more useful to have tags, related links, etc.
