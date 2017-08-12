@@ -72,6 +72,9 @@
       {% if paper.links.biorxiv %}
         <a class="publication__link-item" href="{{ paper.links.biorxiv }}"><i class="ai ai-biorxiv" aria-hidden="true"></i> View @ BioRxiv</a>
       {% endif %}
+      {% if paper.links.poster %}
+        <a class="publication__link-item" href="{{ paper.links.poster }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Poster</a>
+      {% endif %}
       </p>
     {% endif %}
   </td>

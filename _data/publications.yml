@@ -100,6 +100,8 @@ conference_abstracts:
     url: /assets/doc/2017--isit--recent-results-poster.pdf
     venue: International Symposium on Information Theory (ISIT), Recent Results
     date: June 2017
+    links:
+      poster: /assets/doc/2017--isit--recent-results-poster.pdf
   - id: Chamanzar2017Systematic
     authors:
       - Alireza Chamanzar
@@ -126,3 +128,5 @@ conference_abstracts:
     url: /assets/doc/2015--sfn--poster.pdf
     venue: SfN Neuroscience 2015
     date: October 2015
+    links:
+      poster: /assets/doc/2015--sfn--poster.pdf
