@@ -1,4 +1,4 @@
-- Create categories for research, blog/logs, publications, etc.
+- Create categories for research, blog/logs, publications, etc. => IN PROGRESS FOR RESEARCH
 - Create a research post for each paper/study, with a nice simple explanation
 - Upload teaching info
 - Publications still missing a couple of links: bibtex citation, link to post under research/
