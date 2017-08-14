@@ -3,7 +3,6 @@ layout: single
 title: Directions of information flow and Granger Causality
 date: 2017-08-11 21:06 -0400
 day: Friday
-categories: research
 tags:
   - Granger Causality
   - Directed Information
@@ -26,5 +25,5 @@ using simple theoretical experiments, that comparison of Granger causal
 influences can, in fact, yield an answer that is opposite to the true
 direction of information flow.
 
-<a href="/publications#Venkatesh2015Direction_Allerton" class="publication__link-item"><i class="fa fa-file-text-o" aria-hidden="true"></i> Link to paper</a>
-<a href="/publications#Venkatesh2015Direction_SfN" class="publication__link-item"><i class="fa fa-file-image-o" aria-hidden="true"></i> Link to poster</a>
+[<i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>&ensp;Link to paper](/publications#Venkatesh2015Direction_Allerton){: .btn .btn--inverse}
+[<i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>&ensp;Link to poster](/publications#Venkatesh2015Direction_SfN){: .btn .btn--inverse}
