@@ -49,6 +49,9 @@ that](/publications#Robinson2017Very) high-density EEG has better
 classification accuracy than low-density EEG in classifying between visual
 stimuli of different spatial frequencies.
 
+[<i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>&ensp;Link to paper](/publications#Grover2017Information){: .btn .btn--light}
+[<i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>&ensp;Link to poster](/publications#Venkatesh2017High){: .btn .btn--light}
+
 {% comment %}
 Lastly, to show that EEG has practical benefit in the clinical setting, we
 presented a poster at the 2016 annual meeting of the American Epilepsy Society

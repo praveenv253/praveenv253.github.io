@@ -25,5 +25,5 @@ using simple theoretical experiments, that comparison of Granger causal
 influences can, in fact, yield an answer that is opposite to the true
 direction of information flow.
 
-[<i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>&ensp;Link to paper](/publications#Venkatesh2015Direction_Allerton){: .btn .btn--inverse}
-[<i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>&ensp;Link to poster](/publications#Venkatesh2015Direction_SfN){: .btn .btn--inverse}
+[<i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>&ensp;Link to paper](/publications#Venkatesh2015Direction_Allerton){: .btn .btn--light}
+[<i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>&ensp;Link to poster](/publications#Venkatesh2015Direction_SfN){: .btn .btn--light}
