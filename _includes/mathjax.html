@@ -1,0 +1,8 @@
+{% if page.mathjax %}
+  {% comment %}
+  I'm using the TeX-AMS_CHTML configuration for MathJax, because my input is always in TeX with AMS Math (http://docs.mathjax.org/en/latest/config-files.html#the-tex-ams-chtml-configuration-file).
+  Also, turns out the CommonHTML output format is best (http://docs.mathjax.org/en/latest/output.html#mathjax-output-formats).
+  I've configured displaymath font sizes manually in my CSS files. See _includes/_page.scss.
+  {% endcomment %}
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML"></script>
+{% endif %}

@@ -426,3 +426,14 @@
     color: $link-color-hover;
   }
 }
+
+
+/*
+   MathJax
+   ========================================================================== */
+
+/* This class may change based on what Mathjax output processor is selected.
+   Refer _includes/mathjax.html                                               */
+.MJXc-display {
+  font-size: 75% !important;
+}
