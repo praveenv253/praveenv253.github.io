@@ -13,19 +13,19 @@
 
 
 
-<title>            Log Message      Praveen’s website      </title>
+<title>            C++ template functions and header files      Praveen’s website      </title>
 
 
 
 
-<meta name="description" content="“The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code.” What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to “know” what the “full” definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create “specializations” of this template for each type that actually gets used. That is the only way it can generate object code. Check out http://stackoverflow.com/questions/10632251/undefined-reference-to-template-function on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations.">
+<meta name="description" content="“The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code.” What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to “know” what the “full” definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create “specializations” of this template for each type that actually gets used. That is the only way it can generate object code. Check out this link on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations.">
 
 
 
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Praveen's website">
-<meta property="og:title" content="Log Message">
+<meta property="og:title" content="C++ template functions and header files">
 
 
   <link rel="canonical" href="https://praveenv253.github.io/logs/2014/03/15/log-message.html">
@@ -33,7 +33,7 @@
 
 
 
-  <meta property="og:description" content="“The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code.” What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to “know” what the “full” definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create “specializations” of this template for each type that actually gets used. That is the only way it can generate object code. Check out http://stackoverflow.com/questions/10632251/undefined-reference-to-template-function on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations.">
+  <meta property="og:description" content="“The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code.” What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to “know” what the “full” definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create “specializations” of this template for each type that actually gets used. That is the only way it can generate object code. Check out this link on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations.">
 
 
 
@@ -251,15 +251,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Log Message">
-    <meta itemprop="description" content="“The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code.” What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to “know” what the “full” definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create “specializations” of this template for each type that actually gets used. That is the only way it can generate object code. Check out http://stackoverflow.com/questions/10632251/undefined-reference-to-template-function on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations.">
+    <meta itemprop="headline" content="C++ template functions and header files">
+    <meta itemprop="description" content="“The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code.” What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to “know” what the “full” definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create “specializations” of this template for each type that actually gets used. That is the only way it can generate object code. Check out this link on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations.">
     <meta itemprop="datePublished" content="March 15, 2014">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Log Message
+          <h1 class="page__title" itemprop="headline">C++ template functions and header files
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -274,7 +274,8 @@
       
 
       <section class="page__content" itemprop="text">
-        "The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code." What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to "know" what the "full" definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create "specializations" of this template for each type that actually gets used. That is the only way it can generate object code. Check out http://stackoverflow.com/questions/10632251/undefined-reference-to-template-function on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations. 
+        <p>“The implementation of a non-specialized template must be visible to a translation unit that uses it. The compiler must be able to see the implementation in order to generate code for all specializations in your code.” What this essentially means is that you cannot define an external templated function in the typical way: have the template function declaration in the header, followed by an implementation of the template function in a C++ file, which then gets compiled into an object file, and later gets linked with the main program. This method does not work. Why? Because the compiler needs to “know” what the “full” definition of the function is (with actual classes of the templated types) in order to actually compile the program. A template function is simply a sort of shorthand for writing many functions of that do the same thing with different data types; but the compiler still needs to actually create “specializations” of this template for each type that actually gets used. That is the only way it can generate object code. Check out <a href="http://stackoverflow.com/questions/10632251/undefined-reference-to-template-function">this link</a> on ways to resolve this issue. One method involves putting the implementation in the header. The other method involves pre-defining the specializations.</p>
+
         
       </section>
 
@@ -346,7 +347,7 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Log Message https://praveenv253.github.io/logs/2014/03/15/log-message.html" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=C++ template functions and header files https://praveenv253.github.io/logs/2014/03/15/log-message.html" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://praveenv253.github.io/logs/2014/03/15/log-message.html" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -359,11 +360,11 @@
       
   <nav class="pagination">
     
-      <a href="https://praveenv253.github.io/logs/2014/02/26/log-message.html" class="pagination--pager" title="Log Message
+      <a href="https://praveenv253.github.io/logs/2014/02/26/log-message.html" class="pagination--pager" title="modeline needs to be set for it to work
 ">Previous</a>
     
     
-      <a href="https://praveenv253.github.io/logs/2014/04/05/log-message.html" class="pagination--pager" title="Log Message
+      <a href="https://praveenv253.github.io/logs/2014/03/15/log-message-1.html" class="pagination--pager" title="Order of linking static libraries with ld and g++
 ">Next</a>
     
   </nav>
@@ -406,6 +407,8 @@
     </div>
 
     <script src="https://praveenv253.github.io/assets/js/main.min.js"></script>
+
+
 
 
 

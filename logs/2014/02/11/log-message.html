@@ -13,19 +13,19 @@
 
 
 
-<title>            Log Message      Praveen’s website      </title>
+<title>            Using apt-get behind a proxy      Praveen’s website      </title>
 
 
 
 
-<meta name="description" content="Often what happens is that the proxy settings that are set via the command line are not reflected when executing sudo apt-get update/upgrade. The reason this happens is because root has a different set of environment variables than the ones that the user calling sudo does. In order to pass on environment variables to root when executing sudo, you need to edit the /etc/sudoers file. WARNING: Editing this file is dangerous. A corrupted sudoers file may prevent you from using sudo mode. Always use visudo to edit the sudoers file. The sudoers file, by default, has a setting that goes Defaults env_reset. This resets all but a few key environment variables. In order to retain variables of your choice, you need to add them to the “env_keep” list. This goes: “Defaults env_keep += “http_proxy https_proxy ftp_proxy”, for example. man sudoers. Also man visudo. Take a look at https://help.ubuntu.com/community/AptGet/Howto for more apt options. Take a look at http://stackoverflow.com/questions/8633461/how-to-keep-environment-variables-when-using-sudo regarding retaining environment variables while using sudo.">
+<meta name="description" content="Often what happens is that the proxy settings that are set via the command line are not reflected when executing sudo apt-get update/upgrade. The reason this happens is because root has a different set of environment variables than the ones that the user calling sudo does. In order to pass on environment variables to root when executing sudo, you need to edit the /etc/sudoers file. WARNING: Editing this file is dangerous. A corrupted sudoers file may prevent you from using sudo mode. Always use visudo to edit the sudoers file. The sudoers file, by default, has a setting that goes Defaults env_reset. This resets all but a few key environment variables. In order to retain variables of your choice, you need to add them to the env_keep list. This goes: Defaults env_keep += &quot;http_proxy https_proxy ftp_proxy&quot;, for example. man sudoers. Also man visudo. Take a look at this link for more apt options. Take a look at this SO question regarding retaining environment variables while using sudo. Also, here’s my answer on AskUbuntu regarding this issue.">
 
 
 
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Praveen's website">
-<meta property="og:title" content="Log Message">
+<meta property="og:title" content="Using apt-get behind a proxy">
 
 
   <link rel="canonical" href="https://praveenv253.github.io/logs/2014/02/11/log-message.html">
@@ -33,7 +33,7 @@
 
 
 
-  <meta property="og:description" content="Often what happens is that the proxy settings that are set via the command line are not reflected when executing sudo apt-get update/upgrade. The reason this happens is because root has a different set of environment variables than the ones that the user calling sudo does. In order to pass on environment variables to root when executing sudo, you need to edit the /etc/sudoers file. WARNING: Editing this file is dangerous. A corrupted sudoers file may prevent you from using sudo mode. Always use visudo to edit the sudoers file. The sudoers file, by default, has a setting that goes Defaults env_reset. This resets all but a few key environment variables. In order to retain variables of your choice, you need to add them to the “env_keep” list. This goes: “Defaults env_keep += “http_proxy https_proxy ftp_proxy”, for example. man sudoers. Also man visudo. Take a look at https://help.ubuntu.com/community/AptGet/Howto for more apt options. Take a look at http://stackoverflow.com/questions/8633461/how-to-keep-environment-variables-when-using-sudo regarding retaining environment variables while using sudo.">
+  <meta property="og:description" content="Often what happens is that the proxy settings that are set via the command line are not reflected when executing sudo apt-get update/upgrade. The reason this happens is because root has a different set of environment variables than the ones that the user calling sudo does. In order to pass on environment variables to root when executing sudo, you need to edit the /etc/sudoers file. WARNING: Editing this file is dangerous. A corrupted sudoers file may prevent you from using sudo mode. Always use visudo to edit the sudoers file. The sudoers file, by default, has a setting that goes Defaults env_reset. This resets all but a few key environment variables. In order to retain variables of your choice, you need to add them to the env_keep list. This goes: Defaults env_keep += &quot;http_proxy https_proxy ftp_proxy&quot;, for example. man sudoers. Also man visudo. Take a look at this link for more apt options. Take a look at this SO question regarding retaining environment variables while using sudo. Also, here’s my answer on AskUbuntu regarding this issue.">
 
 
 
@@ -251,15 +251,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Log Message">
-    <meta itemprop="description" content="Often what happens is that the proxy settings that are set via the command line are not reflected when executing sudo apt-get update/upgrade. The reason this happens is because root has a different set of environment variables than the ones that the user calling sudo does. In order to pass on environment variables to root when executing sudo, you need to edit the /etc/sudoers file. WARNING: Editing this file is dangerous. A corrupted sudoers file may prevent you from using sudo mode. Always use visudo to edit the sudoers file. The sudoers file, by default, has a setting that goes Defaults env_reset. This resets all but a few key environment variables. In order to retain variables of your choice, you need to add them to the “env_keep” list. This goes: “Defaults env_keep += “http_proxy https_proxy ftp_proxy”, for example. man sudoers. Also man visudo. Take a look at https://help.ubuntu.com/community/AptGet/Howto for more apt options. Take a look at http://stackoverflow.com/questions/8633461/how-to-keep-environment-variables-when-using-sudo regarding retaining environment variables while using sudo.">
+    <meta itemprop="headline" content="Using apt-get behind a proxy">
+    <meta itemprop="description" content="Often what happens is that the proxy settings that are set via the command line are not reflected when executing sudo apt-get update/upgrade. The reason this happens is because root has a different set of environment variables than the ones that the user calling sudo does. In order to pass on environment variables to root when executing sudo, you need to edit the /etc/sudoers file. WARNING: Editing this file is dangerous. A corrupted sudoers file may prevent you from using sudo mode. Always use visudo to edit the sudoers file. The sudoers file, by default, has a setting that goes Defaults env_reset. This resets all but a few key environment variables. In order to retain variables of your choice, you need to add them to the env_keep list. This goes: Defaults env_keep += &quot;http_proxy https_proxy ftp_proxy&quot;, for example. man sudoers. Also man visudo. Take a look at this link for more apt options. Take a look at this SO question regarding retaining environment variables while using sudo. Also, here’s my answer on AskUbuntu regarding this issue.">
     <meta itemprop="datePublished" content="February 11, 2014">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Log Message
+          <h1 class="page__title" itemprop="headline">Using apt-get behind a proxy
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -274,7 +274,8 @@
       
 
       <section class="page__content" itemprop="text">
-        Often what happens is that the proxy settings that are set via the command line are not reflected when executing sudo apt-get update/upgrade. The reason this happens is because root has a different set of environment variables than the ones that the user calling sudo does. In order to pass on environment variables to root when executing sudo, you need to edit the /etc/sudoers file. WARNING: Editing this file is dangerous. A corrupted sudoers file may prevent you from using sudo mode. Always use visudo to edit the sudoers file. The sudoers file, by default, has a setting that goes Defaults env_reset. This resets all but a few key environment variables. In order to retain variables of your choice, you need to add them to the "env_keep" list. This goes: "Defaults env_keep += "http_proxy https_proxy ftp_proxy", for example. man sudoers. Also man visudo. Take a look at https://help.ubuntu.com/community/AptGet/Howto for more apt options. Take a look at http://stackoverflow.com/questions/8633461/how-to-keep-environment-variables-when-using-sudo regarding retaining environment variables while using sudo. 
+        <p>Often what happens is that the proxy settings that are set via the command line are not reflected when executing <code class="highlighter-rouge">sudo apt-get update</code>/<code class="highlighter-rouge">upgrade</code>. The reason this happens is because root has a different set of environment variables than the ones that the user calling sudo does. In order to pass on environment variables to root when executing sudo, you need to edit the <code class="highlighter-rouge">/etc/sudoers</code> file. WARNING: Editing this file is dangerous. A corrupted sudoers file may prevent you from using sudo mode. Always use <code class="highlighter-rouge">visudo</code> to edit the sudoers file. The sudoers file, by default, has a setting that goes <code class="highlighter-rouge">Defaults env_reset</code>. This resets all but a few key environment variables. In order to retain variables of your choice, you need to add them to the <code class="highlighter-rouge">env_keep</code> list. This goes: <code class="highlighter-rouge">Defaults env_keep += "http_proxy https_proxy ftp_proxy"</code>, for example. <code class="highlighter-rouge">man sudoers</code>. Also <code class="highlighter-rouge">man visudo</code>. Take a look at <a href="https://help.ubuntu.com/community/AptGet/Howto">this link</a> for more apt options. Take a look at <a href="http://stackoverflow.com/questions/8633461/how-to-keep-environment-variables-when-using-sudo">this SO question</a> regarding retaining environment variables while using sudo. Also, <a href="https://askubuntu.com/a/424542/251032">here’s my answer on AskUbuntu</a> regarding this issue.</p>
+
         
       </section>
 
@@ -346,7 +347,7 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Log Message https://praveenv253.github.io/logs/2014/02/11/log-message.html" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Using apt-get behind a proxy https://praveenv253.github.io/logs/2014/02/11/log-message.html" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://praveenv253.github.io/logs/2014/02/11/log-message.html" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -359,11 +360,11 @@
       
   <nav class="pagination">
     
-      <a href="https://praveenv253.github.io/logs/2014/02/03/log-message.html" class="pagination--pager" title="Log Message
+      <a href="https://praveenv253.github.io/logs/2014/02/03/log-message.html" class="pagination--pager" title="Temporarily redifining macros with gcc
 ">Previous</a>
     
     
-      <a href="https://praveenv253.github.io/logs/2014/02/17/log-message.html" class="pagination--pager" title="Log Message
+      <a href="https://praveenv253.github.io/logs/2014/02/11/log-message-1.html" class="pagination--pager" title="Fixing a corrupted sudoers file
 ">Next</a>
     
   </nav>
@@ -406,6 +407,8 @@
     </div>
 
     <script src="https://praveenv253.github.io/assets/js/main.min.js"></script>
+
+
 
 
 

@@ -206,13 +206,13 @@
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="https://praveenv253.github.io/logs/2014/02/02/log-message.html" rel="permalink">Log Message
+          <a href="https://praveenv253.github.io/logs/2014/02/02/log-message.html" rel="permalink">Stage only part of a file in git
 </a>
         
       </h2>
       <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2014-02-02">February 02, 2014</time></p>
       
-      <p class="archive__item-excerpt" itemprop="description">In order to add only some lines of a file for committing, use git add -p . If the file is new, use git add -N . Look up http://stackoverflow.com/questions/10...</p>
+      <p class="archive__item-excerpt" itemprop="description">In order to add only some lines of a file for committing, use git add -p &lt;filename&gt;. If the file is new, use git add -N &lt;filename&gt;. Look up this ...</p>
     </article>
   
 </div>
@@ -228,13 +228,13 @@
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="https://praveenv253.github.io/logs/2013/07/21/log-message.html" rel="permalink">Log Message
+          <a href="https://praveenv253.github.io/logs/2013/07/21/log-message.html" rel="permalink">git reflog
 </a>
         
       </h2>
       <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2013-07-21">July 21, 2013</time></p>
       
-      <p class="archive__item-excerpt" itemprop="description">In order to undo a commit, a reset, a merge, or anything involving refs, just take a look at git reflog and reset to the appropriate HEAD@{n}
+      <p class="archive__item-excerpt" itemprop="description">In order to undo a commit, a reset, a merge, or anything involving refs, just take a look at git reflog and reset to the appropriate HEAD@{n}.
 </p>
     </article>
   
@@ -251,13 +251,35 @@
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="https://praveenv253.github.io/logs/2013/07/11/log-message.html" rel="permalink">Log Message
+          <a href="https://praveenv253.github.io/logs/2013/07/19/log-message-1.html" rel="permalink">Undoing a git commit –amend
+</a>
+        
+      </h2>
+      <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2013-07-19">July 19, 2013</time></p>
+      
+      <p class="archive__item-excerpt" itemprop="description">In order to undo a git commit --amend, take a look at the git reflog. HEAD@{1} will contain the commit just before the amend (assuming that the amend was mad...</p>
+    </article>
+  
+</div>
+
+
+  
+
+
+
+<div class="list__item">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="https://praveenv253.github.io/logs/2013/07/11/log-message.html" rel="permalink">Change tab stop size for git diff
 </a>
         
       </h2>
       <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2013-07-11">July 11, 2013</time></p>
       
-      <p class="archive__item-excerpt" itemprop="description">Customize the tab stop size in git diff by using $ git config –global core.pager “less -x5,9”. man less to look at all options.
+      <p class="archive__item-excerpt" itemprop="description">Customize the tab stop size in git diff by using $ git config --global core.pager "less -x5,9". man less to look at all options.
 </p>
     </article>
   
@@ -302,6 +324,8 @@
     </div>
 
     <script src="https://praveenv253.github.io/assets/js/main.min.js"></script>
+
+
 
 
 

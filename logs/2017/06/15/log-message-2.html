@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Debugging python deadlocks      Praveen’s website      </title>
+
+
+
+
+<meta name="description" content="Sometimes, a python script just gives up and hangs. Even Ctrl-C does not exit the program. You do not have to have a loop with a catch-all except command or anything. Apparently, this can happen because of what is known as a “deadlock”, which refers to some kind of race condition when running a threaded program. I was not running a threaded program, except I was, because I was using BLAS. In this case, OpenBLAS, which appears to have had a history with deadlocks, and maybe still does, or maybe it was due to my having accidentally installed numpy with MKL and scipy with OpenBLAS. In any event, the only reason I found out that the issue was with blas.py is thanks to this excellent little piece of software, which shows you a stack trace if your program is inactive for more than 10 seconds. It is a python package called hanging_threads and works like a charm. This invaluable tool was found after I finally figured out what to google for, and landed on this SO page, and then scrolled down a lot after the top answer (trace) did not work for me. trace is a python module and is also really useful. It prints out the commands currently being executed. This is really neat because if your program suddenly (and hopefully deterministically) gives up, you get a full history of all the commands executed. The --ignore-dir flag is extremely useful, since you can avoid printing out various internal modules. I was lucky, since my packages of interest (sht, cross_validation, etc.) were under $HOME/.local, so I could just supply --ignore-dir=/usr and prevent tracing through imports like sys and numpy.">
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Praveen's website">
+<meta property="og:title" content="Debugging python deadlocks">
+
+
+  <link rel="canonical" href="https://praveenv253.github.io/logs/2017/06/15/log-message-2.html">
+  <meta property="og:url" content="https://praveenv253.github.io/logs/2017/06/15/log-message-2.html">
+
+
+
+  <meta property="og:description" content="Sometimes, a python script just gives up and hangs. Even Ctrl-C does not exit the program. You do not have to have a loop with a catch-all except command or anything. Apparently, this can happen because of what is known as a “deadlock”, which refers to some kind of race condition when running a threaded program. I was not running a threaded program, except I was, because I was using BLAS. In this case, OpenBLAS, which appears to have had a history with deadlocks, and maybe still does, or maybe it was due to my having accidentally installed numpy with MKL and scipy with OpenBLAS. In any event, the only reason I found out that the issue was with blas.py is thanks to this excellent little piece of software, which shows you a stack trace if your program is inactive for more than 10 seconds. It is a python package called hanging_threads and works like a charm. This invaluable tool was found after I finally figured out what to google for, and landed on this SO page, and then scrolled down a lot after the top answer (trace) did not work for me. trace is a python module and is also really useful. It prints out the commands currently being executed. This is really neat because if your program suddenly (and hopefully deterministically) gives up, you get a full history of all the commands executed. The --ignore-dir flag is extremely useful, since you can avoid printing out various internal modules. I was lucky, since my packages of interest (sht, cross_validation, etc.) were under $HOME/.local, so I could just supply --ignore-dir=/usr and prevent tracing through imports like sys and numpy.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-06-15T02:38:01-04:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Praveen Venkatesh",
+      "url" : "https://praveenv253.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://praveenv253.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Praveen's website Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://praveenv253.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/assets/ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/ico/manifest.json">
+<link rel="mask-icon" href="/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/ico/favicon.ico">
+<meta name="msapplication-config" content="/assets/ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="/assets/css/academicons.css"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--blog">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://praveenv253.github.io/">Praveen's website</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://praveenv253.github.io/research/">Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://praveenv253.github.io/publications">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://praveenv253.github.io/awards">Awards</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://praveenv253.github.io/assets/doc/cv.pdf">CV</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://praveenv253.github.io/logs/">Logs</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://praveenv253.github.io/assets/img/portrait-full-size.jpg" class="author__avatar" alt="Praveen Venkatesh" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Praveen Venkatesh</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Ph.D. Candidate<br>Electrical & Computer Engineering<br>Carnegie Mellon University
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/praveenv253" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://www.stackoverflow.com/users/525169/praveen" itemprop="sameAs">
+            <i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+        <li>
+    <a href="https://scholar.google.com/citations?user=gQckdIMAAAAJ" itemprop="sameAs">
+      <i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i> Google Scholar
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Debugging python deadlocks">
+    <meta itemprop="description" content="Sometimes, a python script just gives up and hangs. Even Ctrl-C does not exit the program. You do not have to have a loop with a catch-all except command or anything. Apparently, this can happen because of what is known as a “deadlock”, which refers to some kind of race condition when running a threaded program. I was not running a threaded program, except I was, because I was using BLAS. In this case, OpenBLAS, which appears to have had a history with deadlocks, and maybe still does, or maybe it was due to my having accidentally installed numpy with MKL and scipy with OpenBLAS. In any event, the only reason I found out that the issue was with blas.py is thanks to this excellent little piece of software, which shows you a stack trace if your program is inactive for more than 10 seconds. It is a python package called hanging_threads and works like a charm. This invaluable tool was found after I finally figured out what to google for, and landed on this SO page, and then scrolled down a lot after the top answer (trace) did not work for me. trace is a python module and is also really useful. It prints out the commands currently being executed. This is really neat because if your program suddenly (and hopefully deterministically) gives up, you get a full history of all the commands executed. The --ignore-dir flag is extremely useful, since you can avoid printing out various internal modules. I was lucky, since my packages of interest (sht, cross_validation, etc.) were under $HOME/.local, so I could just supply --ignore-dir=/usr and prevent tracing through imports like sys and numpy.">
+    <meta itemprop="datePublished" content="June 15, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Debugging python deadlocks
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>Sometimes, a python script just gives up and hangs. Even Ctrl-C does not exit the program. You do not have to have a loop with a catch-all <code class="highlighter-rouge">except</code> command or anything. Apparently, this can happen because of what is known as a “deadlock”, which refers to some kind of race condition when running a threaded program. I was not running a threaded program, except I <em>was</em>, because I was using BLAS. In this case, OpenBLAS, which appears to have had a history with deadlocks, and maybe still does, or maybe it was due to my having accidentally installed numpy with MKL and scipy with OpenBLAS. In any event, the only reason I found out that the issue was with blas.py is thanks to <a href="https://pypi.python.org/pypi/hanging_threads/2.0.3">this excellent little piece of software</a>, which shows you a stack trace if your program is inactive for more than 10 seconds. It is a python package called <a href="https://github.com/niccokunzmann/hanging_threads"><code class="highlighter-rouge">hanging_threads</code></a> and works like a charm. This invaluable tool was found after I finally figured out what to google for, and landed on <a href="https://stackoverflow.com/q/3443607/525169">this SO page</a>, and then scrolled down a lot after the top answer (<code class="highlighter-rouge">trace</code>) did not work for me. <a href="https://docs.python.org/3.4/library/trace.html"><code class="highlighter-rouge">trace</code></a> is a python module and is also really useful. It prints out the commands currently being executed. This is really neat because if your program suddenly (and hopefully deterministically) gives up, you get a full history of all the commands executed. The <code class="highlighter-rouge">--ignore-dir</code> flag is extremely useful, since you can avoid printing out various internal modules. I was lucky, since my packages of interest (<code class="highlighter-rouge">sht</code>, <code class="highlighter-rouge">cross_validation</code>, etc.) were under <code class="highlighter-rouge">$HOME/.local</code>, so I could just supply <code class="highlighter-rouge">--ignore-dir=/usr</code> and prevent tracing through imports like <code class="highlighter-rouge">sys</code> and <code class="highlighter-rouge">numpy</code>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://praveenv253.github.io/tags/deadlock" class="page__taxonomy-item" rel="tag">deadlock</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://praveenv253.github.io/tags/hanging" class="page__taxonomy-item" rel="tag">hanging</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://praveenv253.github.io/tags/log-message" class="page__taxonomy-item" rel="tag">log message</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://praveenv253.github.io/tags/python" class="page__taxonomy-item" rel="tag">python</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://praveenv253.github.io/tags/stuck" class="page__taxonomy-item" rel="tag">stuck</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://praveenv253.github.io/tags/trace" class="page__taxonomy-item" rel="tag">trace</a>
+    
+    </span>
+  </p>
+
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://praveenv253.github.io/categories/logs" class="page__taxonomy-item" rel="tag">logs</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-06-15T02:38:01-04:00">June 15, 2017</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Debugging python deadlocks https://praveenv253.github.io/logs/2017/06/15/log-message-2.html" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://praveenv253.github.io/logs/2017/06/15/log-message-2.html" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://praveenv253.github.io/logs/2017/06/15/log-message-2.html" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://praveenv253.github.io/logs/2017/06/15/log-message-2.html" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://praveenv253.github.io/logs/2017/06/13/log-message-1.html" class="pagination--pager" title="Visualizing the output of python’s cprofile
+">Previous</a>
+    
+    
+      <a href="https://praveenv253.github.io/logs/2017/06/15/log-message-1.html" class="pagination--pager" title="Link for Python logging
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <!--
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/praveenv253"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://praveenv253.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+-->
+
+<div class="page__footer-copyright">&copy; 2017 Praveen Venkatesh. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://praveenv253.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

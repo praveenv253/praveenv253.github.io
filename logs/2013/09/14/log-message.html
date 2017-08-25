@@ -13,19 +13,19 @@
 
 
 
-<title>            Log Message      Praveen’s website      </title>
+<title>            cset for partitioning user and system processes      Praveen’s website      </title>
 
 
 
 
-<meta name="description" content="taskset only allows you to set something called the cpu affinity, meaning you can tell the system to run a certain process on some cores only. However, in order to tell the OS to run only your process on a given core, you need to use something called cpuset. This is a pseudo-filesystem which manages how processes are distributed among cores. man cpuset for more info. While cpuset is nice and everything, it is not very intuitive to use, especially if you just want to run your own process(es) separately from the general bunch of system-upkeep processes. A nice interface for cpuset is cset, whose shield command does exactly this. man cset and cset-shield for more info. Also take a look at this tutorial: https://www.suse.com/documentation/slerte_11/slerte_tutorial/data/slerte_tutorial.html. If you are hell bent on using cpuset nonetheless, just remember that moving sbin/init into the system cpuset along with the “general” lot of processes ensures that any newly spawned processes are also restricted to that cpuset. Oh and dont forget to set the cpu_exclusive flag.">
+<meta name="description" content="taskset only allows you to set something called the CPU affinity, meaning you can tell the system to run a certain process on some cores only. However, in order to tell the OS to run only your process on a given core, you need to use something called cpuset. This is a pseudo-filesystem which manages how processes are distributed among cores. man cpuset for more info. While cpuset is nice and everything, it is not very intuitive to use, especially if you just want to run your own process(es) separately from the general bunch of system-upkeep processes. A nice interface for cpuset is cset, whose shield command does exactly this. man cset and cset-shield for more info. Also take a look at this tutorial. If you are hell bent on using cpuset nonetheless, just remember that moving sbin/init into the system cpuset along with the “general” lot of processes ensures that any newly spawned processes are also restricted to that cpuset. Oh and dont forget to set the cpu_exclusive flag.">
 
 
 
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Praveen's website">
-<meta property="og:title" content="Log Message">
+<meta property="og:title" content="cset for partitioning user and system processes">
 
 
   <link rel="canonical" href="https://praveenv253.github.io/logs/2013/09/14/log-message.html">
@@ -33,7 +33,7 @@
 
 
 
-  <meta property="og:description" content="taskset only allows you to set something called the cpu affinity, meaning you can tell the system to run a certain process on some cores only. However, in order to tell the OS to run only your process on a given core, you need to use something called cpuset. This is a pseudo-filesystem which manages how processes are distributed among cores. man cpuset for more info. While cpuset is nice and everything, it is not very intuitive to use, especially if you just want to run your own process(es) separately from the general bunch of system-upkeep processes. A nice interface for cpuset is cset, whose shield command does exactly this. man cset and cset-shield for more info. Also take a look at this tutorial: https://www.suse.com/documentation/slerte_11/slerte_tutorial/data/slerte_tutorial.html. If you are hell bent on using cpuset nonetheless, just remember that moving sbin/init into the system cpuset along with the “general” lot of processes ensures that any newly spawned processes are also restricted to that cpuset. Oh and dont forget to set the cpu_exclusive flag.">
+  <meta property="og:description" content="taskset only allows you to set something called the CPU affinity, meaning you can tell the system to run a certain process on some cores only. However, in order to tell the OS to run only your process on a given core, you need to use something called cpuset. This is a pseudo-filesystem which manages how processes are distributed among cores. man cpuset for more info. While cpuset is nice and everything, it is not very intuitive to use, especially if you just want to run your own process(es) separately from the general bunch of system-upkeep processes. A nice interface for cpuset is cset, whose shield command does exactly this. man cset and cset-shield for more info. Also take a look at this tutorial. If you are hell bent on using cpuset nonetheless, just remember that moving sbin/init into the system cpuset along with the “general” lot of processes ensures that any newly spawned processes are also restricted to that cpuset. Oh and dont forget to set the cpu_exclusive flag.">
 
 
 
@@ -251,15 +251,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Log Message">
-    <meta itemprop="description" content="taskset only allows you to set something called the cpu affinity, meaning you can tell the system to run a certain process on some cores only. However, in order to tell the OS to run only your process on a given core, you need to use something called cpuset. This is a pseudo-filesystem which manages how processes are distributed among cores. man cpuset for more info. While cpuset is nice and everything, it is not very intuitive to use, especially if you just want to run your own process(es) separately from the general bunch of system-upkeep processes. A nice interface for cpuset is cset, whose shield command does exactly this. man cset and cset-shield for more info. Also take a look at this tutorial: https://www.suse.com/documentation/slerte_11/slerte_tutorial/data/slerte_tutorial.html. If you are hell bent on using cpuset nonetheless, just remember that moving sbin/init into the system cpuset along with the “general” lot of processes ensures that any newly spawned processes are also restricted to that cpuset. Oh and dont forget to set the cpu_exclusive flag.">
+    <meta itemprop="headline" content="cset for partitioning user and system processes">
+    <meta itemprop="description" content="taskset only allows you to set something called the CPU affinity, meaning you can tell the system to run a certain process on some cores only. However, in order to tell the OS to run only your process on a given core, you need to use something called cpuset. This is a pseudo-filesystem which manages how processes are distributed among cores. man cpuset for more info. While cpuset is nice and everything, it is not very intuitive to use, especially if you just want to run your own process(es) separately from the general bunch of system-upkeep processes. A nice interface for cpuset is cset, whose shield command does exactly this. man cset and cset-shield for more info. Also take a look at this tutorial. If you are hell bent on using cpuset nonetheless, just remember that moving sbin/init into the system cpuset along with the “general” lot of processes ensures that any newly spawned processes are also restricted to that cpuset. Oh and dont forget to set the cpu_exclusive flag.">
     <meta itemprop="datePublished" content="September 14, 2013">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Log Message
+          <h1 class="page__title" itemprop="headline">cset for partitioning user and system processes
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -274,7 +274,8 @@
       
 
       <section class="page__content" itemprop="text">
-        taskset only allows you to set something called the cpu affinity, meaning you can tell the system to run a certain process on some cores only. However, in order to tell the OS to run only your process on a given core, you need to use something called cpuset. This is a pseudo-filesystem which manages how processes are distributed among cores. man cpuset for more info. While cpuset is nice and everything, it is not very intuitive to use, especially if you just want to run your own process(es) separately from the general bunch of system-upkeep processes. A nice interface for cpuset is cset, whose shield command does exactly this. man cset and cset-shield for more info. Also take a look at this tutorial: https://www.suse.com/documentation/slerte_11/slerte_tutorial/data/slerte_tutorial.html. If you are hell bent on using cpuset nonetheless, just remember that moving sbin/init into the system cpuset along with the "general" lot of processes ensures that any newly spawned processes are also restricted to _that_ cpuset. Oh and dont forget to set the cpu_exclusive flag. 
+        <p><code class="highlighter-rouge">taskset</code> only allows you to set something called the CPU affinity, meaning you can tell the system to run a certain process on some cores only. However, in order to tell the OS to run only your process on a given core, you need to use something called <code class="highlighter-rouge">cpuset</code>. This is a pseudo-filesystem which manages how processes are distributed among cores. <code class="highlighter-rouge">man cpuset</code> for more info. While <code class="highlighter-rouge">cpuset</code> is nice and everything, it is not very intuitive to use, especially if you just want to run your own process(es) separately from the general bunch of system-upkeep processes. A nice interface for cpuset is <code class="highlighter-rouge">cset</code>, whose <code class="highlighter-rouge">shield</code> command does exactly this. <code class="highlighter-rouge">man cset</code> and <code class="highlighter-rouge">cset-shield</code> for more info. Also take a look at <a href="https://www.suse.com/documentation/slerte_11/slerte_tutorial/data/slerte_tutorial.html">this tutorial</a>. If you are hell bent on using <code class="highlighter-rouge">cpuset</code> nonetheless, just remember that moving <code class="highlighter-rouge">sbin/init</code> into the system cpuset along with the “general” lot of processes ensures that any newly spawned processes are also restricted to <em>that</em> cpuset. Oh and dont forget to set the <code class="highlighter-rouge">cpu_exclusive</code> flag.</p>
+
         
       </section>
 
@@ -354,7 +355,7 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Log Message https://praveenv253.github.io/logs/2013/09/14/log-message.html" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=cset for partitioning user and system processes https://praveenv253.github.io/logs/2013/09/14/log-message.html" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://praveenv253.github.io/logs/2013/09/14/log-message.html" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -367,11 +368,11 @@
       
   <nav class="pagination">
     
-      <a href="https://praveenv253.github.io/logs/2013/09/13/log-message.html" class="pagination--pager" title="Log Message
+      <a href="https://praveenv253.github.io/logs/2013/09/13/log-message-1.html" class="pagination--pager" title="C++ chrono lib resolution
 ">Previous</a>
     
     
-      <a href="https://praveenv253.github.io/logs/2013/09/15/log-message.html" class="pagination--pager" title="Log Message
+      <a href="https://praveenv253.github.io/logs/2013/09/15/log-message.html" class="pagination--pager" title="Vim modelines
 ">Next</a>
     
   </nav>
@@ -414,6 +415,8 @@
     </div>
 
     <script src="https://praveenv253.github.io/assets/js/main.min.js"></script>
+
+
 
 
 

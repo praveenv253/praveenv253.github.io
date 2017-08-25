@@ -13,19 +13,19 @@
 
 
 
-<title>            Log Message      Praveen’s website      </title>
+<title>            const variables in C/C++ and multiple definition errors      Praveen’s website      </title>
 
 
 
 
-<meta name="description" content="If you have defined a variable in a header file and not declared it as const, like so: double e = 2.71; then the compiler will treat it as a separate variable in each translation unit. So if you link two such translation units together under the same object later, you will get a multiple definition error, or something like “already defined in…”. To solve this issue, mark this variable as static const (in C), or as simply const (in C++, where static is implied for const variables). What this does is to make the linkage of this variable definition internal, meaning that once this definition gets #included into a .c or .cpp file, the definition stays there. It does not have scope outside of the translation unit, and thus cannot be seen by the other object files. On the other hand, the addresses of each of these “copies” of the constant in different translation units will be different. To have a “true” global constant this way, you will need to have an “extern const double e;” in your header file, followed by a “const double e = 2.71;” in a separate source file, which is compiled into a separate object file, which then gets linked with all the other objects. Courtesy of http://stackoverflow.com/questions/2328671/constant-variables-not-working-in-header.">
+<meta name="description" content="If you have defined a variable in a header file and not declared it as const, like so: double e = 2.71; then the compiler will treat it as a separate variable in each translation unit. So if you link two such translation units together under the same object later, you will get a multiple definition error, or something like “already defined in…”. To solve this issue, mark this variable as static const (in C), or as simply const (in C++, where static is implied for const variables). What this does is to make the linkage of this variable definition internal, meaning that once this definition gets #included into a .c or .cpp file, the definition stays there. It does not have scope outside of the translation unit, and thus cannot be seen by the other object files. On the other hand, the addresses of each of these “copies” of the constant in different translation units will be different. To have a “true” global constant this way, you will need to have an extern const double e; in your header file, followed by a const double e = 2.71; in a separate source file, which is compiled into a separate object file, which then gets linked with all the other objects. Courtesy of this SO post.">
 
 
 
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Praveen's website">
-<meta property="og:title" content="Log Message">
+<meta property="og:title" content="const variables in C/C++ and multiple definition errors">
 
 
   <link rel="canonical" href="https://praveenv253.github.io/logs/2014/02/17/log-message.html">
@@ -33,7 +33,7 @@
 
 
 
-  <meta property="og:description" content="If you have defined a variable in a header file and not declared it as const, like so: double e = 2.71; then the compiler will treat it as a separate variable in each translation unit. So if you link two such translation units together under the same object later, you will get a multiple definition error, or something like “already defined in…”. To solve this issue, mark this variable as static const (in C), or as simply const (in C++, where static is implied for const variables). What this does is to make the linkage of this variable definition internal, meaning that once this definition gets #included into a .c or .cpp file, the definition stays there. It does not have scope outside of the translation unit, and thus cannot be seen by the other object files. On the other hand, the addresses of each of these “copies” of the constant in different translation units will be different. To have a “true” global constant this way, you will need to have an “extern const double e;” in your header file, followed by a “const double e = 2.71;” in a separate source file, which is compiled into a separate object file, which then gets linked with all the other objects. Courtesy of http://stackoverflow.com/questions/2328671/constant-variables-not-working-in-header.">
+  <meta property="og:description" content="If you have defined a variable in a header file and not declared it as const, like so: double e = 2.71; then the compiler will treat it as a separate variable in each translation unit. So if you link two such translation units together under the same object later, you will get a multiple definition error, or something like “already defined in…”. To solve this issue, mark this variable as static const (in C), or as simply const (in C++, where static is implied for const variables). What this does is to make the linkage of this variable definition internal, meaning that once this definition gets #included into a .c or .cpp file, the definition stays there. It does not have scope outside of the translation unit, and thus cannot be seen by the other object files. On the other hand, the addresses of each of these “copies” of the constant in different translation units will be different. To have a “true” global constant this way, you will need to have an extern const double e; in your header file, followed by a const double e = 2.71; in a separate source file, which is compiled into a separate object file, which then gets linked with all the other objects. Courtesy of this SO post.">
 
 
 
@@ -251,15 +251,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Log Message">
-    <meta itemprop="description" content="If you have defined a variable in a header file and not declared it as const, like so: double e = 2.71; then the compiler will treat it as a separate variable in each translation unit. So if you link two such translation units together under the same object later, you will get a multiple definition error, or something like “already defined in…”. To solve this issue, mark this variable as static const (in C), or as simply const (in C++, where static is implied for const variables). What this does is to make the linkage of this variable definition internal, meaning that once this definition gets #included into a .c or .cpp file, the definition stays there. It does not have scope outside of the translation unit, and thus cannot be seen by the other object files. On the other hand, the addresses of each of these “copies” of the constant in different translation units will be different. To have a “true” global constant this way, you will need to have an “extern const double e;” in your header file, followed by a “const double e = 2.71;” in a separate source file, which is compiled into a separate object file, which then gets linked with all the other objects. Courtesy of http://stackoverflow.com/questions/2328671/constant-variables-not-working-in-header.">
+    <meta itemprop="headline" content="const variables in C/C++ and multiple definition errors">
+    <meta itemprop="description" content="If you have defined a variable in a header file and not declared it as const, like so: double e = 2.71; then the compiler will treat it as a separate variable in each translation unit. So if you link two such translation units together under the same object later, you will get a multiple definition error, or something like “already defined in…”. To solve this issue, mark this variable as static const (in C), or as simply const (in C++, where static is implied for const variables). What this does is to make the linkage of this variable definition internal, meaning that once this definition gets #included into a .c or .cpp file, the definition stays there. It does not have scope outside of the translation unit, and thus cannot be seen by the other object files. On the other hand, the addresses of each of these “copies” of the constant in different translation units will be different. To have a “true” global constant this way, you will need to have an extern const double e; in your header file, followed by a const double e = 2.71; in a separate source file, which is compiled into a separate object file, which then gets linked with all the other objects. Courtesy of this SO post.">
     <meta itemprop="datePublished" content="February 17, 2014">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Log Message
+          <h1 class="page__title" itemprop="headline">const variables in C/C++ and multiple definition errors
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -274,7 +274,8 @@
       
 
       <section class="page__content" itemprop="text">
-        If you have defined a variable in a header file and not declared it as const, like so: double e = 2.71; then the compiler will treat it as a separate variable in each translation unit. So if you link two such translation units together under the same object later, you will get a multiple definition error, or something like "already defined in...". To solve this issue, mark this variable as static const (in C), or as simply const (in C++, where static is implied for const variables). What this does is to make the linkage of this variable definition _internal_, meaning that once this definition gets #included into a .c or .cpp file, the definition stays there. It does not have scope outside of the translation unit, and thus cannot be seen by the other object files. On the other hand, the addresses of each of these "copies" of the constant in different translation units will be different. To have a "true" global constant this way, you will need to have an "extern const double e;" in your header file, followed by a "const double e = 2.71;" in a separate source file, which is compiled into a separate object file, _which_ then gets linked with all the other objects. Courtesy of http://stackoverflow.com/questions/2328671/constant-variables-not-working-in-header. 
+        <p>If you have defined a variable in a header file and not declared it as <code class="highlighter-rouge">const</code>, like so: <code class="highlighter-rouge">double e = 2.71;</code> then the compiler will treat it as a separate variable in each translation unit. So if you link two such translation units together under the same object later, you will get a multiple definition error, or something like “already defined in…”. To solve this issue, mark this variable as <code class="highlighter-rouge">static const</code> (in C), or as simply <code class="highlighter-rouge">const</code> (in C++, where static is implied for const variables). What this does is to make the linkage of this variable definition <em>internal</em>, meaning that once this definition gets <code class="highlighter-rouge">#include</code>d into a .c or .cpp file, the definition stays there. It does not have scope outside of the translation unit, and thus cannot be seen by the other object files. On the other hand, the addresses of each of these “copies” of the constant in different translation units will be different. To have a “true” global constant this way, you will need to have an <code class="highlighter-rouge">extern const double e;</code> in your header file, followed by a <code class="highlighter-rouge">const double e = 2.71;</code> in a separate source file, which is compiled into a separate object file, <em>which</em> then gets linked with all the other objects. Courtesy of <a href="http://stackoverflow.com/questions/2328671/constant-variables-not-working-in-header">this SO post</a>.</p>
+
         
       </section>
 
@@ -358,7 +359,7 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Log Message https://praveenv253.github.io/logs/2014/02/17/log-message.html" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=const variables in C/C++ and multiple definition errors https://praveenv253.github.io/logs/2014/02/17/log-message.html" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://praveenv253.github.io/logs/2014/02/17/log-message.html" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -371,11 +372,11 @@
       
   <nav class="pagination">
     
-      <a href="https://praveenv253.github.io/logs/2014/02/11/log-message.html" class="pagination--pager" title="Log Message
+      <a href="https://praveenv253.github.io/logs/2014/02/11/log-message-1.html" class="pagination--pager" title="Fixing a corrupted sudoers file
 ">Previous</a>
     
     
-      <a href="https://praveenv253.github.io/logs/2014/02/26/log-message.html" class="pagination--pager" title="Log Message
+      <a href="https://praveenv253.github.io/logs/2014/02/26/log-message.html" class="pagination--pager" title="modeline needs to be set for it to work
 ">Next</a>
     
   </nav>
@@ -418,6 +419,8 @@
     </div>
 
     <script src="https://praveenv253.github.io/assets/js/main.min.js"></script>
+
+
 
 
 
