@@ -41,10 +41,9 @@ conference_papers:
     venue: International Symposium on Information Theory (ISIT)
     url: https://github.com/praveenv253/isit-2017/blob/master/paper.pdf
     date: June 2017
-    status: to appear
     links:
-      doi:
-      ieee:
+      doi: https://doi.org/10.1109/ISIT.2017.8007096
+      ieee: http://ieeexplore.ieee.org/document/8007096/
       full_version: https://github.com/praveenv253/isit-2017/blob/master/paper.pdf
       code: https://github.com/praveenv253/isit-2017/blob/master/q-function-test/q_fn_test.py
       slides: https://github.com/praveenv253/isit-2017/blob/master/presentation/isit-presentation.pptx
