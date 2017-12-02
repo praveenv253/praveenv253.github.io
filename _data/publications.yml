@@ -10,13 +10,14 @@ journal_papers:
       - Pulkit Grover
       - Marlene Behrmann
     title: "Very High Density EEG Elucidates Spatiotemporal Aspects of Early Visual Processing"
-    url: http://www.biorxiv.org/content/early/2017/08/04/172353
-    venue:
-    date:
-    status: submitted
+    url: https://www.nature.com/articles/s41598-017-16377-3
+    venue: Scientific Reports
+    date: November 2017
+    status:
     links:
-      doi: https://doi.org/10.1101/172353
+      doi: https://doi.org/10.1038/s41598-017-16377-3
       biorxiv: http://www.biorxiv.org/content/early/2017/08/04/172353
+      nature: https://www.nature.com/articles/s41598-017-16377-3
   - id: Grover2017Information
     authors:
       - Pulkit Grover
@@ -80,6 +81,23 @@ conference_papers:
 # Conference abstracts
 
 conference_abstracts:
+  - id: Sun2017Analysis
+    authors:
+      - Rui Sun
+      - Pulkit Grover
+      - Rudina Morina
+      - Marie Bremner
+      - Praveen Venkatesh
+      - Anto Bagic
+      - Mark Richardson
+      - Jullie Pan
+      - Alexandra Urban
+      - Naoir Zaher
+      - Arun Antony
+    title: "Analysis of cortical stimulation data to localize intracranial electrodes using simultaneous scalp and stereo EEG recordings"
+    venue: American Epilepsy Society annual meeting
+    date: December 2017
+    status:
   - id: Venkatesh2017Ultra
     authors:
       - Praveen Venkatesh
@@ -88,9 +106,12 @@ conference_abstracts:
       - Shawn Kelly
       - Pulkit Grover
     title: "Ultra-resolution Subdermal EEG: Long-term Minimally-invasive Brain Monitoring"
-    venue: SfN Neuroscience 2017
+    url: /assets/doc/2017--sfn--poster.pdf
+    venue: SfN Neuroscience
     date: November 2017
-    status: accepted
+    status:
+    links:
+      poster: /assets/doc/2017--sfn--poster.pdf
   - id: Venkatesh2017High
     authors:
       - Praveen Venkatesh
@@ -125,7 +146,7 @@ conference_abstracts:
       - Pulkit Grover
     title: "Is the Direction of Greater Granger Causal Influence the Same as the Direction of Information Flow?"
     url: /assets/doc/2015--sfn--poster.pdf
-    venue: SfN Neuroscience 2015
+    venue: SfN Neuroscience
     date: October 2015
     links:
       poster: /assets/doc/2015--sfn--poster.pdf

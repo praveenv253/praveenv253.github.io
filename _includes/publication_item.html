@@ -67,10 +67,13 @@
         <a class="publication__link-item" href="{{ paper.links.doi }}"><i class="ai ai-doi" aria-hidden="true"></i> doi</a>
       {% endif %}
       {% if paper.links.ieee %}
-        <a class="publication__link-item" href="{{ paper.links.ieee }}"><i class="ai ai-ieee" aria-hidden="true"></i> View @ IEEE</a>
+        <a class="publication__link-item" href="{{ paper.links.ieee }}"><i class="ai ai-ieee" aria-hidden="true"></i> IEEE.org</a>
       {% endif %}
       {% if paper.links.biorxiv %}
-        <a class="publication__link-item" href="{{ paper.links.biorxiv }}"><i class="ai ai-biorxiv" aria-hidden="true"></i> View @ BioRxiv</a>
+        <a class="publication__link-item" href="{{ paper.links.biorxiv }}"><i class="ai ai-biorxiv" aria-hidden="true"></i> BioRxiv.org</a>
+      {% endif %}
+      {% if paper.links.nature %}
+        <a class="publication__link-item" href="{{ paper.links.nature }}"><i class="ai ai-springer" aria-hidden="true"></i> Nature.com</a>
       {% endif %}
       {% if paper.links.poster %}
         <a class="publication__link-item" href="{{ paper.links.poster }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Poster</a>
