@@ -81,6 +81,20 @@ conference_papers:
 # Conference abstracts
 
 conference_abstracts:
+  - id: Kumar2017Ultra
+    authors:
+      - Ritesh Kumar
+      - Praveen Venkatesh
+      - Rui Sun
+      - Gayathri Mohankumar
+      - Arun Antony
+      - Mark Richardson
+      - Pulkit Grover
+    title: "Ultra-high-density scalp EEG outperforms localized invasive ECoG grids in inferring depth of seizure foci"
+    url:
+    venue:
+    date:
+    status: submitted
   - id: Sun2017Analysis
     authors:
       - Rui Sun
