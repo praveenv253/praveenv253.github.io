@@ -1,6 +1,18 @@
 # Journal papers
 
 journal_papers:
+  - id: Chamanzar2018Systematic
+    authors:
+      - Alireza Chamanzar
+      - Shilpa George
+      - Praveen Venkatesh
+      - Maysamreza Chamanzar
+      - Lori Shutter
+      - Jonathan Elmer
+      - Pulkit Grover
+    title: "Systematic and automated algorithms for detecting cortical spreading depolarizations using EEG recordings"
+    venue: IEEE Transactions on Biomedical Engineering
+    status: submitted
   - id: Robinson2017Very
     authors:
       - Amanda Robinson
@@ -34,6 +46,16 @@ journal_papers:
 # Conference papers
 
 conference_papers:
+  - id: Krishnan2018Lowcost
+    authors:
+      - Ashwati Krishnan
+      - Ritesh Kumar
+      - Praveen Venkatesh
+      - Shawn Kelly
+      - Pulkit Grover
+    title: "Low-cost Carbon Fiber-based Conductive Silicone Sponge EEG Electrodes"
+    venue: Engineering in Medicine and Biology Conference, 2018
+    status: submitted
   - id: Venkatesh2017Lower
     authors:
       - Praveen Venkatesh
@@ -92,9 +114,9 @@ conference_abstracts:
       - Pulkit Grover
     title: "Ultra-high-density scalp EEG outperforms localized invasive ECoG grids in inferring depth of seizure foci"
     url:
-    venue:
+    venue: 31st International Congress of Clinical Neurophysiology
     date:
-    status: submitted
+    status: accepted
   - id: Sun2017Analysis
     authors:
       - Rui Sun
