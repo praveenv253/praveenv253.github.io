@@ -104,18 +104,18 @@ conference_papers:
 
 conference_abstracts:
   #- id: SfN2018Subdermal
-  - id: Chamanzar2018Automated
-    authors:
-      - Alireza Chamanzar
-      - Shilpa George
-      - Praveen Venkatesh
-      - Maysam Chamanzar
-      - Jonathan Elmer
-      - Lori Shutter
-      - Pulkit Grover
-    title: "Automated Algorithm and System for Noninvasive Detection of Worsening Brain Injuries"
-    venue: Military Health System Research Symposium
-    status: accepted
+  #- id: Chamanzar2018Automated
+  #  authors:
+  #    - Alireza Chamanzar
+  #    - Shilpa George
+  #    - Praveen Venkatesh
+  #    - Maysam Chamanzar
+  #    - Jonathan Elmer
+  #    - Lori Shutter
+  #    - Pulkit Grover
+  #  title: "Automated Algorithm and System for Noninvasive Detection of Worsening Brain Injuries"
+  #  venue: Military Health System Research Symposium
+  #  status: accepted
   - id: Kumar2017Ultra
     authors:
       - Ritesh Kumar
