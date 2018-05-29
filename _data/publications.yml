@@ -11,7 +11,7 @@ journal_papers:
       - Jonathan Elmer
       - Pulkit Grover
     title: "Systematic and automated algorithms for detecting cortical spreading depolarizations using EEG recordings"
-    venue: IEEE Transactions on Biomedical Engineering
+    venue: #IEEE Transactions on Biomedical Engineering
     status: submitted
   - id: Robinson2017Very
     authors:
@@ -46,16 +46,16 @@ journal_papers:
 # Conference papers
 
 conference_papers:
-  - id: Krishnan2018Lowcost
-    authors:
-      - Ashwati Krishnan
-      - Ritesh Kumar
-      - Praveen Venkatesh
-      - Shawn Kelly
-      - Pulkit Grover
-    title: "Low-cost Carbon Fiber-based Conductive Silicone Sponge EEG Electrodes"
-    venue: Engineering in Medicine and Biology Conference, 2018
-    status: submitted
+  #- id: Krishnan2018Lowcost
+  #  authors:
+  #    - Ashwati Krishnan
+  #    - Ritesh Kumar
+  #    - Praveen Venkatesh
+  #    - Shawn Kelly
+  #    - Pulkit Grover
+  #  title: "Low-cost Carbon Fiber-based Conductive Silicone Sponge EEG Electrodes"
+  #  venue: Engineering in Medicine and Biology Conference, 2018
+  #  status: accepted
   - id: Venkatesh2017Lower
     authors:
       - Praveen Venkatesh
@@ -103,6 +103,19 @@ conference_papers:
 # Conference abstracts
 
 conference_abstracts:
+  #- id: SfN2018Subdermal
+  - id: Chamanzar2018Automated
+    authors:
+      - Alireza Chamanzar
+      - Shilpa George
+      - Praveen Venkatesh
+      - Maysam Chamanzar
+      - Jonathan Elmer
+      - Lori Shutter
+      - Pulkit Grover
+    title: "Automated Algorithm and System for Noninvasive Detection of Worsening Brain Injuries"
+    venue: Military Health System Research Symposium
+    status: accepted
   - id: Kumar2017Ultra
     authors:
       - Ritesh Kumar
@@ -115,8 +128,8 @@ conference_abstracts:
     title: "Ultra-high-density scalp EEG outperforms localized invasive ECoG grids in inferring depth of seizure foci"
     url:
     venue: 31st International Congress of Clinical Neurophysiology
-    date:
-    status: accepted
+    date: May 2018
+    status:
   - id: Sun2017Analysis
     authors:
       - Rui Sun
