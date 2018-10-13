@@ -13,6 +13,9 @@ journal_papers:
     title: "An algorithm for automated, noninvasive detection of cortical spreading depolarizations based on EEG simulation"
     venue: IEEE Transactions on Biomedical Engineering
     status: accepted
+    links:
+      doi: https://doi.org/10.1109/TBME.2018.2867112
+      ieee: https://ieeexplore.ieee.org/document/8445667/
   - id: Robinson2017Very
     authors:
       - Amanda Robinson
@@ -143,18 +146,18 @@ conference_abstracts:
     venue: "SfN Neuroscience: Nanosymposium"
     status: accepted
     date: November 2018
-  #- id: Chamanzar2018Automated
-  #  authors:
-  #    - Alireza Chamanzar
-  #    - Shilpa George
-  #    - Praveen Venkatesh
-  #    - Maysam Chamanzar
-  #    - Jonathan Elmer
-  #    - Lori Shutter
-  #    - Pulkit Grover
-  #  title: "Automated Algorithm and System for Noninvasive Detection of Worsening Brain Injuries"
-  #  venue: Military Health System Research Symposium
-  #  status: accepted
+  - id: Chamanzar2018Automated
+    authors:
+      - Alireza Chamanzar
+      - Shilpa George
+      - Praveen Venkatesh
+      - Maysam Chamanzar
+      - Jonathan Elmer
+      - Lori Shutter
+      - Pulkit Grover
+    title: "Automated Algorithm and System for Noninvasive Detection of Worsening Brain Injuries"
+    venue: Military Health System Research Symposium
+    status: accepted
   - id: Kumar2017Ultra
     authors:
       - Ritesh Kumar
