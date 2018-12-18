@@ -1,6 +1,13 @@
 # Journal papers
 
 journal_papers:
+  - id: Venkatesh2018Information
+    authors:
+      - Praveen Venkatesh
+      - Sanghamitra Dutta
+      - Pulkit Grover
+    title: "Information Flow in Computational Systems"
+    status: in preparation
   - id: Chamanzar2018Algorithm
     authors:
       - Alireza Chamanzar
@@ -12,7 +19,7 @@ journal_papers:
       - Pulkit Grover
     title: "An algorithm for automated, noninvasive detection of cortical spreading depolarizations based on EEG simulation"
     venue: IEEE Transactions on Biomedical Engineering
-    status: accepted
+    status:
     links:
       doi: https://doi.org/10.1109/TBME.2018.2867112
       ieee: https://ieeexplore.ieee.org/document/8445667/
@@ -49,6 +56,14 @@ journal_papers:
 # Conference papers
 
 conference_papers:
+  - id: Gangrade2019Testing
+    authors:
+      - Aditya Gangrade
+      - Praveen Venkatesh
+      - Bobak Nazer
+      - Venkatesh Saligrama
+    title: "Testing Changes in Communities for the Stochastic Block Model"
+    status: submitted
   - id: Ahmed2018Flexible
     authors:
       - Zabir Ahmed
@@ -72,8 +87,11 @@ conference_papers:
       - Pulkit Grover
     title: "Low-cost Carbon Fiber-based Conductive Silicone Sponge EEG Electrodes"
     venue: "Engineering in Medicine and Biology Conference (EMBC): Oral presentation"
-    status:
+    url: https://ieeexplore.ieee.org/document/8512521
     date: July 2018
+    links:
+      doi: https://doi.org/10.1109/EMBC.2018.8512521
+      ieee: https://ieeexplore.ieee.org/document/8512521
   - id: Venkatesh2017Lower
     authors:
       - Praveen Venkatesh
