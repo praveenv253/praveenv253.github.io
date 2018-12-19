@@ -7,7 +7,7 @@ journal_papers:
       - Sanghamitra Dutta
       - Pulkit Grover
     title: "Information Flow in Computational Systems"
-    status: in preparation
+    status: submitted
   - id: Chamanzar2018Algorithm
     authors:
       - Alireza Chamanzar
@@ -18,8 +18,10 @@ journal_papers:
       - Jonathan Elmer
       - Pulkit Grover
     title: "An algorithm for automated, noninvasive detection of cortical spreading depolarizations based on EEG simulation"
+    url: https://ieeexplore.ieee.org/document/8445667/
     venue: IEEE Transactions on Biomedical Engineering
     status:
+    date: August 2018
     links:
       doi: https://doi.org/10.1109/TBME.2018.2867112
       ieee: https://ieeexplore.ieee.org/document/8445667/
@@ -76,7 +78,7 @@ conference_papers:
       - Maysamreza Chamanzar
     title: "Flexible Ultra-resolution Subdermal EEG Probes"
     venue: Biomedical Circuits and Systems Conference (BioCAS)
-    status: accepted
+    status:
     date: October 2018
   - id: Krishnan2018Lowcost
     authors:
@@ -162,7 +164,7 @@ conference_abstracts:
       - Maysamreza Chamanzar
     title: "Flexible, Ultra-resolution, Subdermal EEG Probes"
     venue: "SfN Neuroscience: Nanosymposium"
-    status: accepted
+    status:
     date: November 2018
   - id: Chamanzar2018Automated
     authors:
@@ -175,7 +177,8 @@ conference_abstracts:
       - Pulkit Grover
     title: "Automated Algorithm and System for Noninvasive Detection of Worsening Brain Injuries"
     venue: Military Health System Research Symposium
-    status: accepted
+    status:
+    date: August 2018
   - id: Kumar2017Ultra
     authors:
       - Ritesh Kumar
