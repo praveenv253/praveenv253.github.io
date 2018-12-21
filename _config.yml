@@ -209,6 +209,9 @@ autopages:
       - "autopage_category.html"
     title: "Posts filed under :cat"
     permalink: "/categories/:cat"
+    slugify:
+      mode: nil
+      cased: true
   collections:
     enabled: false
   tags:
@@ -217,6 +220,9 @@ autopages:
       - "autopage_tags.html"
     title: "Posts tagged with :tag" # :tag is replaced by the tag name
     permalink: "/tags/:tag"
+    slugify:
+      mode: pretty
+      cased: true
 
 
 # HTML Compression
