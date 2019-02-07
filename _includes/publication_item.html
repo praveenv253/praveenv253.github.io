@@ -7,6 +7,8 @@
       {{ paper.date | date: "%Y<br>%B" }}
     {% elsif paper.status %}
       <em>({{ paper.status }})</em>
+      {% comment %} Parentheses are added around the status here {% endcomment %}
+      {% comment %} So no need for parentheses in _data/publications.yml {% endcomment %}
     {% endif %}
   </td>
 
@@ -71,6 +73,9 @@
       {% endif %}
       {% if paper.links.biorxiv %}
         <a class="publication__link-item" href="{{ paper.links.biorxiv }}"><i class="ai ai-biorxiv" aria-hidden="true"></i> BioRxiv.org</a>
+      {% endif %}
+      {% if paper.links.arxiv %}
+        <a class="publication__link-item" href="{{ paper.links.arxiv }}"><i class="ai ai-arxiv" aria-hidden="true"></i> arXiv.org</a>
       {% endif %}
       {% if paper.links.nature %}
         <a class="publication__link-item" href="{{ paper.links.nature }}"><i class="ai ai-springer" aria-hidden="true"></i> Nature.com</a>
