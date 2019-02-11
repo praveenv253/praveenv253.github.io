@@ -83,9 +83,12 @@ conference_papers:
       - Pulkit Grover
       - Maysamreza Chamanzar
     title: "Flexible Ultra-resolution Subdermal EEG Probes"
-    venue: Biomedical Circuits and Systems Conference (BioCAS)
-    status:
+    venue: "Biomedical Circuits and Systems Conference (BioCAS)"
+    url: https://ieeexplore.ieee.org/document/8584672
     date: October 2018
+    links:
+      doi: https://doi.org/10.1109/BIOCAS.2018.8584672
+      ieee: https://ieeexplore.ieee.org/document/8584672
   - id: Krishnan2018Lowcost
     authors:
       - Ashwati Krishnan
