@@ -7,8 +7,8 @@ journal_papers:
       - Sanghamitra Dutta
       - Pulkit Grover
     title: "Information Flow in Computational Systems"
-    status: submitted
     url: https://arxiv.org/abs/1902.02292
+    status: submitted
     links:
       arxiv: https://arxiv.org/abs/1902.02292
   - id: Chamanzar2018Algorithm
@@ -61,6 +61,18 @@ journal_papers:
 # Conference papers
 
 conference_papers:
+  - id: Venkatesh2019Define
+    authors:
+      - Praveen Venkatesh
+      - Sanghamitra Dutta
+      - Pulkit Grover
+    title: "How should we define Information Flow in Neural Circuits?"
+    url: /assets/doc/papers/2019-isit-full.pdf
+    venue: International Symposium on Information Theory (ISIT)
+    status: accepted
+    date: July 2019
+    links:
+      full_version: /assets/doc/papers/2019-isit-full.pdf
   - id: Gangrade2019Testing
     authors:
       - Aditya Gangrade
@@ -150,6 +162,14 @@ conference_papers:
 # Conference abstracts
 
 conference_abstracts:
+  - id: Venkatesh2019Information_CNS
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "An Information-theoretic Framework for Examining Information Flow in the Brain"
+    venue: "28th Annual Computational Neuroscience Meeting (CNS) 2019"
+    status: accepted
+    date: July 2019
   - id: Haigh2018Cortical
     authors:
       - Sarah M Haigh
@@ -227,22 +247,22 @@ conference_abstracts:
       - Shawn Kelly
       - Pulkit Grover
     title: "Ultra-resolution Subdermal EEG: Long-term Minimally-invasive Brain Monitoring"
-    url: /assets/doc/2017--sfn--poster.pdf
+    url: /assets/doc/posters/2017--sfn--poster.pdf
     venue: SfN Neuroscience
     date: November 2017
     status:
     links:
-      poster: /assets/doc/2017--sfn--poster.pdf
+      poster: /assets/doc/posters/2017--sfn--poster.pdf
   - id: Venkatesh2017High
     authors:
       - Praveen Venkatesh
       - Pulkit Grover
     title: "High Density EEG: Information-theoretic Limits and Algorithms"
-    url: /assets/doc/2017--isit--recent-results-poster.pdf
+    url: /assets/doc/posters/2017--isit-recent-results--poster.pdf
     venue: International Symposium on Information Theory (ISIT), Recent Results
     date: June 2017
     links:
-      poster: /assets/doc/2017--isit--recent-results-poster.pdf
+      poster: /assets/doc/posters/2017--isit-recent-results--poster.pdf
   - id: Chamanzar2017Systematic
     authors:
       - Alireza Chamanzar
@@ -266,8 +286,8 @@ conference_abstracts:
       - Praveen Venkatesh
       - Pulkit Grover
     title: "Is the Direction of Greater Granger Causal Influence the Same as the Direction of Information Flow?"
-    url: /assets/doc/2015--sfn--poster.pdf
+    url: /assets/doc/posters/2015--sfn--poster.pdf
     venue: SfN Neuroscience
     date: October 2015
     links:
-      poster: /assets/doc/2015--sfn--poster.pdf
+      poster: /assets/doc/posters/2015--sfn--poster.pdf
