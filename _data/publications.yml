@@ -67,12 +67,13 @@ conference_papers:
       - Sanghamitra Dutta
       - Pulkit Grover
     title: "How should we define Information Flow in Neural Circuits?"
-    url: /assets/doc/papers/2019-isit-full.pdf
+    url: /assets/doc/papers/2019--isit--full-paper.pdf
     venue: International Symposium on Information Theory (ISIT)
-    status: accepted
+    status: to appear
     date: July 2019
     links:
-      full_version: /assets/doc/papers/2019-isit-full.pdf
+      full_version: /assets/doc/papers/2019--isit--full-paper.pdf
+      slides: /assets/doc/presentations/2019--isit.pptx
   - id: Gangrade2019Testing
     authors:
       - Aditya Gangrade
@@ -162,14 +163,41 @@ conference_papers:
 # Conference abstracts
 
 conference_abstracts:
+  - id: Venkatesh2019Automated
+    authors:
+      - Praveen Venkatesh
+      - Vasileios Kokkinos
+      - R Mark Richardson
+      - Pulkit Grover
+    title: "An automated and configurable seizure segmentation tool for tracking the evolution of seizures"
+    status: submitted
+  - id: Venkateh2019Relating
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Relating Information Flow and Causal Interventions in Neural Circuits"
+    venue: SfN Neuroscience
+    status: accepted
+    date: October 2019
+  - id: Venkatesh2019Revealing
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Revealing Information Paths in the Brain using Synergistic Information"
+    venue: "CNS*2019 Workshop on Methods of Information Theory in Computational Neuroscience"
+    status:
+    date: July 2019
   - id: Venkatesh2019Information_CNS
     authors:
       - Praveen Venkatesh
       - Pulkit Grover
     title: "An Information-theoretic Framework for Examining Information Flow in the Brain"
-    venue: "28th Annual Computational Neuroscience Meeting (CNS) 2019"
-    status: accepted
+    venue: "28th Annual Computational Neuroscience Meeting (CNS*2019)"
+    url: /assets/doc/posters/2019--cns--poster.pdf
+    status:
     date: July 2019
+    links:
+      poster: /assets/doc/posters/2019--cns--poster.pdf
   - id: Haigh2018Cortical
     authors:
       - Sarah M Haigh
