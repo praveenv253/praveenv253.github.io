@@ -61,6 +61,19 @@ journal_papers:
 # Conference papers
 
 conference_papers:
+  - id: Gangrade2019Efficient
+    authors:
+      - Aditya Gangrade
+      - Praveen Venkatesh
+      - Bobak Nazer
+      - Venkatesh Saligrama
+    title: "Efficient Near-Optimal Testing of Community Changes in Stochastic Block Models"
+    venue: Neural Information Processing Systems (NeurIPS)
+    date: December 2019
+    status: accepted
+    url: https://arxiv.org/abs/1812.00769
+    links:
+      arxiv: https://arxiv.org/abs/1812.00769
   - id: Venkatesh2019Define
     authors:
       - Praveen Venkatesh
@@ -74,17 +87,6 @@ conference_papers:
     links:
       full_version: /assets/doc/papers/2019--isit--full-paper.pdf
       slides: /assets/doc/presentations/2019--isit.pptx
-  - id: Gangrade2019Testing
-    authors:
-      - Aditya Gangrade
-      - Praveen Venkatesh
-      - Bobak Nazer
-      - Venkatesh Saligrama
-    title: "Testing Changes in Communities for the Stochastic Block Model"
-    status: submitted
-    url: https://arxiv.org/abs/1812.00769
-    links:
-      arxiv: https://arxiv.org/abs/1812.00769
   - id: Ahmed2018Flexible
     authors:
       - Zabir Ahmed
@@ -170,7 +172,7 @@ conference_abstracts:
       - R Mark Richardson
       - Pulkit Grover
     title: "An automated and configurable seizure segmentation tool for tracking the evolution of seizures"
-    status: submitted
+    status: accepted
   - id: Venkateh2019Relating
     authors:
       - Praveen Venkatesh
