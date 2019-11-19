@@ -61,6 +61,17 @@ journal_papers:
 # Conference papers
 
 conference_papers:
+  - id: Dutta2020Information
+    authors:
+      - Sanghamitra Dutta
+      - Praveen Venkatesh
+      - Piotr Mardziel
+      - Anupam Datta
+      - Pulkit Grover
+    title: "An Information-Theoretic Quantification of Discrimination with Exempt Features"
+    venue: "Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI): Oral presentation"
+    status: accepted
+    date: February 2020
   - id: Gangrade2019Efficient
     authors:
       - Aditya Gangrade
@@ -82,11 +93,12 @@ conference_papers:
     title: "How should we define Information Flow in Neural Circuits?"
     url: /assets/doc/papers/2019--isit--full-paper.pdf
     venue: International Symposium on Information Theory (ISIT)
-    status: to appear
+    status:
     date: July 2019
     links:
       full_version: /assets/doc/papers/2019--isit--full-paper.pdf
       slides: /assets/doc/presentations/2019--isit.pptx
+      ieee: https://ieeexplore.ieee.org/document/8849411
   - id: Ahmed2018Flexible
     authors:
       - Zabir Ahmed
@@ -165,6 +177,12 @@ conference_papers:
 # Conference abstracts
 
 conference_abstracts:
+  - id: Venkatesh2020Understanding
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Understanding Encoding and Redundancy in Grid Cells Using Partial Information Decomposition"
+    status: submitted
   - id: Venkatesh2019Automated
     authors:
       - Praveen Venkatesh
@@ -172,7 +190,9 @@ conference_abstracts:
       - R Mark Richardson
       - Pulkit Grover
     title: "An automated and configurable seizure segmentation tool for tracking the evolution of seizures"
+    venue: American Epilepsy Society Annual Meeting (AES)
     status: accepted
+    date: December 2019
   - id: Venkateh2019Relating
     authors:
       - Praveen Venkatesh
