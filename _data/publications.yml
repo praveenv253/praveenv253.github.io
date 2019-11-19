@@ -23,6 +23,7 @@ journal_papers:
     title: "An algorithm for automated, noninvasive detection of cortical spreading depolarizations based on EEG simulation"
     url: https://ieeexplore.ieee.org/document/8445667/
     venue: IEEE Transactions on Biomedical Engineering
+    shortvenue: Trans BME
     status:
     date: August 2018
     links:
@@ -39,6 +40,7 @@ journal_papers:
     title: "Very High Density EEG Elucidates Spatiotemporal Aspects of Early Visual Processing"
     url: https://www.nature.com/articles/s41598-017-16377-3
     venue: Scientific Reports
+    shortvenue: Sci Rep
     date: November 2017
     status:
     links:
@@ -52,6 +54,7 @@ journal_papers:
     title: "An Information-theoretic View of EEG Sensing"
     url: http://ieeexplore.ieee.org/document/7782724/
     venue: Proceedings of the IEEE
+    shortvenue: Proc IEEE
     date: December 2016
     status:
     links:
@@ -70,6 +73,7 @@ conference_papers:
       - Pulkit Grover
     title: "An Information-Theoretic Quantification of Discrimination with Exempt Features"
     venue: "Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI): Oral presentation"
+    shortvenue: AAAI
     status: accepted
     date: February 2020
   - id: Gangrade2019Efficient
@@ -80,10 +84,12 @@ conference_papers:
       - Venkatesh Saligrama
     title: "Efficient Near-Optimal Testing of Community Changes in Stochastic Block Models"
     venue: Neural Information Processing Systems (NeurIPS)
+    shortvenue: NeurIPS
     date: December 2019
     status: accepted
     url: https://arxiv.org/abs/1812.00769
     links:
+      full_version: https://papers.nips.cc/paper/9224-efficient-near-optimal-testing-of-community-changes-in-balanced-stochastic-block-models
       arxiv: https://arxiv.org/abs/1812.00769
   - id: Venkatesh2019Define
     authors:
@@ -93,10 +99,12 @@ conference_papers:
     title: "How should we define Information Flow in Neural Circuits?"
     url: /assets/doc/papers/2019--isit--full-paper.pdf
     venue: International Symposium on Information Theory (ISIT)
+    shortvenue: ISIT
     status:
     date: July 2019
     links:
       full_version: /assets/doc/papers/2019--isit--full-paper.pdf
+      doi: https://doi.org/10.1109/ISIT.2019.8849411
       slides: /assets/doc/presentations/2019--isit.pptx
       ieee: https://ieeexplore.ieee.org/document/8849411
   - id: Ahmed2018Flexible
@@ -111,6 +119,7 @@ conference_papers:
       - Maysamreza Chamanzar
     title: "Flexible Ultra-resolution Subdermal EEG Probes"
     venue: "Biomedical Circuits and Systems Conference (BioCAS)"
+    shortvenue: BioCAS
     url: https://ieeexplore.ieee.org/document/8584672
     date: October 2018
     links:
@@ -125,6 +134,7 @@ conference_papers:
       - Pulkit Grover
     title: "Low-cost Carbon Fiber-based Conductive Silicone Sponge EEG Electrodes"
     venue: "Engineering in Medicine and Biology Conference (EMBC): Oral presentation"
+    shortvenue: EMBC
     url: https://ieeexplore.ieee.org/document/8512521
     date: July 2018
     links:
@@ -136,6 +146,7 @@ conference_papers:
       - Pulkit Grover
     title: "Lower Bounds on the Minimax Risk for the Source Localization Problem"
     venue: International Symposium on Information Theory (ISIT)
+    shortvenue: ISIT
     url: https://github.com/praveenv253/isit-2017/blob/master/paper.pdf
     date: June 2017
     links:
@@ -149,8 +160,9 @@ conference_papers:
       - Praveen Venkatesh
       - Pulkit Grover
     title: "Is the Direction of Greater Granger Causal Influence the Same as the Direction of Information Flow?"
-    url: http://ieeexplore.ieee.org/document/7447069/
     venue: Allerton Conference on Communication, Control and Computing
+    shortvenue: Allerton
+    url: http://ieeexplore.ieee.org/document/7447069/
     date: September 2015
     links:
       doi: https://doi.org/10.1109/ALLERTON.2015.7447069
@@ -168,6 +180,7 @@ conference_papers:
     title: "An Information-theoretic Technique for Harnessing Attenuation of High Spatial Frequencies to Design Ultra-High-Density EEG"
     url: http://ieeexplore.ieee.org/document/7447102/
     venue: Allerton Conference on Communication, Control and Computing
+    shortvenue: Allerton
     date: September 2015
     links:
       doi: https://doi.org/10.1109/ALLERTON.2015.7447102
@@ -191,6 +204,7 @@ conference_abstracts:
       - Pulkit Grover
     title: "An automated and configurable seizure segmentation tool for tracking the evolution of seizures"
     venue: American Epilepsy Society Annual Meeting (AES)
+    shortvenue: AES
     status: accepted
     date: December 2019
   - id: Venkateh2019Relating
@@ -199,22 +213,31 @@ conference_abstracts:
       - Pulkit Grover
     title: "Relating Information Flow and Causal Interventions in Neural Circuits"
     venue: SfN Neuroscience
-    status: accepted
+    shortvenue: SfN
+    url: /assets/doc/posters/2019--sfn--poster.pdf
+    status:
     date: October 2019
+    links:
+      poster: /assets/doc/posters/2019--sfn--poster.pdf
   - id: Venkatesh2019Revealing
     authors:
       - Praveen Venkatesh
       - Pulkit Grover
     title: "Revealing Information Paths in the Brain using Synergistic Information"
     venue: "CNS*2019 Workshop on Methods of Information Theory in Computational Neuroscience"
+    shortvenue: CNS ITW
+    url: /assets/doc/presentations/2019--cns-itw--presentation.pptx
     status:
     date: July 2019
+    links:
+      slides: /assets/doc/presentations/2019--cns-itw--presentation.pptx
   - id: Venkatesh2019Information_CNS
     authors:
       - Praveen Venkatesh
       - Pulkit Grover
     title: "An Information-theoretic Framework for Examining Information Flow in the Brain"
     venue: "28th Annual Computational Neuroscience Meeting (CNS*2019)"
+    shortvenue: CNS
     url: /assets/doc/posters/2019--cns--poster.pdf
     status:
     date: July 2019
@@ -229,6 +252,7 @@ conference_abstracts:
       - Marlene Behrmann
     title: "Cortical Hyper-Excitability in Migraine to Chromatic Patterns"
     venue: Optical Society of America Fall Vision Meeting
+    shortvenue: OSA
     status:
     date: September 2018
   - id: Deshpande2018Flexible
@@ -243,6 +267,7 @@ conference_abstracts:
       - Maysamreza Chamanzar
     title: "Flexible, Ultra-resolution, Subdermal EEG Probes"
     venue: "SfN Neuroscience: Nanosymposium"
+    shortvenue: SfN
     status:
     date: November 2018
   - id: Chamanzar2018Automated
@@ -256,6 +281,7 @@ conference_abstracts:
       - Pulkit Grover
     title: "Automated Algorithm and System for Noninvasive Detection of Worsening Brain Injuries"
     venue: Military Health System Research Symposium
+    shortvenue: MHSRS
     status:
     date: August 2018
   - id: Kumar2017Ultra
@@ -270,6 +296,7 @@ conference_abstracts:
     title: "Ultra-high-density scalp EEG outperforms localized invasive ECoG grids in inferring depth of seizure foci"
     url: https://www.sciencedirect.com/science/article/pii/S1388245718305686
     venue: 31st International Congress of Clinical Neurophysiology
+    shortvenue: ICCN
     date: May 2018
     status:
   - id: Sun2017Analysis
@@ -287,6 +314,7 @@ conference_abstracts:
       - Arun Antony
     title: "Analysis of cortical stimulation data to localize intracranial electrodes using simultaneous scalp and stereo EEG recordings"
     venue: American Epilepsy Society annual meeting
+    shortvenue: AES
     date: December 2017
     status:
   - id: Venkatesh2017Ultra
@@ -299,6 +327,7 @@ conference_abstracts:
     title: "Ultra-resolution Subdermal EEG: Long-term Minimally-invasive Brain Monitoring"
     url: /assets/doc/posters/2017--sfn--poster.pdf
     venue: SfN Neuroscience
+    shortvenue: SfN
     date: November 2017
     status:
     links:
@@ -310,6 +339,7 @@ conference_abstracts:
     title: "High Density EEG: Information-theoretic Limits and Algorithms"
     url: /assets/doc/posters/2017--isit-recent-results--poster.pdf
     venue: International Symposium on Information Theory (ISIT), Recent Results
+    shortvenue: ISIT
     date: June 2017
     links:
       poster: /assets/doc/posters/2017--isit-recent-results--poster.pdf
@@ -321,7 +351,8 @@ conference_abstracts:
       - Wanqiao Ding
       - Pulkit Grover
     title: "Systematic and Automated Algorithms for Detecting Cortical Spreading Depolarizations Using EEG and ECoG to Improve TBI Diagnosis and Treatment"
-    venue: 12th World Conference on Brain Injury
+    venue: 12th World Congress on Brain Injury
+    shortvenue: IBIA
     date: March 2017
   - id: Venkatesh2016Data
     authors:
@@ -330,6 +361,7 @@ conference_abstracts:
       - Pulkit Grover
     title: "Data Processing for Reliable Detection of Cortical Spreading Depolarizations Using High-density EEG"
     venue: American Epilepsy Society annual meeting
+    shortvenue: AES
     date: December 2016
   - id: Venkatesh2015Direction_SfN
     authors:
@@ -338,6 +370,7 @@ conference_abstracts:
     title: "Is the Direction of Greater Granger Causal Influence the Same as the Direction of Information Flow?"
     url: /assets/doc/posters/2015--sfn--poster.pdf
     venue: SfN Neuroscience
+    shortvenue: SfN
     date: October 2015
     links:
       poster: /assets/doc/posters/2015--sfn--poster.pdf

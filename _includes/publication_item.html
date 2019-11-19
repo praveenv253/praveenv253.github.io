@@ -3,6 +3,9 @@
 <tr class="publications" id="{{ paper.id }}">
   <td class="publications align_rt">
     {% comment %} Date formatting {% endcomment %}
+    {% if paper.shortvenue %}
+      <span style="border-bottom: 1px solid #e6e6e6;">{{ paper.shortvenue }}</span><br>
+    {% endif %}
     {% if paper.date %}
       {{ paper.date | date: "%Y<br>%B" }}
     {% elsif paper.status %}
