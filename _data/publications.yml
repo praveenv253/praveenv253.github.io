@@ -64,6 +64,26 @@ journal_papers:
 # Conference papers
 
 conference_papers:
+  - id: Venkatesh2020Define
+    authors:
+      - Praveen Venkatesh
+      - Sanghamitra Dutta
+      - Pulkit Grover
+    title: "How <em>else</em> can we define Information Flow in Neural Circuits?"
+    status: submitted
+    #venue: International Symposium on Information Theory (ISIT)
+    #shortvenue: ISIT
+  - id: Dutta2020Fairness
+    authors:
+      - Sanghamitra Dutta
+      - Praveen Venkatesh
+      - Piotr Mardziel
+      - Anupam Datta
+      - Pulkit Grover
+    title: "Fairness under Feature Exemptions"
+    status: submitted
+    #venue: International Symposium on Information Theory (ISIT)
+    #shortvenue: ISIT
   - id: Dutta2020Information
     authors:
       - Sanghamitra Dutta
@@ -86,7 +106,7 @@ conference_papers:
     venue: Neural Information Processing Systems (NeurIPS)
     shortvenue: NeurIPS
     date: December 2019
-    status: accepted
+    status:
     url: https://arxiv.org/abs/1812.00769
     links:
       full_version: https://papers.nips.cc/paper/9224-efficient-near-optimal-testing-of-community-changes-in-balanced-stochastic-block-models
@@ -195,7 +215,10 @@ conference_abstracts:
       - Praveen Venkatesh
       - Pulkit Grover
     title: "Understanding Encoding and Redundancy in Grid Cells Using Partial Information Decomposition"
-    status: submitted
+    venue: Computational and Systems Neuroscience (Cosyne)
+    shortvenue: Cosyne
+    status: accepted
+    date: February 2020
   - id: Venkatesh2019Automated
     authors:
       - Praveen Venkatesh
@@ -205,8 +228,11 @@ conference_abstracts:
     title: "An automated and configurable seizure segmentation tool for tracking the evolution of seizures"
     venue: American Epilepsy Society Annual Meeting (AES)
     shortvenue: AES
-    status: accepted
+    url: /assets/doc/poters/2019--aes--poster.pdf
+    status:
     date: December 2019
+    links:
+      poster: /assets/doc/poters/2019--aes--poster.pdf
   - id: Venkateh2019Relating
     authors:
       - Praveen Venkatesh
