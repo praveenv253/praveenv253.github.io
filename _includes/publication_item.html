@@ -43,17 +43,18 @@
     {%- else -%}
       "{{ paper.title }}"
     {%- endif -%}
-    <br>
 
     {% comment %} Venue and status formatting {% endcomment %}
     {%- if paper.venue -%}
-      <em>{{ paper.venue }}</em>
-      {%- if paper.status -%}
-        <br>
-      {%- endif -%}
+      <br><em>{{ paper.venue }}</em>
     {%- endif -%}
     {%- if paper.status -%}
-      <em>({{ paper.status }})</em>
+      <br><em>({{ paper.status }})</em>
+    {%- endif -%}
+
+    {% comment %} Note formatting {% endcomment %}
+    {%- if paper.note -%}
+      <br>{{ paper.note }}
     {%- endif -%}
 
     {% comment %} Links formatting {% endcomment %}

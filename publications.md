@@ -24,7 +24,7 @@ title: Publications
   {% endfor %}
 </tbody></table>
 
-## Conference abstracts
+## Workshops and Conference abstracts
 
 {% assign paperlist = site.data.publications.conference_abstracts %}
 <table class="publications"><tbody>

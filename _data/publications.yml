@@ -92,9 +92,9 @@ conference_papers:
       - Anupam Datta
       - Pulkit Grover
     title: "An Information-Theoretic Quantification of Discrimination with Exempt Features"
-    venue: "Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI): Oral presentation"
+    venue: "AAAI Conference on Artificial Intelligence (AAAI): Oral presentation"
     shortvenue: AAAI
-    status: accepted
+    status:
     date: February 2020
   - id: Gangrade2019Efficient
     authors:
@@ -217,7 +217,17 @@ conference_abstracts:
     title: "Understanding Encoding and Redundancy in Grid Cells Using Partial Information Decomposition"
     venue: Computational and Systems Neuroscience (Cosyne)
     shortvenue: Cosyne
-    status: accepted
+    status:
+    date: February 2020
+  - id: Venkatesh2020Information_ITA
+    authors:
+      - Praveen Venkatesh
+      - Sanghamitra Dutta
+      - Pulkit Grover
+    title: "Information Flow in Neural Circuits: Formal Definition and Required Neuroengineering"
+    venue: "Information Theory and Applications Workshop (ITA): Graduation Day Talk"
+    note: "<strong>Winner of the ITA Sun Award:</strong> the gold prize for graduation day talks"
+    shortvenue: ITA
     date: February 2020
   - id: Venkatesh2019Automated
     authors:
