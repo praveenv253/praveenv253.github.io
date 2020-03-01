@@ -8,7 +8,9 @@ journal_papers:
       - Pulkit Grover
     title: "Information Flow in Computational Systems"
     url: https://arxiv.org/abs/1902.02292
-    status: submitted
+    venue: IEEE Transactions on Information Theory
+    shortvenue: Trans IT
+    status: accepted
     links:
       arxiv: https://arxiv.org/abs/1902.02292
   - id: Chamanzar2018Algorithm
