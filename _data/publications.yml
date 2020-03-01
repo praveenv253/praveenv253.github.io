@@ -209,7 +209,7 @@ conference_papers:
       ieee: http://ieeexplore.ieee.org/document/7447102/
       code: http://www.tinyurl.com/pulkitgrover/EEGCode.html
 
-# Conference abstracts
+# Workshops and Conference abstracts
 
 conference_abstracts:
   - id: Venkatesh2020Understanding
@@ -219,8 +219,12 @@ conference_abstracts:
     title: "Understanding Encoding and Redundancy in Grid Cells Using Partial Information Decomposition"
     venue: Computational and Systems Neuroscience (Cosyne)
     shortvenue: Cosyne
+    url: /assets/doc/abstracts/2020--cosyne--abstract.pdf
     status:
     date: February 2020
+    links:
+      abstract: /assets/doc/abstracts/2020--cosyne--abstract.pdf
+      poster: /assets/doc/posters/2020--cosyne--poster.pdf
   - id: Venkatesh2020Information_ITA
     authors:
       - Praveen Venkatesh
@@ -229,8 +233,12 @@ conference_abstracts:
     title: "Information Flow in Neural Circuits: Formal Definition and Required Neuroengineering"
     venue: "Information Theory and Applications Workshop (ITA): Graduation Day Talk"
     note: "<strong>Winner of the ITA Sun Award:</strong> the gold prize for graduation day talks"
+    url: /assets/doc/presentations/2020--ita.pptx
     shortvenue: ITA
     date: February 2020
+    links:
+      slides: /assets/doc/presentations/2020--ita.pptx
+      poster: /assets/doc/posters/2020--ita--poster.pdf
   - id: Venkatesh2019Automated
     authors:
       - Praveen Venkatesh
