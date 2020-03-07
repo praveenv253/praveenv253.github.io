@@ -9,7 +9,7 @@ journal_papers:
     title: "Information Flow in Computational Systems"
     url: https://arxiv.org/abs/1902.02292
     venue: IEEE Transactions on Information Theory
-    shortvenue: Trans IT
+    shortvenue: "Trans&nbsp;IT"
     status: accepted
     links:
       arxiv: https://arxiv.org/abs/1902.02292
@@ -25,7 +25,7 @@ journal_papers:
     title: "An algorithm for automated, noninvasive detection of cortical spreading depolarizations based on EEG simulation"
     url: https://ieeexplore.ieee.org/document/8445667/
     venue: IEEE Transactions on Biomedical Engineering
-    shortvenue: Trans BME
+    shortvenue: "Trans&nbsp;BME"
     status:
     date: August 2018
     links:
