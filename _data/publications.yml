@@ -22,7 +22,7 @@ journal_papers:
       - Lori Shutter
       - Jonathan Elmer
       - Pulkit Grover
-    title: "An algorithm for automated, noninvasive detection of cortical spreading depolarizations based on EEG simulation"
+    title: "An algorithm for automated, noninvasive detection of cortical spreading depolarizations based on EEG simulations"
     url: https://ieeexplore.ieee.org/document/8445667/
     venue: IEEE Transactions on Biomedical Engineering
     shortvenue: "Trans&nbsp;BME"
@@ -72,20 +72,10 @@ conference_papers:
       - Sanghamitra Dutta
       - Pulkit Grover
     title: "How <em>else</em> can we define Information Flow in Neural Circuits?"
-    status: submitted
-    #venue: International Symposium on Information Theory (ISIT)
-    #shortvenue: ISIT
-  - id: Dutta2020Fairness
-    authors:
-      - Sanghamitra Dutta
-      - Praveen Venkatesh
-      - Piotr Mardziel
-      - Anupam Datta
-      - Pulkit Grover
-    title: "Fairness under Feature Exemptions"
-    status: submitted
-    #venue: International Symposium on Information Theory (ISIT)
-    #shortvenue: ISIT
+    venue: International Symposium on Information Theory (ISIT)
+    shortvenue: ISIT
+    status: accepted
+    date: June 2020
   - id: Dutta2020Information
     authors:
       - Sanghamitra Dutta

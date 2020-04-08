@@ -2,6 +2,7 @@
 
 <tr class="publications" id="{{ paper.id }}">
   <td class="publications align_rt">
+    <a href="#{{ paper.id }}" style="color: #494e52; text-decoration: none;">
     {% comment %} Date formatting {% endcomment %}
     {% if paper.shortvenue %}
       <span style="border-bottom: 1px solid #e6e6e6;">{{ paper.shortvenue }}</span><br>
@@ -13,6 +14,7 @@
       {% comment %} Parentheses are added around the status here {% endcomment %}
       {% comment %} So no need for parentheses in _data/publications.yml {% endcomment %}
     {% endif %}
+    </a>
   </td>
 
   <td class="publications">
