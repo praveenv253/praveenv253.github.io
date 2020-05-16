@@ -7,12 +7,14 @@ journal_papers:
       - Sanghamitra Dutta
       - Pulkit Grover
     title: "Information Flow in Computational Systems"
-    url: https://arxiv.org/abs/1902.02292
+    url: https://ieeexplore.ieee.org/document/9067054
     venue: IEEE Transactions on Information Theory
     shortvenue: "Trans&nbsp;IT"
-    status: accepted
+    status: "to&nbsp;appear"
     links:
+      doi: https://doi.org/10.1109/TIT.2020.2987806
       arxiv: https://arxiv.org/abs/1902.02292
+      ieee: https://ieeexplore.ieee.org/document/9067054
   - id: Chamanzar2018Algorithm
     authors:
       - Alireza Chamanzar
@@ -72,10 +74,13 @@ conference_papers:
       - Sanghamitra Dutta
       - Pulkit Grover
     title: "How <em>else</em> can we define Information Flow in Neural Circuits?"
+    url: /assets/doc/papers/2020--isit--full-paper.pdf
     venue: International Symposium on Information Theory (ISIT)
     shortvenue: ISIT
     status: accepted
     date: June 2020
+    links:
+      full_version: /assets/doc/papers/2020--isit--full-paper.pdf
   - id: Dutta2020Information
     authors:
       - Sanghamitra Dutta
@@ -88,6 +93,9 @@ conference_papers:
     shortvenue: AAAI
     status:
     date: February 2020
+    url: https://users.ece.cmu.edu/~sanghamd/publications/Fairness_Exemptions_AAAI2020.pdf
+    links:
+      full_version: https://users.ece.cmu.edu/~sanghamd/publications/Fairness_Exemptions_AAAI2020.pdf
   - id: Gangrade2019Efficient
     authors:
       - Aditya Gangrade
