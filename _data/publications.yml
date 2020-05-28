@@ -246,11 +246,11 @@ conference_abstracts:
     title: "An automated and configurable seizure segmentation tool for tracking the evolution of seizures"
     venue: American Epilepsy Society Annual Meeting (AES)
     shortvenue: AES
-    url: /assets/doc/poters/2019--aes--poster.pdf
+    url: /assets/doc/posters/2019--aes--poster.pdf
     status:
     date: December 2019
     links:
-      poster: /assets/doc/poters/2019--aes--poster.pdf
+      poster: /assets/doc/posters/2019--aes--poster.pdf
   - id: Venkateh2019Relating
     authors:
       - Praveen Venkatesh
