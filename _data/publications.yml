@@ -81,6 +81,7 @@ conference_papers:
     date: June 2020
     links:
       full_version: /assets/doc/papers/2020--isit--full-paper.pdf
+      slides: /assets/doc/presentations/2020--isit.pptx
   - id: Dutta2020Information
     authors:
       - Sanghamitra Dutta
@@ -96,6 +97,8 @@ conference_papers:
     url: https://users.ece.cmu.edu/~sanghamd/publications/Fairness_Exemptions_AAAI2020.pdf
     links:
       full_version: https://users.ece.cmu.edu/~sanghamd/publications/Fairness_Exemptions_AAAI2020.pdf
+      external:
+        aaai.org: https://www.aaai.org/Papers/AAAI/2020GB/AAAI-DuttaS.9451.pdf
   - id: Gangrade2019Efficient
     authors:
       - Aditya Gangrade
@@ -109,7 +112,8 @@ conference_papers:
     status:
     url: https://arxiv.org/abs/1812.00769
     links:
-      full_version: https://papers.nips.cc/paper/9224-efficient-near-optimal-testing-of-community-changes-in-balanced-stochastic-block-models
+      external:
+        neurips.cc: https://papers.nips.cc/paper/9224-efficient-near-optimal-testing-of-community-changes-in-balanced-stochastic-block-models
       arxiv: https://arxiv.org/abs/1812.00769
   - id: Venkatesh2019Define
     authors:
@@ -251,6 +255,8 @@ conference_abstracts:
     date: December 2019
     links:
       poster: /assets/doc/posters/2019--aes--poster.pdf
+      external:
+        aesnet.org: https://www.aesnet.org/meetings_events/annual_meeting_abstracts/view/2422079
   - id: Venkateh2019Relating
     authors:
       - Praveen Venkatesh

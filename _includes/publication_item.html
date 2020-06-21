@@ -92,6 +92,11 @@
       {% if paper.links.poster %}
         <a class="publication__link-item" href="{{ paper.links.poster }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Poster</a>
       {% endif %}
+      {% if paper.links.external %}
+        {% for link in paper.links.external %}
+          <a class="publication__link-item" href="{{ link[1] }}"><i class="fa fa-link" aria-hidden="true"></i> {{ link[0] }}</a>
+        {% endfor %}
+      {% endif %}
       </p>
     {% endif %}
   </td>
