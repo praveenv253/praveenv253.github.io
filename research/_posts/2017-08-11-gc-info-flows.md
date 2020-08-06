@@ -6,7 +6,7 @@ day: Friday
 tags:
   - Granger Causality
   - Directed Information
-  - Information Flow
+  - Information flow
   - Message
 ---
 
@@ -17,7 +17,7 @@ many works in the neuroscience literature have begun to compare Granger
 causal influences along forward and reverse links of a feedback network in
 order to determine the direction of information flow in this network.
 
-![Greater GC can be opposite the direction of Info flow](/assets/img/gc-vs-message.jpg){: width="500px" .align-center}
+![Greater GC can be opposite the direction of Info flow](/assets/img/gc-vs-message.jpg){: width="400px" .align-center}
 
 We asked whether comparing Granger causal influences correctly captures the
 direction of information flow in a simple feedback network. We discovered,

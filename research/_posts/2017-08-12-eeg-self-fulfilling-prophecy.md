@@ -6,6 +6,7 @@ day: Saturday
 tags:
   - EEG
   - Nyquist rate
+  - Fundamental limits
   - Experimental validation
 ---
 

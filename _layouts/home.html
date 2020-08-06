@@ -1,41 +1,40 @@
 ---
 layout: single
 author_profile: true
+mathjax: true
 ---
 
-<!--<h3>Who am I?</h3>-->
+{% comment %}<h3>About me</h1>{% endcomment %}
 
-<p>
-Hi! I'm Praveen, a Ph.D. candidate in the Electrical and Computer Engineering
-department of Carnegie Mellon University. I work in <a
-href="https://users.ece.cmu.edu/~pgrover/">Prof. Pulkit Grover</a>'s lab.
+<p style="font-size: x-large;">
+I'm a Ph.D. candidate in Electrical and Computer Engineering at Carnegie Mellon University.
+I work with <a href="https://users.ece.cmu.edu/~pgrover/">Prof. Pulkit Grover</a>.
 </p>
 
-<h3>What do I do?</h3>
+<hr>
+
+<h3>My research</h3>
 
 <p>
-Broadly speaking, I'm interested in working at the intersection of signal
-processing, information theory, neuroscience and neuroengineering. For the last
-few years, I've been focused on problems with clinical applications. My advisor
-and I have worked closely with doctors, statisticians and neuroscientists to
-find better ways to diagnose brain diseases such as epilepsy and cortical
-spreading depolarizations.
+I work at the intersection of information theory, statistics, neuroscience and neuroengineering. I like to collaborate with theorists and practitioners to identify fundamental theoretical problems, and address these using formal mathematical and computational models. My broad goal is to contribute to the development, study and application of new information-theoretic and statistical methods in neuroscience and neuroengineering.
 </p>
 
 <p>
-To be a bit more technical, I've recently been working on understanding the
-fundamental limits of brain imaging systems, specifically EEG, and on designing
-algorithms for optimal brain signal reconstruction using EEG data. Earlier, I
-worked briefly on metrics for measuring information flow in the brain. Please
-visit my <a href="/research">research page</a> for more!
+Over the course of my Ph.D., I have developed new frameworks and techniques for information flow in neuroscience, and I have studied the fundamental limits of high-density Electroencephalography (EEG). I have also endeavoured to bring my theory to practice by collaborating closely with experimentalists and clinicians.
 </p>
-
-<h3>How do you contact me?</h3>
 
 <p>
-The best way is email. Use the following algorithm to compute my email address.
+Please see my <a href="/research">research page</a> for more, or jump directly to my <a href="/publications">list of publications</a>.
 </p>
 
+<h3>Contact me</h3>
+
+<p>
+The best way to get in touch with me is email:
+{% highlight python %} ''.join(['v', 'praveen', '@', 'cmu', '.', 'edu']) {% endhighlight %}
+</p>
+
+{% comment %}
 {% highlight python %}
 first_name = 'praveen'
 last_initial = 'v'
@@ -44,6 +43,7 @@ domain = '@cmu.edu'
 # Concatenate
 email_id = last_initial + first_name + domain
 {% endhighlight %}
+{% endcomment %}
 
 {% comment %}
 <!-- vim: set ft=liquid : -->
