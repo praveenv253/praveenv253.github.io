@@ -19,24 +19,19 @@
 
   <td class="publications">
     {% comment %} Author formatting {% endcomment %}
-    {%- if paper.authors.size == 2 -%}
-      {%- if paper.authors[0] == "Praveen Venkatesh" -%}
-        <strong>{{ paper.authors[0] }}</strong> and {{ paper.authors[1] }}
-      {%- elsif paper.authors[1] == "Praveen Venkatesh" -%}
-        {{ paper.authors[0] }} and <strong>{{ paper.authors[1] }}</strong>
-      {%- endif -%}
-    {%- else -%}
-      {%- for author in paper.authors -%}
-        {%- if author == "Praveen Venkatesh" -%}
-          <strong>{{ author }}</strong>
-        {%- else -%}
-          {{ author }}
-        {%- endif -%}
+    {%- for author in paper.authors -%}
+      {%- unless forloop.first -%}
+        {% if forloop.last %} and {% endif %}
         {%- unless forloop.last -%}, {% endunless %}
         {% comment %} `if not` doesn't work, apparently {% endcomment %}
         {% comment %} No dash for endunless: space after comma {% endcomment %}
-      {%- endfor -%}
-    {%- endif -%}
+      {%- endunless -%}
+      {%- if author contains "Praveen Venkatesh" -%}
+        <strong>{{ author }}</strong>
+      {%- else -%}
+        {{ author }}
+      {%- endif -%}
+    {%- endfor -%}
     <br>
 
     {% comment %} Title formatting {% endcomment %}
