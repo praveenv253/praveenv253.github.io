@@ -259,8 +259,8 @@ conference_abstracts:
   - id: Venkatesh2020Quantifying
     authors:
       - Praveen Venkatesh
-      - Mohammed Danish
-      - Daniel Sneider
+      - Mohammed Danish*
+      - Daniel Sneider*
       - Nathaniel D Sisterson
       - Pulkit Grover
       - "R&nbsp;Mark Richardson"
@@ -269,10 +269,12 @@ conference_abstracts:
     venue: American Epilepsy Society annual meeting
     shortvenue: AES
     status:
+    note: "*<em>Equal contribution</em>"
     date: December 2020
     url: /assets/doc/abstracts/2020--aes--abstract.pdf
     links:
       abstract: /assets/doc/abstracts/2020--aes--abstract.pdf
+      poster: /assets/doc/posters/2020--aes--poster.pdf
   - id: Venkatesh2020Understanding
     authors:
       - Praveen Venkatesh
