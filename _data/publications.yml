@@ -26,10 +26,13 @@ journal_papers:
       - R Mark Richardson
       - Vasileios Kokkinos
     title: "Quantifying a Frequency Modulation Response Biomarker in Responsive Neurostimulation"
+    url: https://www.biorxiv.org/content/10.1101/2020.12.17.423339v1
     venue:
     shortvenue:
     status: submitted
     note: "*<em>Equal contribution</em>"
+    links:
+      biorxiv: https://www.biorxiv.org/content/10.1101/2020.12.17.423339v1
   - id: Dutta2020Fairness
     authors:
       - Sanghamitra Dutta
