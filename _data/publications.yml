@@ -10,10 +10,10 @@ journal_papers:
     venue:
     shortvenue:
     status: "in&nbsp;prep"
-    url: assets/doc/papers/synergy-info-flow-manuscript.pdf
+    url: /assets/doc/papers/synergy-info-flow-manuscript.pdf
     links:
       external:
-        working-paper: assets/doc/papers/synergy-info-flow-manuscript.pdf
+        working-paper: /assets/doc/papers/synergy-info-flow-manuscript.pdf
   - id: Venkatesh2020Quantifying
     authors:
       - Praveen Venkatesh
@@ -272,7 +272,7 @@ conference_abstracts:
     #venue: Computational and Systems Neuroscience
     #shortvenue: Cosyne
     status: submitted
-    url: assets/doc/abstracts/2021--cosyne--abstract.pdf
+    url: /assets/doc/abstracts/2021--cosyne--abstract.pdf
   - id: Venkatesh2020Quantifying
     authors:
       - Praveen Venkatesh
