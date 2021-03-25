@@ -14,25 +14,6 @@ journal_papers:
     links:
       external:
         working-paper: /assets/doc/papers/synergy-info-flow-manuscript.pdf
-  - id: Venkatesh2020Quantifying
-    authors:
-      - Praveen Venkatesh
-      - Daniel Sneider*
-      - Mohammed Danish*
-      - Nathaniel D Sisterson
-      - Naoir Zaher
-      - Alexandra Urban
-      - Pulkit Grover
-      - R Mark Richardson
-      - Vasileios Kokkinos
-    title: "Quantifying a Frequency Modulation Response Biomarker in Responsive Neurostimulation"
-    url: https://www.biorxiv.org/content/10.1101/2020.12.17.423339v1
-    venue:
-    shortvenue:
-    status: submitted
-    note: "*<em>Equal contribution</em>"
-    links:
-      biorxiv: https://www.biorxiv.org/content/10.1101/2020.12.17.423339v1
   - id: Dutta2020Fairness
     authors:
       - Sanghamitra Dutta
@@ -47,6 +28,28 @@ journal_papers:
     url: https://arxiv.org/abs/2006.07986
     links:
       arxiv: https://arxiv.org/abs/2006.07986
+  - id: Venkatesh2020Quantifying
+    authors:
+      - Praveen Venkatesh
+      - Daniel Sneider*
+      - Mohammed Danish*
+      - Nathaniel D Sisterson
+      - Naoir Zaher
+      - Alexandra Urban
+      - Pulkit Grover
+      - R Mark Richardson
+      - Vasileios Kokkinos
+    title: "Quantifying a Frequency Modulation Response Biomarker in Responsive Neurostimulation"
+    url: https://iopscience.iop.org/article/10.1088/1741-2552/abed82
+    venue: Journal of Neural Engineering
+    shortvenue: JNE
+    status: accepted
+    date: "2021"
+    note: "*<em>Equal contribution</em>"
+    links:
+      doi: https://doi.org/10.1088/1741-2552/abed82
+      biorxiv: https://www.biorxiv.org/content/10.1101/2020.12.17.423339v1
+      iopscience: https://iopscience.iop.org/article/10.1088/1741-2552/abed82
   - id: Venkatesh2018Information
     authors:
       - Praveen Venkatesh
@@ -263,16 +266,6 @@ conference_papers:
 # Workshops and Conference abstracts
 
 conference_abstracts:
-  - id: Venkatesh2021Accounting
-    authors:
-      - Susan Cheng
-      - Pulkit Grover
-      - Praveen Venkatesh
-    title: "Accounting for Synergy is Essential for Inferring Information Flow"
-    #venue: Computational and Systems Neuroscience
-    #shortvenue: Cosyne
-    status: submitted
-    url: /assets/doc/abstracts/2021--cosyne--abstract.pdf
   - id: Venkatesh2020Quantifying
     authors:
       - Praveen Venkatesh
