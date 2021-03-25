@@ -43,8 +43,8 @@ journal_papers:
     url: https://iopscience.iop.org/article/10.1088/1741-2552/abed82
     venue: Journal of Neural Engineering
     shortvenue: JNE
-    status: accepted
-    date: "2021"
+    status:
+    date: March 2021
     note: "*<em>Equal contribution</em>"
     links:
       doi: https://doi.org/10.1088/1741-2552/abed82
