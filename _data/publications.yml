@@ -118,6 +118,27 @@ journal_papers:
 # Conference papers
 
 conference_papers:
+  #- id: Venkatesh2021Can
+  #  authors:
+  #    - Praveen Venkatesh
+  #    - Sanghamitra Dutta
+  #    - Neil Mehta
+  #    - Pulkit Grover
+  #  title: "Can Information Flows Suggest Targets for Interventions in Neural Circuits?"
+  #  status: submitted
+  - id: Schamberg2021Partial
+    authors:
+      - Gabriel Schamberg*
+      - Praveen Venkatesh*
+    title: "Partial Information Decomposition via Deficiency for Multivariate Gaussians"
+    venue:
+    shortvenue:
+    status: submitted
+    date:
+    note: "*<em>Equal contribution</em>"
+    url: https://arxiv.org/abs/2105.00769
+    links:
+      arxiv: https://arxiv.org/abs/2105.00769
   - id: Venkatesh2020Define
     authors:
       - Praveen Venkatesh
