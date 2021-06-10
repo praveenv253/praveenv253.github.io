@@ -12,15 +12,16 @@ title_separator          : "|"
 name                     : "Praveen Venkatesh"
 description              : "Praveen Venkatesh's personal website."
 url                      : "https://praveenv253.github.io"
+#url                      : "http://localhost:4000"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "praveenv253/praveenv253.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "praveenv253" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -70,16 +71,16 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "custom" # I've used custom for the newer version of Google Analytics 4 # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-YBGTG5ZB4N" # Still used by "custom". See _includes/analytics-providers/custom.html
 
 
 # Site Author
 author:
   name             : "Praveen Venkatesh"
   avatar           : "/assets/img/portrait-full-size.jpg"
-  bio              : "Ph.D. Candidate<br>Electrical & Computer Engineering<br>Carnegie Mellon University"
+  bio              : "Soon-to-be postdoc<br>Ph.D. in Elec & Comp Engg,<br>Carnegie Mellon University"
   location         :
   email            :
   uri              :
@@ -243,6 +244,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
