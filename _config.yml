@@ -80,7 +80,7 @@ analytics:
 author:
   name             : "Praveen Venkatesh"
   avatar           : "/assets/img/portrait-full-size.jpg"
-  bio              : "Soon-to-be postdoc<br>Ph.D. in Elec & Comp Engg,<br>Carnegie Mellon University"
+  bio              : "Scientist at the Allen Institute<br><em>Ph.D. in Elec & Comp Engg,</em><br><em>Carnegie Mellon University</em>"
   location         :
   email            :
   uri              :
@@ -101,7 +101,7 @@ author:
   stackoverflow    : "525169/praveen"
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "praveen_ven"
   vine             :
   weibo            :
   xing             :
