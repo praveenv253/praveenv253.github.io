@@ -8,7 +8,7 @@
 # Site Settings
 locale                   : "en"
 title                    : "Praveen's website"
-title_separator          : "|"
+title_separator          : "&#124;"  # = pipe (|); see https://github.com/mmistakes/minimal-mistakes/issues/760
 name                     : "Praveen Venkatesh"
 description              : "Praveen Venkatesh's personal website."
 url                      : "https://praveenv253.github.io"
