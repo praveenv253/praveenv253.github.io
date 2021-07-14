@@ -313,7 +313,7 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>When using <code class="highlighter-rouge">cudaMemcpyToSymbol</code>, you can directly use the name of the variable you are transferring data to. In fact, this is the only way it seems to work. <code class="highlighter-rouge">var</code>, <code class="highlighter-rouge">&amp;var</code>, etc. all do not have the desired effect, despite the function seeming to request a const char or a pointer. Also note that if you are including the <code class="highlighter-rouge">cudaMemcpyKind</code>, then it is the fifth parameter, not the fourth. The fourth parameter is an offset.</p>
+        <p>When using <code class="language-plaintext highlighter-rouge">cudaMemcpyToSymbol</code>, you can directly use the name of the variable you are transferring data to. In fact, this is the only way it seems to work. <code class="language-plaintext highlighter-rouge">var</code>, <code class="language-plaintext highlighter-rouge">&amp;var</code>, etc. all do not have the desired effect, despite the function seeming to request a const char or a pointer. Also note that if you are including the <code class="language-plaintext highlighter-rouge">cudaMemcpyKind</code>, then it is the fifth parameter, not the fourth. The fourth parameter is an offset.</p>
 
         
       </section>
