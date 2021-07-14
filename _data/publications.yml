@@ -22,9 +22,9 @@ journal_papers:
       - Anupam Datta
       - Pulkit Grover
     title: "Fairness Under Feature Exemptions: Counterfactual and Observational Measures"
-    #venue: IEEE Transactions on Information Theory
-    #shortvenue: "Trans&nbsp;IT"
-    status: submitted
+    venue: IEEE Transactions on Information Theory
+    shortvenue: "Trans&nbsp;IT"
+    status: accepted
     url: https://arxiv.org/abs/2006.07986
     links:
       arxiv: https://arxiv.org/abs/2006.07986
@@ -118,14 +118,14 @@ journal_papers:
 # Conference papers
 
 conference_papers:
-  #- id: Venkatesh2021Can
-  #  authors:
-  #    - Praveen Venkatesh
-  #    - Sanghamitra Dutta
-  #    - Neil Mehta
-  #    - Pulkit Grover
-  #  title: "Can Information Flows Suggest Targets for Interventions in Neural Circuits?"
-  #  status: submitted
+  - id: Venkatesh2021Can
+    authors:
+      - Praveen Venkatesh
+      - Sanghamitra Dutta
+      - Neil Mehta
+      - Pulkit Grover
+    title: "Can Information Flows Suggest Targets for Interventions in Neural Circuits?"
+    status: submitted
   - id: Schamberg2021Partial
     authors:
       - Gabriel Schamberg*
