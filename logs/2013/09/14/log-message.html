@@ -48,7 +48,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2013-09-14T06:14:13-04:00">
+  <meta property="article:published_time" content="2013-09-14T03:14:13-07:00">
 
 
 
@@ -186,7 +186,7 @@
     <h3 class="author__name" itemprop="name">Praveen Venkatesh</h3>
     
       <p class="author__bio" itemprop="description">
-        Scientist at the Allen Institute<br><em>Ph.D. in Elec & Comp Engg,</em><br><em>Carnegie Mellon University</em>
+        Shanahan Foundation Fellow<br><em>Allen Institute for Brain Science</em>
       </p>
     
   </div>
@@ -313,7 +313,7 @@
       
 
       <section class="page__content" itemprop="text">
-        <p><code class="language-plaintext highlighter-rouge">taskset</code> only allows you to set something called the CPU affinity, meaning you can tell the system to run a certain process on some cores only. However, in order to tell the OS to run only your process on a given core, you need to use something called <code class="language-plaintext highlighter-rouge">cpuset</code>. This is a pseudo-filesystem which manages how processes are distributed among cores. <code class="language-plaintext highlighter-rouge">man cpuset</code> for more info. While <code class="language-plaintext highlighter-rouge">cpuset</code> is nice and everything, it is not very intuitive to use, especially if you just want to run your own process(es) separately from the general bunch of system-upkeep processes. A nice interface for cpuset is <code class="language-plaintext highlighter-rouge">cset</code>, whose <code class="language-plaintext highlighter-rouge">shield</code> command does exactly this. <code class="language-plaintext highlighter-rouge">man cset</code> and <code class="language-plaintext highlighter-rouge">cset-shield</code> for more info. Also take a look at <a href="https://www.suse.com/documentation/slerte_11/slerte_tutorial/data/slerte_tutorial.html">this tutorial</a>. If you are hell bent on using <code class="language-plaintext highlighter-rouge">cpuset</code> nonetheless, just remember that moving <code class="language-plaintext highlighter-rouge">sbin/init</code> into the system cpuset along with the “general” lot of processes ensures that any newly spawned processes are also restricted to <em>that</em> cpuset. Oh and dont forget to set the <code class="language-plaintext highlighter-rouge">cpu_exclusive</code> flag.</p>
+        <p><code class="highlighter-rouge">taskset</code> only allows you to set something called the CPU affinity, meaning you can tell the system to run a certain process on some cores only. However, in order to tell the OS to run only your process on a given core, you need to use something called <code class="highlighter-rouge">cpuset</code>. This is a pseudo-filesystem which manages how processes are distributed among cores. <code class="highlighter-rouge">man cpuset</code> for more info. While <code class="highlighter-rouge">cpuset</code> is nice and everything, it is not very intuitive to use, especially if you just want to run your own process(es) separately from the general bunch of system-upkeep processes. A nice interface for cpuset is <code class="highlighter-rouge">cset</code>, whose <code class="highlighter-rouge">shield</code> command does exactly this. <code class="highlighter-rouge">man cset</code> and <code class="highlighter-rouge">cset-shield</code> for more info. Also take a look at <a href="https://www.suse.com/documentation/slerte_11/slerte_tutorial/data/slerte_tutorial.html">this tutorial</a>. If you are hell bent on using <code class="highlighter-rouge">cpuset</code> nonetheless, just remember that moving <code class="highlighter-rouge">sbin/init</code> into the system cpuset along with the “general” lot of processes ensures that any newly spawned processes are also restricted to <em>that</em> cpuset. Oh and dont forget to set the <code class="highlighter-rouge">cpu_exclusive</code> flag.</p>
 
         
       </section>
@@ -385,7 +385,7 @@
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2013-09-14T06:14:13-04:00">September 14, 2013</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2013-09-14T03:14:13-07:00">September 14, 2013</time></p>
         
       </footer>
 
