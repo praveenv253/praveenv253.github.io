@@ -186,7 +186,7 @@
     <h3 class="author__name" itemprop="name">Praveen Venkatesh</h3>
     
       <p class="author__bio" itemprop="description">
-        Shanahan Foundation Fellow<br><em>Allen Institute for Brain Science</em>
+        Shanahan Foundation Fellow<br><em>Allen Institute</em>
       </p>
     
   </div>
@@ -313,7 +313,7 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>So I was facing this problem wherein the nvidia kernel module seemed to be getting unloaded after the computer was put to sleep. This can be resolved by explicitly adding the nvidia kernel module to the list of modules unloaded and reloaded before/after suspend. You do this by editing/creating the file <code class="highlighter-rouge">/etc/pm/config.d/unload_modules</code>. In it, add the following line: <code class="highlighter-rouge">SUSPEND_MODULES="$SUSPEND_MODULES nvidia"</code>. And that’s it! Putting the computer to sleep now will not interfere with cuda executability! See <a href="http://www.techytalk.info/ubuntu-fix-network-stopped-working-after-resume-from-sleep/">this link</a>.</p>
+        <p>So I was facing this problem wherein the nvidia kernel module seemed to be getting unloaded after the computer was put to sleep. This can be resolved by explicitly adding the nvidia kernel module to the list of modules unloaded and reloaded before/after suspend. You do this by editing/creating the file <code class="language-plaintext highlighter-rouge">/etc/pm/config.d/unload_modules</code>. In it, add the following line: <code class="language-plaintext highlighter-rouge">SUSPEND_MODULES="$SUSPEND_MODULES nvidia"</code>. And that’s it! Putting the computer to sleep now will not interfere with cuda executability! See <a href="http://www.techytalk.info/ubuntu-fix-network-stopped-working-after-resume-from-sleep/">this link</a>.</p>
 
         
       </section>
