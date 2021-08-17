@@ -121,11 +121,12 @@ conference_papers:
   - id: Venkatesh2021Can
     authors:
       - Praveen Venkatesh
-      - Sanghamitra Dutta
-      - Neil Mehta
+      - Sanghamitra Dutta*
+      - Neil Mehta*
       - Pulkit Grover
     title: "Can Information Flows Suggest Targets for Interventions in Neural Circuits?"
     status: submitted
+    note: "*<em>Equal contribution</em>"
   - id: Schamberg2021Partial
     authors:
       - Gabriel Schamberg*
