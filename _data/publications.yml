@@ -24,10 +24,12 @@ journal_papers:
     title: "Fairness Under Feature Exemptions: Counterfactual and Observational Measures"
     venue: IEEE Transactions on Information Theory
     shortvenue: "Trans&nbsp;IT"
-    status: accepted
-    url: https://arxiv.org/abs/2006.07986
+    status:
+    date: August 2021
+    url: https://ieeexplore.ieee.org/document/9508964
     links:
       arxiv: https://arxiv.org/abs/2006.07986
+      ieee: https://ieeexplore.ieee.org/document/9508964
   - id: Venkatesh2020Quantifying
     authors:
       - Praveen Venkatesh
@@ -118,15 +120,6 @@ journal_papers:
 # Conference papers
 
 conference_papers:
-  - id: Venkatesh2021Can
-    authors:
-      - Praveen Venkatesh
-      - Sanghamitra Dutta*
-      - Neil Mehta*
-      - Pulkit Grover
-    title: "Can Information Flows Suggest Targets for Interventions in Neural Circuits?"
-    status: submitted
-    note: "*<em>Equal contribution</em>"
   - id: Schamberg2021Partial
     authors:
       - Gabriel Schamberg*
@@ -140,6 +133,18 @@ conference_papers:
     url: https://arxiv.org/abs/2105.00769
     links:
       arxiv: https://arxiv.org/abs/2105.00769
+  - id: Venkatesh2021Can
+    authors:
+      - Praveen Venkatesh
+      - Sanghamitra Dutta*
+      - Neil Mehta*
+      - Pulkit Grover
+    title: "Can Information Flows Suggest Targets for Interventions in Neural Circuits?"
+    venue: Neural Information Processing Systems (NeurIPS)
+    shortvenue: NeurIPS
+    status: accepted
+    date: December 2021
+    note: "*<em>Equal contribution</em>"
   - id: Venkatesh2020Define
     authors:
       - Praveen Venkatesh
