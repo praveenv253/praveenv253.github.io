@@ -313,7 +313,7 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>Gimp imports multi-page pdfs as one layer-per-page. But it does not re-export multi-layer figures as a multi-page pdf, with one page-per-layer. It just exports the topmost visible layer. I found a solution for this <a href="http://registry.gimp.org/node/25400">here</a>. You need to reverse the order of layers, export the project as a .mng animation. Then, from command line, call <code class="language-plaintext highlighter-rouge">convert file.mng file.pdf</code>. Apparently, for convert to work, you need to have ImageMagick installed, but I think I had it by default.</p>
+        <p>Gimp imports multi-page pdfs as one layer-per-page. But it does not re-export multi-layer figures as a multi-page pdf, with one page-per-layer. It just exports the topmost visible layer. I found a solution for this <a href="http://registry.gimp.org/node/25400">here</a>. You need to reverse the order of layers, export the project as a .mng animation. Then, from command line, call <code class="highlighter-rouge">convert file.mng file.pdf</code>. Apparently, for convert to work, you need to have ImageMagick installed, but I think I had it by default.</p>
 
         
       </section>
