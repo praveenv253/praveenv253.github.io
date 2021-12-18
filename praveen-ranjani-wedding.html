@@ -1,62 +1,80 @@
----
----
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<html lang="en" class="h-100">
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Praveen weds Ranjani</title>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .container {
+        width: auto;
+        max-width: 680px;
+        padding: 0 15px;
+      }
+
+      .footlink {
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+      .normal {
+        font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+      }
+    </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@1&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@1&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+
   </head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  <body class="d-flex flex-column h-100">
 
-    {% include browser-upgrade.html %}
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+      <div class="container">
 
-    <div id="main" role="main">
-      <div class="page__inner-wrap">
+        <h1 class="mt-5" style="font-family: 'Libre Baskerville', serif !important; font-size: 250% !important; text-align: center; font-weight: bold;">Praveen weds Ranjani</h1>
 
-        {% unless page.header.overlay_color or page.header.overlay_image %}
-          <header>
-            {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-            {% if page.read_time %}
-              <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-            {% endif %}
-          </header>
-        {% endunless %}
-
-        <div style="justify-content: center;">
-
-          <h1 class="page__title" itemprop="headline" style="font-family: 'Libre Baskerville', serif; font-size: 175%; text-align: center;">Praveen weds Ranjani</h1>
-          <br>
-
-          <img src="/assets/img/praveen-ranjani--save-the-date.jpg" alt="Save the date" width="600" style="display: block; margin-left: auto; margin-right: auto;">
-          <br>
-
-          <p style="text-align: center;">Watch this page for updates!</p>
-          <br>
-
+        <div style="display: block; box-sizing: border-box; padding-top: 3em; padding-bottom: 3em;">
+          <img src="/assets/img/praveen-ranjani--save-the-date.jpg" alt="Save the date" width="600" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%">
         </div>
+
+        <p class="fs-4 normal pb-5" style="text-align: center;">Watch this page for updates!</p>
 
       </div>
-    </div> <!-- main -->
+    </main>
 
-    <div class="page__footer">
-      <footer>
-        <div class="page__footer-copyright">
-          <p style="text-align: center;">
-            &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.
-            {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
-            <a href="/privacy-policy">Terms &amp; Privacy Policy</a>.
-          </p>
-        </div>
-      </footer>
-    </div>
+    <footer class="footer mt-auto py-3 bg-light" style="border-top: 1px solid #bdc1c4;">
+      <div class="container pt-4 pb-4">
+        <span class="text-muted normal" style="text-align: center;">
+          &copy; 2021 Praveen Venkatesh.
+          Powered by <a class="footlink" href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a class="footlink" href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+          <a class="footlink" href="/privacy-policy">Terms &amp; Privacy Policy</a>.
+        </span>
+      </div>
+    </footer>
 
-    {% include scripts.html %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   </body>
 </html>
