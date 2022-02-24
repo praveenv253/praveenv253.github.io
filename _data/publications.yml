@@ -122,8 +122,8 @@ journal_papers:
 conference_papers:
   - id: Schamberg2021Partial
     authors:
-      - Gabriel Schamberg*
       - Praveen Venkatesh*
+      - Gabriel Schamberg*
     title: "Partial Information Decomposition via Deficiency for Multivariate Gaussians"
     venue:
     shortvenue:
@@ -133,6 +133,7 @@ conference_papers:
     url: https://arxiv.org/abs/2105.00769
     links:
       arxiv: https://arxiv.org/abs/2105.00769
+      code: https://github.com/gabeschamberg/mvar-gauss-pid
   - id: Venkatesh2021Can
     authors:
       - Praveen Venkatesh
@@ -142,9 +143,14 @@ conference_papers:
     title: "Can Information Flows Suggest Targets for Interventions in Neural Circuits?"
     venue: Neural Information Processing Systems (NeurIPS)
     shortvenue: NeurIPS
-    status: accepted
+    status:
     date: December 2021
     note: "*<em>Equal contribution</em>"
+    links:
+      arxiv: https://arxiv.org/abs/2111.05299
+      code: https://github.com/praveenv253/ann-info-flow
+      external:
+        neurips.cc: https://proceedings.neurips.cc/paper/2021/hash/18de4beb01f6a17b6e1dfb9813ba6045-Abstract.html
   - id: Venkatesh2020Define
     authors:
       - Praveen Venkatesh
