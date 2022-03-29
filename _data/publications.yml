@@ -299,6 +299,22 @@ conference_papers:
 # Workshops and Conference abstracts
 
 conference_abstracts:
+  - id: Venkatesh2022Gaussian
+    authors:
+      - Praveen Venkatesh
+      - Gabriel Schamberg
+      - Adrienne Fairhall
+      - Shawn Olsen
+      - Stefan Mihalas
+      - Christof Koch
+    title: "Gaussian Partial Information Decomposition: Quantifying Inter-areal Interactions in High-Dimensional Neural Data"
+    url: /assets/doc/posters/2022--cosyne--poster.pdf
+    venue: Computational and Systems Neuroscience (Cosyne)
+    shortvenue: Cosyne
+    status:
+    date: March 2022
+    links:
+      poster: /assets/doc/posters/2022--cosyne--poster.pdf
   - id: Venkatesh2020Quantifying
     authors:
       - Praveen Venkatesh
