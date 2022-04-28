@@ -125,10 +125,10 @@ conference_papers:
       - Praveen Venkatesh*
       - Gabriel Schamberg*
     title: "Partial Information Decomposition via Deficiency for Multivariate Gaussians"
-    venue:
-    shortvenue:
-    status: submitted
-    date:
+    venue: International Symposium on Information Theory (ISIT)
+    shortvenue: ISIT
+    status: accepted
+    date: June 2022
     note: "*<em>Equal contribution</em>"
     url: https://arxiv.org/abs/2105.00769
     links:
@@ -146,6 +146,7 @@ conference_papers:
     status:
     date: December 2021
     note: "*<em>Equal contribution</em>"
+    url: https://proceedings.neurips.cc/paper/2021/hash/18de4beb01f6a17b6e1dfb9813ba6045-Abstract.html
     links:
       arxiv: https://arxiv.org/abs/2111.05299
       code: https://github.com/praveenv253/ann-info-flow
