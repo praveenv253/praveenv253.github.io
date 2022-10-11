@@ -1,6 +1,19 @@
-# Journal papers
+# Preprints
 
-journal_papers:
+preprints:
+  - id: Dutta2022Quantifying
+    authors:
+      - Sanghamitra Dutta
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Quantifying Feature Contributions to Overall Disparity Using Information Theory"
+    venue:
+    shortvenue:
+    status: "preprint"
+    note: "Presented at the AAAI-22 Workshop on Information-Theoretic Methods for Causal Inference and Discovery"
+    url: https://arxiv.org/abs/2206.08454
+    links:
+      arxiv: https://arxiv.org/abs/2206.08454
   - id: Venkatesh2020Synergy
     authors:
       - Praveen Venkatesh
@@ -14,6 +27,10 @@ journal_papers:
     links:
       external:
         working-paper: /assets/doc/papers/synergy-info-flow-manuscript.pdf
+
+# Journal papers
+
+journal_papers:
   - id: Dutta2020Fairness
     authors:
       - Sanghamitra Dutta
@@ -120,6 +137,17 @@ journal_papers:
 # Conference papers
 
 conference_papers:
+  - id: Gurushankar2022Extracting
+    authors:
+      - Keerthana Gurushankar
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Extracting Unique Information Through Markov Relations"
+    venue: Allerton Conference on Communication, Control, and Computing
+    shortvenue: Allerton
+    date: September 2022
+    status: to appear
+    url:
   - id: Schamberg2021Partial
     authors:
       - Praveen Venkatesh*
@@ -127,12 +155,13 @@ conference_papers:
     title: "Partial Information Decomposition via Deficiency for Multivariate Gaussians"
     venue: International Symposium on Information Theory (ISIT)
     shortvenue: ISIT
-    status: accepted
+    status:
     date: June 2022
     note: "*<em>Equal contribution</em>"
-    url: https://arxiv.org/abs/2105.00769
+    url: https://ieeexplore.ieee.org/abstract/document/9834649
     links:
       arxiv: https://arxiv.org/abs/2105.00769
+      ieee: https://ieeexplore.ieee.org/abstract/document/9834649
       code: https://github.com/gabeschamberg/mvar-gauss-pid
   - id: Venkatesh2021Can
     authors:
