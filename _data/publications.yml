@@ -147,7 +147,9 @@ conference_papers:
     shortvenue: Allerton
     date: September 2022
     status: to appear
-    url:
+    url: https://arxiv.org/abs/2210.14789
+    links:
+      arxiv: https://arxiv.org/abs/2210.14789
   - id: Schamberg2021Partial
     authors:
       - Praveen Venkatesh*
@@ -443,6 +445,18 @@ conference_abstracts:
     date: July 2019
     links:
       poster: /assets/doc/posters/2019--cns--poster.pdf
+  - id: Venkatesh2019Systematic
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "A Systematic way to Define Information Flow"
+    venue: Ninth International Workshop on the Statistical Analysis of Neuronal Data (SAND)
+    shortvenue: SAND
+    url: /assets/doc/posters/2019--sand--poster.pdf
+    status:
+    date: May 2019
+    links:
+      poster: /assets/doc/posters/2019--sand--poster.pdf
   - id: Haigh2018Cortical
     authors:
       - Sarah M Haigh
@@ -550,6 +564,23 @@ conference_abstracts:
     date: June 2017
     links:
       poster: /assets/doc/posters/2017--isit-recent-results--poster.pdf
+  - id: Venkatesh2017Can
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+      - Amanda Robinson
+      - Marlene Behrmann
+      - Ashwati Krishnan
+      - Jeff Weldon
+      - Shawn Kelly
+      - Michael Tarr
+    title: "Can EEG be Hi-Res? Finding out with Theory, Experiments, Algorithms and Instrumentation"
+    url: /assets/doc/posters/2017--sand--poster.pdf
+    venue: Eighth International Workshop on the Statistical Analysis of Neuronal Data (SAND)
+    shortvenue: SAND
+    date: May 2017
+    links:
+      poster: /assets/doc/posters/2017--sand--poster.pdf
   - id: Chamanzar2017Systematic
     authors:
       - Alireza Chamanzar
@@ -585,3 +616,14 @@ conference_abstracts:
     date: October 2015
     links:
       poster: /assets/doc/posters/2015--sfn--poster.pdf
+  - id: Venkatesh2015Direction_SAND
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Is the Direction of Granger Causal Influence the Same as the Direction of Information Flow?"
+    url: /assets/doc/posters/2015--sand--poster.pdf
+    venue: Seventh International Workshop on the Statistical Analysis of Neuronal Data (SAND)
+    shortvenue: SAND
+    date: May 2015
+    links:
+      poster: /assets/doc/posters/2015--sand--poster.pdf
