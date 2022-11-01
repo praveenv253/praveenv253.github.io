@@ -131,6 +131,7 @@ journal_papers:
     date: December 2016
     status:
     links:
+      preprint: /assets/doc/papers/2016--ieee-proceedings--preprint.pdf
       doi: https://doi.org/10.1109/JPROC.2016.2615179
       ieee: http://ieeexplore.ieee.org/document/7782724/
 
@@ -288,12 +289,12 @@ conference_papers:
     title: "Lower Bounds on the Minimax Risk for the Source Localization Problem"
     venue: International Symposium on Information Theory (ISIT)
     shortvenue: ISIT
-    url: https://github.com/praveenv253/isit-2017/blob/master/paper.pdf
+    url: /assets/doc/papers/2017--isit--full-paper.pdf
     date: June 2017
     links:
       doi: https://doi.org/10.1109/ISIT.2017.8007096
       ieee: http://ieeexplore.ieee.org/document/8007096/
-      full_version: https://github.com/praveenv253/isit-2017/blob/master/paper.pdf
+      full_version: /assets/doc/papers/2017--isit--full-paper.pdf
       code: https://github.com/praveenv253/isit-2017/blob/master/q-function-test/q_fn_test.py
       slides: https://github.com/praveenv253/isit-2017/blob/master/presentation/isit-presentation.pptx
   - id: Venkatesh2015Direction_Allerton

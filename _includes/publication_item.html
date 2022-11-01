@@ -60,6 +60,9 @@
       {% if paper.links.full_version %}
         <a class="publication__link-item" href="{{ paper.links.full_version }}"><i class="fa fa-file-text" aria-hidden="true"></i> Full version</a>
       {% endif %}
+      {% if paper.links.preprint %}
+        <a class="publication__link-item" href="{{ paper.links.preprint }}"><i class="fa fa-file-text" aria-hidden="true"></i> Preprint</a>
+      {% endif %}
       {% if paper.links.abstract %}
         <a class="publication__link-item" href="{{ paper.links.abstract }}"><i class="fa fa-file-text" aria-hidden="true"></i> Abstract</a>
       {% endif %}
