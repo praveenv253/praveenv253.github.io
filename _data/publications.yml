@@ -163,6 +163,7 @@ conference_papers:
     note: "*<em>Equal contribution</em>"
     url: https://ieeexplore.ieee.org/abstract/document/9834649
     links:
+      full_version: /assets/doc/papers/2022--isit--full-version.pdf
       arxiv: https://arxiv.org/abs/2105.00769
       ieee: https://ieeexplore.ieee.org/abstract/document/9834649
       code: https://github.com/gabeschamberg/mvar-gauss-pid
