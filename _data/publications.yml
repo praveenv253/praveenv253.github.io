@@ -138,6 +138,16 @@ journal_papers:
 # Conference papers
 
 conference_papers:
+  - id: Venkatesh2023Capturing
+    authors:
+      - Praveen Venkatesh
+      - Keerthana Gurushankar
+      - Gabriel Schamberg
+    title: "Capturing and Interpreting Unique Information"
+    status: submitted
+    url: https://arxiv.org/abs/2302.11873
+    links:
+      arxiv: https://arxiv.org/abs/2302.11873
   - id: Gurushankar2022Extracting
     authors:
       - Keerthana Gurushankar
@@ -147,10 +157,12 @@ conference_papers:
     venue: Allerton Conference on Communication, Control, and Computing
     shortvenue: Allerton
     date: September 2022
-    status: to appear
+    status:
     url: https://arxiv.org/abs/2210.14789
     links:
       arxiv: https://arxiv.org/abs/2210.14789
+      ieee: https://ieeexplore.ieee.org/document/9929411
+      doi: https://doi.org/10.1109/Allerton49937.2022.9929411
   - id: Schamberg2021Partial
     authors:
       - Praveen Venkatesh*
@@ -164,6 +176,7 @@ conference_papers:
     url: https://ieeexplore.ieee.org/abstract/document/9834649
     links:
       full_version: /assets/doc/papers/2022--isit--full-paper.pdf
+      doi: https://doi.org/10.1109/ISIT50566.2022.9834649
       arxiv: https://arxiv.org/abs/2105.00769
       ieee: https://ieeexplore.ieee.org/abstract/document/9834649
       code: https://github.com/gabeschamberg/mvar-gauss-pid
