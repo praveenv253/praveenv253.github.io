@@ -144,7 +144,10 @@ conference_papers:
       - Keerthana Gurushankar
       - Gabriel Schamberg
     title: "Capturing and Interpreting Unique Information"
-    status: submitted
+    status: accepted
+    venue: International Symposium on Information Theory (ISIT)
+    shortvenue: ISIT
+    date: June 2023
     url: https://arxiv.org/abs/2302.11873
     links:
       arxiv: https://arxiv.org/abs/2302.11873
