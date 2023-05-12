@@ -150,6 +150,7 @@ conference_papers:
     date: June 2023
     url: https://arxiv.org/abs/2302.11873
     links:
+      full_version: https://praveenv253.github.io/assets/doc/papers/2023--isit--full-paper.pdf
       arxiv: https://arxiv.org/abs/2302.11873
   - id: Gurushankar2022Extracting
     authors:
