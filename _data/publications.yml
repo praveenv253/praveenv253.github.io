@@ -153,7 +153,7 @@ conference_papers:
     venue:
     shortvenue:
     date:
-    url:
+    url: https://arxiv.org/abs/2307.10515
     links:
       arxiv: https://arxiv.org/abs/2307.10515
   - id: Venkatesh2023Capturing
