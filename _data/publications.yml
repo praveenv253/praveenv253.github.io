@@ -138,13 +138,31 @@ journal_papers:
 # Conference papers
 
 conference_papers:
+  - id: Venkatesh2023Gaussian
+    authors:
+      - Praveen Venkatesh
+      - Corbett Bennett
+      - Sam Gale
+      - Tamina K Ramirez
+      - Greggory Heller
+      - Severine Durand
+      - Shawn Olsen
+      - Stefan Mihalas
+    title: "Gaussian Partial Information Decomposition: Bias Correction and Application to High-dimensional Data"
+    status: submitted
+    venue:
+    shortvenue:
+    date:
+    url:
+    links:
+      arxiv: https://arxiv.org/abs/2307.10515
   - id: Venkatesh2023Capturing
     authors:
       - Praveen Venkatesh
       - Keerthana Gurushankar
       - Gabriel Schamberg
     title: "Capturing and Interpreting Unique Information"
-    status: accepted
+    status:
     venue: International Symposium on Information Theory (ISIT)
     shortvenue: ISIT
     date: June 2023
