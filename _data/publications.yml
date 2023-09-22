@@ -149,10 +149,11 @@ conference_papers:
       - Shawn Olsen
       - Stefan Mihalas
     title: "Gaussian Partial Information Decomposition: Bias Correction and Application to High-dimensional Data"
-    status: submitted
-    venue:
-    shortvenue:
-    date:
+    status: accepted
+    venue: Neural Information Processing Systems (NeurIPS)
+    shortvenue: NeurIPS
+    date: December 2023
+    note: "<strong>Spotlight presentation</strong>"
     url: https://arxiv.org/abs/2307.10515
     links:
       arxiv: https://arxiv.org/abs/2307.10515
