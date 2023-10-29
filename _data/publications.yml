@@ -1,32 +1,19 @@
 # Preprints
 
 preprints:
-  - id: Dutta2022Quantifying
-    authors:
-      - Sanghamitra Dutta
-      - Praveen Venkatesh
-      - Pulkit Grover
-    title: "Quantifying Feature Contributions to Overall Disparity Using Information Theory"
-    venue:
-    shortvenue:
-    status: "preprint"
-    note: "Presented at the AAAI-22 Workshop on Information-Theoretic Methods for Causal Inference and Discovery"
-    url: https://arxiv.org/abs/2206.08454
-    links:
-      arxiv: https://arxiv.org/abs/2206.08454
-  - id: Venkatesh2020Synergy
-    authors:
-      - Praveen Venkatesh
-      - Susan Cheng
-      - Pulkit Grover
-    title: "A Synergistic Perspective on Information Flow and Encoding"
-    venue:
-    shortvenue:
-    status: "in&nbsp;prep"
-    url: /assets/doc/papers/synergy-info-flow-manuscript.pdf
-    links:
-      external:
-        working-paper: /assets/doc/papers/synergy-info-flow-manuscript.pdf
+  #- id: Venkatesh2020Synergy
+  #  authors:
+  #    - Praveen Venkatesh
+  #    - Susan Cheng
+  #    - Pulkit Grover
+  #  title: "A Synergistic Perspective on Information Flow and Encoding"
+  #  venue:
+  #  shortvenue:
+  #  status: "in&nbsp;prep"
+  #  url: /assets/doc/papers/synergy-info-flow-manuscript.pdf
+  #  links:
+  #    external:
+  #      working-paper: /assets/doc/papers/synergy-info-flow-manuscript.pdf
 
 # Journal papers
 
@@ -135,9 +122,11 @@ journal_papers:
       doi: https://doi.org/10.1109/JPROC.2016.2615179
       ieee: http://ieeexplore.ieee.org/document/7782724/
 
-# Conference papers
 
-conference_papers:
+
+# Top-tier ML conference papers
+
+top_tier_ml_papers:
   - id: Venkatesh2023Gaussian
     authors:
       - Praveen Venkatesh
@@ -157,6 +146,63 @@ conference_papers:
     url: https://arxiv.org/abs/2307.10515
     links:
       arxiv: https://arxiv.org/abs/2307.10515
+  - id: Venkatesh2021Can
+    authors:
+      - Praveen Venkatesh
+      - Sanghamitra Dutta*
+      - Neil Mehta*
+      - Pulkit Grover
+    title: "Can Information Flows Suggest Targets for Interventions in Neural Circuits?"
+    venue: Neural Information Processing Systems (NeurIPS)
+    shortvenue: NeurIPS
+    status:
+    date: December 2021
+    note: "*<em>Equal contribution</em>"
+    url: https://proceedings.neurips.cc/paper/2021/hash/18de4beb01f6a17b6e1dfb9813ba6045-Abstract.html
+    links:
+      arxiv: https://arxiv.org/abs/2111.05299
+      code: https://github.com/praveenv253/ann-info-flow
+      external:
+        neurips.cc: https://proceedings.neurips.cc/paper/2021/hash/18de4beb01f6a17b6e1dfb9813ba6045-Abstract.html
+  - id: Dutta2020Information
+    authors:
+      - Sanghamitra Dutta
+      - Praveen Venkatesh
+      - Piotr Mardziel
+      - Anupam Datta
+      - Pulkit Grover
+    title: "An Information-Theoretic Quantification of Discrimination with Exempt Features"
+    venue: "AAAI Conference on Artificial Intelligence (AAAI): Oral presentation"
+    shortvenue: AAAI
+    status:
+    date: February 2020
+    url: https://users.ece.cmu.edu/~sanghamd/publications/Fairness_Exemptions_AAAI2020.pdf
+    links:
+      full_version: https://users.ece.cmu.edu/~sanghamd/publications/Fairness_Exemptions_AAAI2020.pdf
+      external:
+        aaai.org: https://www.aaai.org/Papers/AAAI/2020GB/AAAI-DuttaS.9451.pdf
+  - id: Gangrade2019Efficient
+    authors:
+      - Aditya Gangrade
+      - Praveen Venkatesh
+      - Bobak Nazer
+      - Venkatesh Saligrama
+    title: "Efficient Near-Optimal Testing of Community Changes in Stochastic Block Models"
+    venue: Neural Information Processing Systems (NeurIPS)
+    shortvenue: NeurIPS
+    date: December 2019
+    status:
+    url: https://arxiv.org/abs/1812.00769
+    links:
+      external:
+        neurips.cc: https://papers.nips.cc/paper/9224-efficient-near-optimal-testing-of-community-changes-in-balanced-stochastic-block-models
+      arxiv: https://arxiv.org/abs/1812.00769
+
+
+
+# Conference papers
+
+conference_papers:
   - id: Venkatesh2023Capturing
     authors:
       - Praveen Venkatesh
@@ -203,24 +249,6 @@ conference_papers:
       arxiv: https://arxiv.org/abs/2105.00769
       ieee: https://ieeexplore.ieee.org/abstract/document/9834649
       code: https://github.com/gabeschamberg/mvar-gauss-pid
-  - id: Venkatesh2021Can
-    authors:
-      - Praveen Venkatesh
-      - Sanghamitra Dutta*
-      - Neil Mehta*
-      - Pulkit Grover
-    title: "Can Information Flows Suggest Targets for Interventions in Neural Circuits?"
-    venue: Neural Information Processing Systems (NeurIPS)
-    shortvenue: NeurIPS
-    status:
-    date: December 2021
-    note: "*<em>Equal contribution</em>"
-    url: https://proceedings.neurips.cc/paper/2021/hash/18de4beb01f6a17b6e1dfb9813ba6045-Abstract.html
-    links:
-      arxiv: https://arxiv.org/abs/2111.05299
-      code: https://github.com/praveenv253/ann-info-flow
-      external:
-        neurips.cc: https://proceedings.neurips.cc/paper/2021/hash/18de4beb01f6a17b6e1dfb9813ba6045-Abstract.html
   - id: Venkatesh2020Define
     authors:
       - Praveen Venkatesh
@@ -237,39 +265,6 @@ conference_papers:
       slides: /assets/doc/presentations/2020--isit.pptx
       ieee: https://ieeexplore.ieee.org/document/9174028
       doi: https://doi.org/10.1109/ISIT44484.2020.9174028
-  - id: Dutta2020Information
-    authors:
-      - Sanghamitra Dutta
-      - Praveen Venkatesh
-      - Piotr Mardziel
-      - Anupam Datta
-      - Pulkit Grover
-    title: "An Information-Theoretic Quantification of Discrimination with Exempt Features"
-    venue: "AAAI Conference on Artificial Intelligence (AAAI): Oral presentation"
-    shortvenue: AAAI
-    status:
-    date: February 2020
-    url: https://users.ece.cmu.edu/~sanghamd/publications/Fairness_Exemptions_AAAI2020.pdf
-    links:
-      full_version: https://users.ece.cmu.edu/~sanghamd/publications/Fairness_Exemptions_AAAI2020.pdf
-      external:
-        aaai.org: https://www.aaai.org/Papers/AAAI/2020GB/AAAI-DuttaS.9451.pdf
-  - id: Gangrade2019Efficient
-    authors:
-      - Aditya Gangrade
-      - Praveen Venkatesh
-      - Bobak Nazer
-      - Venkatesh Saligrama
-    title: "Efficient Near-Optimal Testing of Community Changes in Stochastic Block Models"
-    venue: Neural Information Processing Systems (NeurIPS)
-    shortvenue: NeurIPS
-    date: December 2019
-    status:
-    url: https://arxiv.org/abs/1812.00769
-    links:
-      external:
-        neurips.cc: https://papers.nips.cc/paper/9224-efficient-near-optimal-testing-of-community-changes-in-balanced-stochastic-block-models
-      arxiv: https://arxiv.org/abs/1812.00769
   - id: Venkatesh2019Define
     authors:
       - Praveen Venkatesh
@@ -366,9 +361,38 @@ conference_papers:
       ieee: http://ieeexplore.ieee.org/document/7447102/
       code: http://www.tinyurl.com/pulkitgrover/EEGCode.html
 
-# Workshops and Conference abstracts
 
-conference_abstracts:
+
+# Conferences & workshops with extended abstracts
+
+top_tier_abstracts:
+  - id: Venkatesh2023Variability
+    authors:
+      - Praveen Venkatesh
+      - Corbett C Bennett
+      - Sam Gale
+      - Juri Minxha
+      - Hristos Courellis
+      - Greggory Robert Heller
+      - Tamina Keira Ramirez
+      - Severine Durand
+      - Ueli Rutishauser
+      - Shawn R Olsen
+      - Stefan Mihalas
+    title: "The Variability of Representations in Mice and Humans Changes with Learning, Engagement, and Attention"
+    status: accepted
+    venue: NeurIPS 2023 Workshop on Symmetry and Geometry in Neural Representations (NeurReps)
+    shortvenue: NeurReps
+    date: December 2023
+  - id: Mahon2023Information
+    authors:
+      - Miles Mahon
+      - Praveen Venkatesh
+    title: "Information Flows Reveal Computational Mechanisms of RNNs in Contextual Decision-making"
+    status: accepted
+    venue: NeurIPS 2023 Workshop on Information-Theoretic Principles in Cognitive Systems (InfoCog)
+    shortvenue: InfoCog
+    date: December 2023
   - id: Venkatesh2022Gaussian
     authors:
       - Praveen Venkatesh
@@ -385,6 +409,39 @@ conference_abstracts:
     date: March 2022
     links:
       poster: /assets/doc/posters/2022--cosyne--poster.pdf
+  - id: Dutta2022Quantifying
+    authors:
+      - Sanghamitra Dutta
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Quantifying Feature Contributions to Overall Disparity Using Information Theory"
+    venue: AAAI 2022 Workshop on Information-Theoretic Methods for Causal Inference and Discovery (ITCI)
+    shortvenue: ITCI
+    date: February 2022
+    status: #"preprint"
+    note: #"Presented at the AAAI-22 Workshop on Information-Theoretic Methods for Causal Inference and Discovery"
+    url: https://arxiv.org/abs/2206.08454
+    links:
+      arxiv: https://arxiv.org/abs/2206.08454
+  - id: Venkatesh2020Understanding
+    authors:
+      - Praveen Venkatesh
+      - Pulkit Grover
+    title: "Understanding Encoding and Redundancy in Grid Cells Using Partial Information Decomposition"
+    venue: Computational and Systems Neuroscience (Cosyne)
+    shortvenue: Cosyne
+    url: /assets/doc/abstracts/2020--cosyne--abstract.pdf
+    status:
+    date: February 2020
+    links:
+      abstract: /assets/doc/abstracts/2020--cosyne--abstract.pdf
+      poster: /assets/doc/posters/2020--cosyne--poster.pdf
+
+
+
+# Workshops and Conference abstracts
+
+conference_abstracts:
   - id: Venkatesh2020Quantifying
     authors:
       - Praveen Venkatesh
@@ -404,19 +461,6 @@ conference_abstracts:
     links:
       abstract: /assets/doc/abstracts/2020--aes--abstract.pdf
       poster: /assets/doc/posters/2020--aes--poster.pdf
-  - id: Venkatesh2020Understanding
-    authors:
-      - Praveen Venkatesh
-      - Pulkit Grover
-    title: "Understanding Encoding and Redundancy in Grid Cells Using Partial Information Decomposition"
-    venue: Computational and Systems Neuroscience (Cosyne)
-    shortvenue: Cosyne
-    url: /assets/doc/abstracts/2020--cosyne--abstract.pdf
-    status:
-    date: February 2020
-    links:
-      abstract: /assets/doc/abstracts/2020--cosyne--abstract.pdf
-      poster: /assets/doc/posters/2020--cosyne--poster.pdf
   - id: Venkatesh2020Information_ITA
     authors:
       - Praveen Venkatesh
