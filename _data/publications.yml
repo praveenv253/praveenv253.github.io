@@ -18,6 +18,19 @@ preprints:
 # Journal papers
 
 journal_papers:
+  - id: Feldman2024Information
+    authors:
+      - Ariel K Feldman
+      - Praveen Venkatesh
+      - Douglas J Weber
+      - Pulkit Grover
+    title: "Information-Theoretic Tools to Understand Distributed Source Coding in Neuroscience"
+    venue: IEEE Journal on Selected Areas in Information Theory
+    shortvenue: JSAIT
+    date: June 2024
+    url: https://ieeexplore.ieee.org/abstract/document/10552323/
+    links:
+      ieee: https://ieeexplore.ieee.org/abstract/document/10552323/
   - id: Dutta2020Fairness
     authors:
       - Sanghamitra Dutta
@@ -138,11 +151,11 @@ top_tier_ml_papers:
       - Shawn Olsen
       - Stefan Mihalas
     title: "Gaussian Partial Information Decomposition: Bias Correction and Application to High-dimensional Data"
-    status: accepted
+    status:
     venue: Neural Information Processing Systems (NeurIPS)
     shortvenue: NeurIPS
     date: December 2023
-    note: "<strong>Spotlight presentation</strong>"
+    note: "<strong>Spotlight</strong>"
     url: https://arxiv.org/abs/2307.10515
     links:
       arxiv: https://arxiv.org/abs/2307.10515
@@ -366,6 +379,58 @@ conference_papers:
 # Conferences & workshops with extended abstracts
 
 top_tier_abstracts:
+  #- id: Venkatesh2024Role
+  #  authors:
+  #    - Praveen Venkatesh
+  #    - Jiaqi Shang
+  #    - Corbett C Bennett
+  #    - Sam Gale
+  #    - Greggory Robert Heller
+  #    - Tamina Keira Ramirez
+  #    - Severine Durand
+  #    - Eric Shea-Brown
+  #    - Shawn R Olsen
+  #    - Stefan Mihalas
+  #  title: "The Role of Cortical Variability in Supporting Few-shot Generalization: Theory and Empirical Evidence"
+  #  venue: Computational and Systems Neuroscience (Cosyne)
+  #  shortvenue: Cosyne
+  #  date: March 2025
+  #  status: submitted
+  - id: Venkatesh2024Role
+    authors:
+      - Praveen Venkatesh
+      - Jiaqi Shang
+      - Corbett C Bennett
+      - Sam Gale
+      - Greggory Robert Heller
+      - Tamina Keira Ramirez
+      - Severine Durand
+      - Eric Shea-Brown
+      - Shawn R Olsen
+      - Stefan Mihalas
+    title: "The Role of Cortical Variability in Supporting Few-shot Generalization: Theory and Empirical Evidence"
+    url: https://openreview.net/forum?id=2FWkTBtSWJ
+    venue: NeurIPS 2024 Workshop on NeuroAI
+    shortvenue: NeuroAI
+    date: December 2024
+    status: accepted
+  - id: Venkatesh2024Variability
+    authors:
+      - Praveen Venkatesh
+      - Corbett C Bennett
+      - Sam Gale
+      - Juri Minxha
+      - Hristos Courellis
+      - Greggory Robert Heller
+      - Tamina Keira Ramirez
+      - Severine Durand
+      - Ueli Rutishauser
+      - Shawn R Olsen
+      - Stefan Mihalas
+    title: "The variability of representations in mice and humans changes with learning, engagement, and attention"
+    venue: Computational and Systems Neuroscience (Cosyne)
+    shortvenue: Cosyne
+    date: March 2024
   - id: Venkatesh2023Variability
     authors:
       - Praveen Venkatesh
@@ -380,7 +445,7 @@ top_tier_abstracts:
       - Shawn R Olsen
       - Stefan Mihalas
     title: "The Variability of Representations in Mice and Humans Changes with Learning, Engagement, and Attention"
-    status: accepted
+    url: https://openreview.net/forum?id=9kxkYY7B3j
     venue: NeurIPS 2023 Workshop on Symmetry and Geometry in Neural Representations (NeurReps)
     shortvenue: NeurReps
     date: December 2023
@@ -389,7 +454,7 @@ top_tier_abstracts:
       - Miles Mahon
       - Praveen Venkatesh
     title: "Information Flows Reveal Computational Mechanisms of RNNs in Contextual Decision-making"
-    status: accepted
+    url: https://openreview.net/forum?id=fpmnptci7d
     venue: NeurIPS 2023 Workshop on Information-Theoretic Principles in Cognitive Systems (InfoCog)
     shortvenue: InfoCog
     date: December 2023
@@ -418,8 +483,8 @@ top_tier_abstracts:
     venue: AAAI 2022 Workshop on Information-Theoretic Methods for Causal Inference and Discovery (ITCI)
     shortvenue: ITCI
     date: February 2022
-    status: #"preprint"
-    note: #"Presented at the AAAI-22 Workshop on Information-Theoretic Methods for Causal Inference and Discovery"
+    status:
+    note:
     url: https://arxiv.org/abs/2206.08454
     links:
       arxiv: https://arxiv.org/abs/2206.08454
